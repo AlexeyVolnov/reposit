@@ -1,0 +1,797 @@
+$Comforta: 'Comfortaa', cursive;
+$Inter: 'Inter', sans-serif;
+
+
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+{
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: $Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.conteiner {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
+/*
+
+------------------Header-------------------------------------------------------
+*/
+
+
+.header {
+  background: url("/start/images/Header/header_bg.jpg") no-repeat center / cover;
+  min-height: 100vh;
+  position: relative;
+
+}
+
+
+.header__top {
+  display: flex;
+  align-items: center;
+  padding: 57px 0 57px 0;
+  gap: toRem(100);
+  justify-content: flex-end;
+  font-family: $Comforta;
+  font-size: toRem(20);
+  font-weight: toRem(700);
+  line-height: 1.375rem;
+}
+
+.logo path {
+  transition: fill .3s ease;
+}
+
+
+.logo:hover path {
+  fill: #0093A1;
+
+}
+
+.header__btn {
+  min-height: 42px;
+  width: 193px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #262C27;
+  color: #fff;
+}
+
+.header__content {
+
+  min-height: calc(100vh - 161px);
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+
+}
+
+.header__content-box {
+  font-family: $Comforta;
+  font-weight: 700;
+  line-height: 24px;
+  max-width: 550px;
+  text-align: center;
+  margin-right: 110px;
+
+
+}
+
+
+.header__title {
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.header__text {
+  margin-bottom: 20px;
+}
+
+
+.header__decor-text {
+  position: absolute;
+  font-family: $Inter;
+  font-size: 32px;
+  font-weight: 300;
+  color: #0093A1;
+  text-align: center;
+}
+
+
+.Big {
+  font-family: $Comforta;
+  font-size: 130px;
+  font-weight: 400;
+  text-align: left;
+  opacity: 0.3;
+}
+
+.header__decor-text--one {
+  max-width: 345px;
+  z-index: 1;
+  right: 215px;
+  bottom: 146px;
+
+}
+
+.header__decor-text--two {
+  z-index: 4;
+  bottom: 35px;
+  left: 240px;
+
+}
+
+.header__decor-text--three {
+  bottom: 5px;
+  max-width: 360px;
+  z-index: 4;
+  text-align: center;
+  line-height: 28px;
+
+  right: 206px;
+  font-style: italic;
+}
+
+
+/*-----------------------------Елки декор--------------------------------*/
+
+
+.header::before {
+  content: "";
+  position: absolute;
+  max-width: 100%;
+  overflow: auto;
+  height: 456px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/Header/Header_top_elki.svg") no-repeat center / cover;
+  transform: translateY(46%);
+  z-index: 2;
+}
+
+.header::after {
+  content: "";
+  overflow: auto;
+  position: absolute;
+  max-width: 100%;
+  height: 700px;
+  bottom: 0;
+  left: -30px;
+  right: 0;
+  background: url("../images/Header/Header_top_elki.svg") no-repeat center / cover;
+  transform: translateX(30px) translateY(78%) rotate(180deg);
+  z-index: 3;
+
+}
+
+
+/*-----------------------------Елки декор--------------------------------*/
+/*
+
+-----------------////////-Header-----------------------------------------------------
+*/
+
+/*--------------------Present board------------------*/
+
+
+.present-board {
+  max-width: 100%;
+  min-height: 100%;
+  background: url("../images/present-board/bg.jpg") no-repeat center center / cover;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 130px;
+  gap: 300px;
+}
+
+.main::before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: #262C27;
+
+}
+
+.info-top {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 80px;
+
+}
+
+.present-board__text {
+  font-family: $Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  max-width: 290px;
+  padding: 260px 5px 5px 5px;
+  position: relative;
+}
+
+.present-board__text__line::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin-top: 30px;
+}
+
+
+.present-board__board-image {
+  min-width: 227px;
+  min-height: 650px;
+  background: url("../images/present-board/F21_SUP_RayAirPocket 1.png");
+  z-index: 99;
+}
+
+.present-board__video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.video_btn {
+  font-family: $Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background: none;
+  max-width: 104px;
+  border: none;
+  position: absolute;
+
+
+  &:hover path {
+    fill: #B9C400;
+  }
+  &:hover circle {
+    stroke: #B9C400;
+  }
+
+  &:hover span {
+    color: #B9C400;
+  }
+
+
+}
+.video_btn path, .video_btn circle{
+  transition: all .3s;
+}
+.video_btn span{
+  transition: color .3s;
+}
+
+
+
+.specs {
+  font-family: $Comforta;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+
+}
+
+
+.info-specs_property {
+  padding: 0 40px 0 20px;
+
+}
+
+
+.info-specs {
+  font-family: $Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 38px;
+  color: #FFFFFF;
+  width: content-box;
+  display: flex;
+  gap: 170px;
+  align-items: center;
+  margin-top: 190px;
+  margin-bottom: 20px;
+
+
+}
+
+.info-specs__table {
+  width: 600px;
+}
+
+.info-specs__table::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.info-specs__table::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+
+/*---------------------------------BUY---------------------------------*/
+.buy {
+  padding: 125px 0;
+  font-family: $Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.buy-inner {
+  display: flex;
+  gap: 150px;
+}
+
+.buy__title {
+  padding-bottom: 65px;
+  font-family: $Comforta;
+  font-size: 60px;
+  color: #0093A1;
+}
+.buy__list{
+  margin-right: 199px;
+}
+
+.buy__list-item {
+  padding-bottom: 30px;
+  max-width: 290px;
+
+}
+
+.buy__list-item:hover .buy-item-title {
+  color: #0093A1;
+}
+
+.prise-btn {
+  border: none;
+  position: absolute;
+}
+
+.buy-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  transition: color .3s;
+
+  &:hover {
+    color: #0093A1;
+    cursor: pointer;
+  }
+}
+
+.buy__btn {
+  font-family: $Comforta;
+  padding: 18px 197px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #0093A1;
+  margin-top: 33px;
+  border: 1.5px solid #0093A1;
+  text-transform: uppercase;
+  transition: background-color .3s, color .5s;
+
+  &:hover {
+    color: #262C27;
+    background-color: #B9C400;
+  }
+}
+
+
+.buy__price{
+  position: absolute;
+  width: 201px;
+  height: 199px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/buy/Star 1.svg") no-repeat ;
+  bottom: 35px;
+  right: -250px;
+  transition: transform .3s;
+
+}
+.buy__price:hover{
+  transform: scale(1.3);
+}
+
+.buy__list{
+  position: relative;
+}
+
+/*---------------------------------BUY---------------------------------*/
+
+
+/*--------------------------------MICRO TECHNOLOGY--------------------------------*/
+
+
+.technology__top{
+  width: 100vw;
+  height:1369px ;
+  background: url("../images/technology/techno_bg.jpg") no-repeat center center / cover;
+  position: relative;
+
+
+}
+
+.technology-btn{
+
+  top: 670px;
+  right: 34%;
+}
+
+.technology-title {
+  font-family: $Comforta;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  margin-bottom: 65px;
+  max-width: 454px;
+
+}
+
+.technology-list {
+  font-family: $Inter;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.technology-box__text{
+ position: absolute;
+  bottom: 30px;
+  left: 20% ;
+
+}
+
+.technology_item {
+   margin: 0 0 25px 30px;
+   padding-left: 30px;
+
+}
+/*--------------------------------MICRO TECHNOLOGY--------------------------------*/
+
+/*--------------------------------GALLERY--------------------------------*/
+
+.gallery {
+  width: 100vw;
+
+}
+
+.conteiner {
+}
+
+.gallery-box_min {
+  display: flex;
+  padding-top: 115px;
+  position: relative;
+  margin-bottom: 150px;
+  height:1031px ;
+}
+
+.gallery-text {
+  width: 350px;
+  height: 176.18px;
+}
+
+.gallery-min {
+  display: grid;
+  grid-template-columns:481px 208px ;
+  grid-template-rows: 432px 299px ;
+  column-gap: 30px ;
+  row-gap: 25px;
+  padding:70px 30px 51px 30px ;
+  margin-left: 30px;
+  transform: translateX(180px) translateY(-50%);
+  position: relative;
+}
+
+.gallery-min::before{
+  content: "";
+  position: absolute;
+  border: 3px solid #262C27;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.gallery-min-img-bd{
+z-index: -1;
+}
+
+.gallery-min-imgBIG{
+  grid-column: 1 / -1;
+}
+
+.gallery-box_max {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: -40%;
+}
+.gallery-box_max__text{
+  font-family: $Inter;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+.gallery-max__text{
+  max-width: 300px;
+  width: 100%;
+  font-family: $Inter;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  background-color: #0093A1;
+  border-bottom-left-radius: 200px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text{
+  max-width: 165px ;
+  width: 100%;
+}
+
+
+/*--------------------------------GALLERY--------------------------------*/
+
+/*--------------------------------FOOTER--------------------------------*/
+
+.contact-form{
+  display: flex;
+  gap: 20px;
+  min-height: 421px;
+  justify-content: space-between;
+  padding-top: 100px;
+
+}
+.contact-text{
+  min-width: 500px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  margin-bottom: 56px;
+
+
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  gap:97px ;
+}
+
+.form_title {
+
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.form_title::placeholder{
+  font-family: $Inter;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contact__btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 10px 66px ;
+  text-transform: inherit;
+
+}
+.contact-logo path{
+  transition: fill .3s;
+}
+.contact-logo svg:hover path {
+  fill: #0093A1;
+  transition: fill .3s;
+}
+
+.footer{
+  background-color: #262C27;
+  color: #fff;
+  font-family:$Comforta ;
+}
+
+.contact-gallery-images {
+  display: flex;
+  gap:52px  ;
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
+.contact-menu {
+  display: flex;
+  gap: 91px;
+
+}
+
+.contact-menu__item {
+  font-family: $Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  list-style: none;
+  margin-bottom: 83px;
+}
+
+/*--------------------------------FOOTER--------------------------------*/
+
+
+@media (max-width:1200px ) {
+  .header__decor-text--two{
+    left: 5px;
+  }
+
+}
+@media (max-width:720px ) {
+  .header__top{
+    flex-wrap: wrap ;
+    gap: 30px 90px;
+    justify-content: center;
+  }
+
+}
