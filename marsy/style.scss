@@ -1,0 +1,306 @@
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+  /* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.conteiner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+/*font-family: 'Lato', sans-serif;*/
+/*
+_________________________________________header_________________________________________
+*/
+.page1{
+  height: 95vh;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 93px;
+  align-items: center;
+
+}
+
+.header-logo {
+}
+
+.header-logo__img {
+}
+
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav__item {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 21px;
+  font-size: 13.5px;
+  line-height: 1.2;
+  text-align: center;
+  color: #868686;
+  transition: color .3s, background-color .3s;
+
+  &:hover{
+    background-color: #ffbb42;
+    color: #fff;
+
+  }
+}
+
+.header-nav-link {
+}
+
+.business {
+  height: 589px;
+  background-color:#709dca ;
+}
+
+
+.business-box{
+  text-align: center;
+  color: #fff;
+  padding-top: 110px ;
+
+}
+
+.business-title {
+  font-size: 35px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-family: "Open Sans",sans-serif ;
+}
+
+.business-sub-title {
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.business-form {
+  margin-top: 30px;
+}
+
+.form {
+}
+.form-item {
+  width: 281px;
+  height: 46px;
+
+
+
+  &::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #a9a9a9;
+    padding-left:44px ;
+  }
+}
+
+.business-slider{
+  width: 647px;
+  height: 383px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 65px auto;
+
+}
+
+.business-slider--gallery{
+  background:url("sourse/header/notebook.png") no-repeat center 100% / cover;
+  width: 648px;
+  height: 344px;
+  position: relative;
+
+}
+.business-slider__img{
+  position: absolute;
+  top: 18px;
+  left: 103px;
+}
+
+
+
+.form_NAME {
+}
+
+.form-EMAIL {
+}
+
+.form-Phone {
+}
+
+.form-btn {
+  width: 211px;
+  height: 46px;
+
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: black;
+  transition: color .3s, background-color .3s;
+
+
+  &:hover{
+    background-color: #ffbb42;
+    color: #fff;
+  }
+}
+
+
+/*-----------------------------------------Page 2-----------------------------------------*/
+
+
+
+.page2 {
+  min-height: 90vh;
+}
+
+
+.services {
+  margin-top: 20px;
+  font-family: 'Open Sans' , sans-serif;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #394b50;
+
+}
+
+.services-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 93px;
+  padding-top: 7px;
+}
+
+.services-list {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr  ;
+  grid-template-rows: repeat(3,1fr) ;
+  grid-gap: 79px 106px;
+}
+
+.services-list__item {
+}
+
+.services-list_title {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #394b50;
+}
+
+.services-list__text {
+  color: #7b7b7b;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-top: 21px;
+
+}
+
+
