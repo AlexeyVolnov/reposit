@@ -77,14 +77,18 @@ a {
   text-decoration: none; }
 
 .conteiner {
-  width: 1200px;
-  margin: 0 auto; }
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .header {
   display: flex;
   height: 100px;
   align-items: center;
   justify-content: space-between; }
+
+.menu {
+  margin-right: 70px; }
 
 .menu-items {
   display: flex;
@@ -100,36 +104,36 @@ a {
     background-color: #131313;
     color: white; }
 
-.product-inner {
+.bike-inner {
   margin-top: 97px;
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: 1fr 1fr; }
 
 .inner-text {
-  font-size: 14px;
   line-height: 120%; }
   .inner-text * {
     max-width: 420px; }
 
-.product-title {
-  margin-top: calc(169px - 97px);
+.bike-title {
+  margin-top: 60px;
   font-weight: 700;
   font-size: 64px;
   line-height: 77px;
   max-width: 539px; }
 
-.product-sub-title {
+.bike-sub-title {
   font-size: 32px;
   line-height: 39px;
   color: #6F6F6F; }
 
-.product-text-sup {
+.bike-text {
   margin-top: 60px; }
 
-.product-text-sub {
+.bike-text + .bike-text {
   margin-top: 20px; }
 
-.product-btn {
+.bike-btn {
   margin-top: 80px; }
 
 .btn {
@@ -143,6 +147,12 @@ a {
   border: none; }
   .btn:hover {
     background-color: #FF4040; }
+
+.bike-slider-img {
+  display: none; }
+
+.bike-slider-img_0 {
+  display: block; }
 
 .slider-spec {
   margin-top: 25px;
@@ -167,14 +177,14 @@ a {
 .spec-name {
   max-width: 220px; }
 
-.product-present {
+.bike-present {
   display: flex;
   gap: 60px;
   margin-top: 150px; }
 
-.product-present-text-block {
+.bike-present-text-block {
   max-width: 490px; }
-  .product-present-text-block :first-child {
+  .bike-present-text-block :first-child {
     margin-top: 0; }
 
 .sup-text {
