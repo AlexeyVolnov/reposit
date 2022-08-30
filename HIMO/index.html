@@ -7,7 +7,7 @@
     <link href="style/style.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style/slick.css">
+    <link href="style/slick.css" rel="stylesheet" type="text/css">
     <title>Title</title>
 </head>
 <body>
@@ -50,18 +50,43 @@
             </div>
             <div class="inner-slider">
                 <div class="bike-slider">
-                    <img alt="" class="bike-slider-img"
-                         src="sources/header/product-present/product-slider_0.jpg">
-                    <img alt="" class="bike-slider-img"
-                         src="sources/header/product-present/product-slider_1.jpg">
-                    <img alt="" class="bike-slider-img"
-                         src="sources/header/product-present/product-slider_2.jpg">
-                    <img alt="" class="bike-slider-img"
-                         src="sources/header/product-present/product-slider_3.jpg">
-                    <img alt="" class="bike-slider-img"
-                         src="sources/header/product-present/product-slider_4.jpg">
+                    <img
+                          alt="" class="bike-slider-img"
+                          src="sources/header/product-present/product-slider_0.jpg">
+                    <img
+                          alt="" class="bike-slider-img"
+                          src="sources/header/product-present/product-slider_1.jpg">
+                    <img
+                          alt="" class="bike-slider-img"
+                          src="sources/header/product-present/product-slider_2.jpg">
+                    <img
+                          alt="" class="bike-slider-img"
+                          src="sources/header/product-present/product-slider_3.jpg">
+                    <img
+                          alt="" class="bike-slider-img"
+                          src="sources/header/product-present/product-slider_4.jpg">
 
                 </div>
+                <ul class="bike-list">
+                    <li class="bike-list-item">
+                        <span class="bike-list-item-num">до 100</span>
+                        <span class="bike-list-item-text">Запас хода</span>
+                    </li>
+                    <li class="bike-list-item">
+
+                        <span class="bike-list-item-num">25 км/ч</span>
+                        <span class="bike-list-item-text">Макс корость</span>
+                    </li>
+                    <li class="bike-list-item">
+                        <span class="bike-list-item-num">3 режима езды</span>
+                        <span class="bike-list-item-text">механический, гибридный, электрический</span>
+                    </li>
+                    <li class="bike-list-item">
+                        <span class="bike-list-item-num">25 кг</span>
+                        <span class="bike-list-item-text">вес</span>
+                    </li>
+
+                </ul>
             </div>
         </article>
         <article class="bike-present">
@@ -217,7 +242,11 @@
 
 
         </article>
-        <article class="gallery"><img alt="" src="sources/gallery/gallery.png">
+        <article class="gallery">
+            <img alt="" class="gallery-img" src="sources/gallery/gallery-1.jpg">
+            <img alt="" class="gallery-img" src="sources/gallery/gallery-2.jpg">
+            <img alt="" class="gallery-img" src="sources/gallery/gallery-3.jpg">
+
         </article>
         <article class="order">
             <div class="order-form">
@@ -228,16 +257,14 @@
                     <input class="order-inp-name order-inp-text" placeholder="ИМЯ" type="text">
                     <input class="order-inp-phone order-inp-text" placeholder="телефон" type="text">
                 </label>
-                <label>
-                    <span class="order-color">Bыберите желаемый цвет</span>
-                    <input class="order-color-gray order-color-radio" type="radio">
-                    <input class="order-color-white order-color-radio" type="radio">
-                    <input class="order-color-red order-color-radio" type="radio">
-                </label>
+                <span class="order-color">Bыберите желаемый цвет</span>
                 <button class="order-btn btn">ЗАКАЗАТЬ</button>
             </div>
             <div class="order-price">32 999 руб.</div>
-            <div class="order-images"><img alt="" class="order-img" src="sources/order/order.png">
+            <div class="order-images">
+                <img alt="" class="order-img" src="sources/order/order-gray.jpg">
+                <img alt="" class="order-img" src="sources/order/order-red.jpg">
+                <img alt="" class="order-img" src="sources/order/order-white.jpg">
             </div>
         </article>
     </div>
@@ -267,17 +294,9 @@
     </footer>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script
+      crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="script/slick.min.js"></script>
 <script src="script/main.js"></script>
 </body>

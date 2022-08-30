@@ -163,10 +163,11 @@ a {
 }
 
 
-.bike-text{
+.bike-text {
   margin-top: 60px;
 }
-.bike-text + .bike-text{
+
+.bike-text + .bike-text {
   margin-top: 20px;
 }
 
@@ -190,6 +191,7 @@ a {
   }
 }
 
+//--------------------------------------slider
 .inner-slider {
 
 }
@@ -197,6 +199,7 @@ a {
 
 .bike-slider {
   max-width: 630px;
+  margin-bottom: 35px;
 }
 
 .bike-slider-img {
@@ -208,41 +211,73 @@ a {
 }
 
 
-.slick-dots{
+.slick-dots {
   position: absolute;
   top: 0;
 
 
 }
 
-.bike-slider .slick-dots{
+.bike-slider .slick-dots {
   right: 0;
   top: 52px;
 }
 
-
-
-.slider-spec {
+.slick-dots li + li {
+  margin-top: 10px;
 }
 
-.spec-value_str {
+.slick-dots button {
+  width: 2px;
+  height: 25px;
+  font-size: 0;
+  border: none;
+  background-color: #131313;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 0;
+
+
 }
 
-.spec-value {
+.slick-active:hover button {
+
 }
 
-.spec-name_str {
+.slick-dots button:hover, .slick-active button {
+  background-color: #FF4040;
+
 }
 
-.spec-name {
+.bike-list {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
 }
 
-.slider-spec {
-  margin-top: 25px;
+.bike-list-item {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  align-items: center;
+  max-width: 225px;
+  min-height: 40px;
+  gap: 5px;
+
 }
+
+.bike-list-item-num{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.bike-list-item-text{
+  text-transform: lowercase;
+  margin: auto 0;
+}
+
+//----------------------------slider
 
 
 .spec-value_str {
@@ -348,6 +383,9 @@ a {
 
 }
 
+//---------------------Slider
+
+//---------------------Slider
 
 .order {
   display: flex;
@@ -377,9 +415,6 @@ a {
   margin-top: 15px;
 }
 
-.order-color-radio {
-
-}
 
 .order-inp-text::placeholder {
   text-transform: lowercase;
@@ -407,6 +442,15 @@ a {
 }
 
 .order-images {
+  width: 630px;
+  z-index: 1;
+}
+
+.order-images .slick-dots {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
 }
 
 .order-img {
@@ -425,12 +469,13 @@ a {
 .order-price {
   position: absolute;
   top: 23px;
-  left: 500px;
+  left: 466px;
   font-size: 32px;
   line-height: 39px;
   border: 1px solid #FF4040;
   padding: 20px;
   border-radius: 50%;
+  z-index: 3;
 
   &:before {
     content: "";
