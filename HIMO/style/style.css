@@ -216,65 +216,36 @@ a {
   justify-content: space-between;
   margin-top: 13px; }
 
-.spec-value {
-  max-width: 220px; }
-
-.spec-name {
-  max-width: 220px; }
-
-.bike-present {
+.info {
   display: flex;
   gap: 60px;
   margin-top: 150px; }
 
-.bike-present-text-block {
-  max-width: 490px; }
-  .bike-present-text-block :first-child {
-    margin-top: 0; }
+.info-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
-.sup-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 50px; }
-
-.present-sub-text {
+.info-text {
   font-size: 14px;
   line-height: 120%; }
+  .info-text:first-child {
+    margin-top: -15px; }
 
-.spec-full-block {
-  margin-top: 150px; }
-
-.spec-full {
-  display: flex;
-  align-items: center;
-  gap: 60px; }
-
-.spec-full-title {
+.info-sup-text {
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase; }
 
-.spec-full-table {
-  margin-top: 40px;
+.info-sub-text span {
+  display: block; }
+
+.info-sub-text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 120%;
-  max-width: 570px; }
-
-.spec-full-row {
-  background-color: #131313; }
-
-.spec-full-row-name {
-  font-size: 14px;
-  line-height: 17px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-align: start; }
-
-.spec-full-value {
-  padding-left: 130px; }
+  max-width: 456px; }
 
 .gallery {
   margin: 150px 0 0 30px; }
@@ -304,7 +275,9 @@ a {
 
 .order-inp-text {
   border: none;
-  padding: 10px; }
+  padding: 10px;
+  border-bottom: 1px solid #131313;
+  width: 100%; }
 
 .order-btn {
   margin-top: 56px; }
@@ -324,7 +297,8 @@ a {
   color: #6F6F6F;
   opacity: 0.5;
   margin: 20px 0 10px 0;
-  display: block; }
+  display: block;
+  text-transform: lowercase; }
 
 .order-price {
   position: absolute;
@@ -377,5 +351,37 @@ a {
   font-size: 12px;
   line-height: 15px;
   text-transform: lowercase; }
+
+.spec-full {
+  display: flex;
+  align-items: center;
+  gap: 60px; }
+
+.spec-table {
+  max-width: 570px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%; }
+
+.spec-title {
+  width: 570px;
+  height: 22px;
+  background-color: #131313;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 33px;
+  padding-top: 3px; }
+
+ul.spec-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5px; }
+
+.spec-name {
+  max-width: 234px; }
+
+.gallery-img {
+  padding-left: 50px; }
 
 /*# sourceMappingURL=style.css.map */
