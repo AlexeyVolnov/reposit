@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/main.js" afterDir="false" />
@@ -84,7 +85,7 @@
       <workItem from="1661312422661" duration="20284000" />
       <workItem from="1661406195556" duration="178000" />
       <workItem from="1661430384223" duration="25350000" />
-      <workItem from="1661917762216" duration="27836000" />
+      <workItem from="1661917762216" duration="35051000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>

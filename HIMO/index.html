@@ -27,7 +27,6 @@
 <body>
 <div class="wrapper">
     <div class="conteiner">
-
         <header class="header">
             <div class="header-logo logo">
                 <img
@@ -38,19 +37,13 @@
             <nav class="menu">
                 <ul class="menu-items">
                     <li class="menu-item">
-                        <a
-                                class="menu-link"
-                                href="#">Описание</a>
+                        <a class="menu-link" href="#info">Описание</a>
                     </li>
                     <li class="menu-item">
-                        <a
-                                class="menu-link"
-                                href="#">Характеристики</a>
+                        <a class="menu-link" href="#spec-full-block">Характеристики</a>
                     </li>
                     <li class="menu-item">
-                        <a
-                                class="menu-link"
-                                href="#">стоимость</a>
+                        <a class="menu-link" href="#order">стоимость</a>
                     </li>
                 </ul>
             </nav>
@@ -70,7 +63,7 @@
                         7-скоростная трансмиссия и эргономичное сидение делают каждую поездку гораздо приятнее.
                     </p>
                 </div>
-                <button class="bike-btn btn">ЗАКАЗАТЬ</button>
+                <a class="bike-btn btn" href="#order">ЗАКАЗАТЬ</a>
             </div>
             <div class="inner-slider">
                 <div class="bike-slider">
@@ -118,7 +111,7 @@
                 </ul>
             </div>
         </article>
-        <article class="info">
+        <article class="info" id="info">
             <div class="info-img-block">
                 <img
                         alt=""
@@ -192,7 +185,7 @@
                 </div>
             </div>
         </article>
-        <article class="spec-full-block">
+        <article class="spec-full-block" id="spec-full-block">
 
 
             <h5 class="spec-full-title">ХАрактеристики</h5>
@@ -432,8 +425,7 @@
                     src="sources/gallery/gallery-3.jpg">
 
         </article>
-        <article class="order">
-
+        <article class="order" id="order">
             <form class="order-form">
                 <h4 class="order-form-title">Заказать</h4>
                 <p class="order-form-text-info">Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер
@@ -449,47 +441,32 @@
 
                 <div class="form-label-box">
                     <label class="form__label">
-                        <input class="form__input__radio" type="radio">
+                        <input class="form__input__radio" name="radio" type="radio">
                         <div class="form_bike">
-                            <img class="form-bike-img" src="sources/order/order-gray.jpg" alt="">
-                            <p class="form__bike-price">50000 rub</p>
+                            <img alt="" class="form-bike-img" src="sources/order/order-gray.jpg">
+                            <p class="form__bike-price">50 000 rub</p>
                         </div>
                         <span class="form__radio-style form__radio-style-gray"></span>
                     </label>
                     <label class="form__label">
-                        <input class="form__input__radio" type="radio">
+                        <input checked class="form__input__radio" name="radio" type="radio">
                         <div class="form_bike">
-                            <img class="form-bike-img" src="sources/order/order-white.jpg" alt="">
-                            <p class="form__bike-price">26000 rub</p>
+                            <img alt="" class="form-bike-img" src="sources/order/order-white.jpg">
+                            <p class="form__bike-price">26 000 rub</p>
                         </div>
                         <span class="form__radio-style form__radio-style-white"></span>
                     </label>
                     <label class="form__label">
-                        <input class="form__input__radio" type="radio">
+                        <input class="form__input__radio" name="radio" type="radio">
                         <div class="form_bike">
-                            <img class="form-bike-img" src="sources/order/order-red.jpg" alt="">
-                            <p class="form__bike-price">12000 rub</p>
+                            <img alt="" class="form-bike-img" src="sources/order/order-red.jpg">
+                            <p class="form__bike-price">12 000 rub</p>
                         </div>
                         <span class="form__radio-style form__radio-style-red"></span>
                     </label>
                 </div>
                 <button class="order-btn btn" type="submit">ЗАКАЗАТЬ</button>
             </form>
-
-           <!--  <div class="order-images">
-                <img
-                        alt=""
-                        class="order-img"
-                        src="sources/order/order-gray.jpg">
-                <img
-                        alt=""
-                        class="order-img"
-                        src="sources/order/order-red.jpg">
-                <img
-                        alt=""
-                        class="order-img"
-                        src="sources/order/order-white.jpg">
-            </div> -->
         </article>
     </div>
     <footer class="footer-block">

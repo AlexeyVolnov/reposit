@@ -5,6 +5,9 @@
 *::after {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
@@ -30,7 +33,6 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed; }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -134,7 +136,8 @@ a {
   margin-top: 20px; }
 
 .bike-btn {
-  margin-top: 80px; }
+  margin-top: 80px;
+  display: block; }
 
 .btn {
   font-size: 20px;
@@ -251,8 +254,6 @@ a {
   margin: 150px 0 0 30px; }
 
 .order {
-  display: flex;
-  gap: 140px;
   margin-top: 55px;
   position: relative; }
 
@@ -277,7 +278,8 @@ a {
   border: none;
   padding: 10px;
   border-bottom: 1px solid #131313;
-  width: 100%; }
+  width: 100%;
+  outline: none; }
 
 .order-btn {
   margin-top: 56px; }
@@ -383,5 +385,72 @@ ul.spec-list {
 
 .gallery-img {
   padding-left: 50px; }
+
+.form-label-box {
+  display: flex; }
+
+.form__label + .form__label {
+  margin-left: 23px; }
+
+.form__input__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: 0 0 0 0; }
+
+.form_bike {
+  display: none; }
+
+.form-bike-img {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.form__bike-price {
+  position: absolute;
+  top: 52px;
+  right: 498px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  transform: translateX(-20%); }
+  .form__bike-price:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #FF4040;
+    width: 221px;
+    height: 100px;
+    top: -35px;
+    left: -28px; }
+  .form__bike-price:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FF4040;
+    width: 221px;
+    height: 100px;
+    border-radius: 50%;
+    top: -17px;
+    left: -27px; }
+
+.form__radio-style {
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+  display: block; }
+
+.form__radio-style-gray {
+  background: #6F6F6F; }
+
+.form__radio-style-white {
+  background: #fff;
+  border: 1px solid #6F6F6F; }
+
+.form__radio-style-red {
+  background: #FF4040; }
+
+.form__input__radio:checked + .form_bike {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
