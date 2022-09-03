@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
-      <change afterPath="$PROJECT_DIR$/style/.sass-cache/7d0d416e7bc6da8a7a1bbcc66c2369f438208d88/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/slick.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,8 @@
       <workItem from="1661406195556" duration="178000" />
       <workItem from="1661430384223" duration="25350000" />
       <workItem from="1661917762216" duration="35051000" />
-      <workItem from="1662220978290" duration="406000" />
+      <workItem from="1662220978290" duration="1173000" />
+      <workItem from="1662225796334" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>
