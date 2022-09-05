@@ -106,7 +106,7 @@ a {
 .conteiner {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px 30px;
 }
 
 
@@ -339,13 +339,15 @@ a {
 
 .info-sup-text {
   font-weight: 700;
-  @include adaptiv-font(16,14);
+
   line-height: 19px;
   text-transform: uppercase;
 }
-.info-sub-text{
-  @include adaptiv-font(14,12);
+
+.info-sub-text {
+
 }
+
 .info-sub-text span {
   display: block;
 }
@@ -523,7 +525,9 @@ a {
   align-items: center;
   gap: 60px;
 }
-
+.spec-full-title{
+  text-transform: uppercase;
+}
 .spec-table {
   max-width: 570px;
   font-weight: 400;
@@ -532,7 +536,7 @@ a {
 }
 
 .spec-title {
-  width: 570px;
+  max-width: 570px;
   height: 22px;
   background-color: #131313;
   color: #fff;
@@ -689,7 +693,47 @@ ul.spec-list {
     max-width: 100%;
   }
 
+}
 
+@media (max-width: 1080px) {
+  .info-sup-text {
+    padding-top: 15px;
+  }
+  .info-text:first-child {
+    margin-top: -30px;
+  }
+  .info {
+    gap: 30px;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-sub-text {
+    max-width: clamp(300px, 570px, 600px);
+  }
+  .spec-full{
+    //flex-direction: column-reverse;
+  }
+  .spec-full-title{
+    text-align: center;
+  }
+  .spec-full-block{
+    margin-top: 90px;
+  }
+  .info-sup-text {
+    @include adaptiv-font(16, 14);
+  }
+
+  .info-sub-text {
+    @include adaptiv-font(14 , 12);
+  }
+  .spec-table{
+    @include adaptiv-font(14,12);
+
+  }
+  .spec-full{
+    gap: 30px;
+  }
 }
 
 
@@ -700,6 +744,9 @@ ul.spec-list {
 
   .menu {
     margin-right: 0;
+  }
+  .spec-full{
+    flex-direction: column-reverse;
   }
 
 }
@@ -740,6 +787,9 @@ ul.spec-list {
   .bike-slider .slick-dots {
     top: 0;
   }
+  .spec-name {
+    max-width: 116px;
+  }
 }
 
 @media (max-width: 535px) {
@@ -759,8 +809,12 @@ ul.spec-list {
   .bike-list-item {
     max-width: 225px;
   }
+  .gallery {
+    margin: 71px 0 0 0px;
+  }
 
 }
+
 @media (max-width: 491px) {
   .bike-list-item {
     gap: 4px;
@@ -768,7 +822,7 @@ ul.spec-list {
   .bike-list-item-num {
     line-height: 12px;
   }
-  .bike-text{
+  .bike-text {
     max-width: 276px;
   }
   .bike-title {
@@ -783,6 +837,9 @@ ul.spec-list {
   .bike-title {
     line-height: 57px;
   }
+  .gallery-img {
+    padding-left: 21px;
+  }
 }
 
 
@@ -791,8 +848,14 @@ ul.spec-list {
   .menu-link {
     padding: 25px 8px;
   }
-  .btn{
+  .btn {
     padding: 15px 20px;
   }
 }
 
+@media (max-width: 356px) {
+
+  .slick-dots li + li {
+    margin-top: 1px;
+  }
+}
