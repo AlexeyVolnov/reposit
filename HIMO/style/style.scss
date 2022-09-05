@@ -1,3 +1,12 @@
+$maxWidth: 1920;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -5,9 +14,10 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
@@ -115,11 +125,12 @@ a {
 .menu-items {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .menu-link {
   padding: 41px 20px;
-  font-size: 14px;
+  @include adaptiv-font(14, 12);
   line-height: 17px;
   text-transform: uppercase;
   transition: color .3s, background-color .3s;
@@ -131,13 +142,10 @@ a {
 }
 
 
-.bike-inner {
+.bike {
   margin-top: 97px;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr;
-  //display: flex;
-  //justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
 }
 
@@ -152,13 +160,13 @@ a {
 .bike-title {
   margin-top: 60px;
   font-weight: 700;
-  font-size: 64px;
+  @include adaptiv-font(64, 24);
   line-height: 77px;
   max-width: 539px;
 }
 
 .bike-sub-title {
-  font-size: 32px;
+  @include adaptiv-font(32, 14);
   line-height: 39px;
   color: #6F6F6F;
 }
@@ -166,6 +174,7 @@ a {
 
 .bike-text {
   margin-top: 60px;
+  @include adaptiv-font(14, 12);
 }
 
 .bike-text + .bike-text {
@@ -179,7 +188,6 @@ a {
 }
 
 .btn {
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
   text-transform: uppercase;
@@ -187,6 +195,7 @@ a {
   background-color: #131313;
   color: white;
   border: none;
+  @include adaptiv-font(20, 12);
 
   &:hover {
     background-color: #FF4040;
@@ -270,7 +279,7 @@ a {
 
 .bike-list-item-num {
   font-weight: 700;
-  font-size: 14px;
+  @include adaptiv-font(14, 10);
   line-height: 17px;
   text-transform: uppercase;
 }
@@ -278,6 +287,7 @@ a {
 .bike-list-item-text {
   text-transform: lowercase;
   margin: auto 0;
+  @include adaptiv-font(12, 10);
 }
 
 //----------------------------slider
@@ -329,11 +339,13 @@ a {
 
 .info-sup-text {
   font-weight: 700;
-  font-size: 16px;
+  @include adaptiv-font(16,14);
   line-height: 19px;
   text-transform: uppercase;
 }
-
+.info-sub-text{
+  @include adaptiv-font(14,12);
+}
 .info-sub-text span {
   display: block;
 }
@@ -344,8 +356,6 @@ a {
   line-height: 120%;
   max-width: 456px;
 }
-
-
 
 
 .gallery {
@@ -407,10 +417,9 @@ a {
 
 .order-btn {
   margin-top: 56px;
+
 }
 
-.btn {
-}
 
 .order-images {
   width: 630px;
@@ -509,7 +518,7 @@ a {
 }
 
 
-.spec-full{
+.spec-full {
   display: flex;
   align-items: center;
   gap: 60px;
@@ -541,12 +550,11 @@ ul.spec-list {
 }
 
 .spec-name {
-  max-width:234px ;
+  max-width: 234px;
 }
 
 .spec-value {
 }
-
 
 
 .gallery .slick-dots {
@@ -556,28 +564,17 @@ ul.spec-list {
 }
 
 
-.gallery-img{
+.gallery-img {
   padding-left: 50px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .form-label-box {
-display: flex;
+  display: flex;
 
 }
-.form__label + .form__label{
+
+.form__label + .form__label {
   margin-left: 23px;
 }
 
@@ -613,9 +610,7 @@ display: flex;
   transform: translateX(-20%);
 
 
-
-
-  &:before{
+  &:before {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -625,7 +620,8 @@ display: flex;
     top: -35px;
     left: -28px;
   }
-  &:after{
+
+  &:after {
     content: "";
     position: absolute;
     border: 1px solid #FF4040;
@@ -657,6 +653,146 @@ display: flex;
   background: #FF4040;
 }
 
-.form__input__radio:checked + .form_bike{
+.form__input__radio:checked + .form_bike {
   display: block;
 }
+
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 1115px) {
+  .bike {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .bike-title {
+    margin-top: 41px;
+  }
+  .bike-btn {
+    margin-top: 34px;
+  }
+  .bike-text {
+    max-width: 630px;
+    margin-top: 12px;
+  }
+  .inner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-slider {
+    max-width: 100%;
+  }
+
+
+}
+
+
+@media (max-width: 830px) {
+  .menu-items {
+    gap: 10px;
+  }
+
+  .menu {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .header {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bike {
+    margin-top: 120px;
+  }
+  .header-logo {
+    margin-bottom: 20px;
+  }
+  .menu-link {
+    padding: 25px 15px;
+  }
+
+}
+
+
+@media (max-width: 655px) {
+
+
+  .bike-list {
+    justify-content: center;
+    gap: 20px;
+  }
+  .inner-slider {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 530px) {
+  .bike-slider .slick-dots {
+    top: 0;
+  }
+}
+
+@media (max-width: 535px) {
+
+
+}
+
+@media (max-width: 500px) {
+  .menu-items {
+    gap: 5px;
+
+  }
+  .menu-link {
+    padding: 25px 15px;
+
+  }
+  .bike-list-item {
+    max-width: 225px;
+  }
+
+}
+@media (max-width: 491px) {
+  .bike-list-item {
+    gap: 4px;
+  }
+  .bike-list-item-num {
+    line-height: 12px;
+  }
+  .bike-text{
+    max-width: 276px;
+  }
+  .bike-title {
+    margin-top: 20px;
+  }
+  .bike-sub-title {
+    line-height: 9px;
+  }
+  .bike-text {
+    margin-top: 6px;
+  }
+  .bike-title {
+    line-height: 57px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .menu-link {
+    padding: 25px 8px;
+  }
+  .btn{
+    padding: 15px 20px;
+  }
+}
+

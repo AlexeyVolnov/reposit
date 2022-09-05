@@ -94,11 +94,12 @@ a {
 
 .menu-items {
   display: flex;
-  gap: 30px; }
+  gap: 30px;
+  justify-content: space-between; }
 
 .menu-link {
   padding: 41px 20px;
-  font-size: 14px;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1600));
   line-height: 17px;
   text-transform: uppercase;
   transition: color .3s, background-color .3s; }
@@ -106,11 +107,10 @@ a {
     background-color: #131313;
     color: white; }
 
-.bike-inner {
+.bike {
   margin-top: 97px;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr; }
+  display: flex;
+  justify-content: space-between; }
 
 .inner-text {
   line-height: 120%; }
@@ -120,17 +120,18 @@ a {
 .bike-title {
   margin-top: 60px;
   font-weight: 700;
-  font-size: 64px;
+  font-size: calc(24px + 40 * ((100vw - 320px) / 1600));
   line-height: 77px;
   max-width: 539px; }
 
 .bike-sub-title {
-  font-size: 32px;
+  font-size: calc(14px + 18 * ((100vw - 320px) / 1600));
   line-height: 39px;
   color: #6F6F6F; }
 
 .bike-text {
-  margin-top: 60px; }
+  margin-top: 60px;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1600)); }
 
 .bike-text + .bike-text {
   margin-top: 20px; }
@@ -140,14 +141,14 @@ a {
   display: block; }
 
 .btn {
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
   text-transform: uppercase;
   padding: 28px 81px;
   background-color: #131313;
   color: white;
-  border: none; }
+  border: none;
+  font-size: calc(12px + 8 * ((100vw - 320px) / 1600)); }
   .btn:hover {
     background-color: #FF4040; }
 
@@ -200,13 +201,14 @@ a {
 
 .bike-list-item-num {
   font-weight: 700;
-  font-size: 14px;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 1600));
   line-height: 17px;
   text-transform: uppercase; }
 
 .bike-list-item-text {
   text-transform: lowercase;
-  margin: auto 0; }
+  margin: auto 0;
+  font-size: calc(10px + 2 * ((100vw - 320px) / 1600)); }
 
 .spec-value_str {
   display: flex;
@@ -237,9 +239,12 @@ a {
 
 .info-sup-text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   line-height: 19px;
   text-transform: uppercase; }
+
+.info-sub-text {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1600)); }
 
 .info-sub-text span {
   display: block; }
@@ -452,5 +457,96 @@ ul.spec-list {
 
 .form__input__radio:checked + .form_bike {
   display: block; }
+
+@media (max-width: 1115px) {
+  .bike {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px; }
+
+  .bike-title {
+    margin-top: 41px; }
+
+  .bike-btn {
+    margin-top: 34px; }
+
+  .bike-text {
+    max-width: 630px;
+    margin-top: 12px; }
+
+  .inner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .inner-slider {
+    max-width: 100%; } }
+@media (max-width: 830px) {
+  .menu-items {
+    gap: 10px; }
+
+  .menu {
+    margin-right: 0; } }
+@media (max-width: 720px) {
+  .header {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; }
+
+  .bike {
+    margin-top: 120px; }
+
+  .header-logo {
+    margin-bottom: 20px; }
+
+  .menu-link {
+    padding: 25px 15px; } }
+@media (max-width: 655px) {
+  .bike-list {
+    justify-content: center;
+    gap: 20px; }
+
+  .inner-slider {
+    max-width: 100%; } }
+@media (max-width: 530px) {
+  .bike-slider .slick-dots {
+    top: 0; } }
+@media (max-width: 500px) {
+  .menu-items {
+    gap: 5px; }
+
+  .menu-link {
+    padding: 25px 15px; }
+
+  .bike-list-item {
+    max-width: 225px; } }
+@media (max-width: 491px) {
+  .bike-list-item {
+    gap: 4px; }
+
+  .bike-list-item-num {
+    line-height: 12px; }
+
+  .bike-text {
+    max-width: 276px; }
+
+  .bike-title {
+    margin-top: 20px; }
+
+  .bike-sub-title {
+    line-height: 9px; }
+
+  .bike-text {
+    margin-top: 6px; }
+
+  .bike-title {
+    line-height: 57px; } }
+@media (max-width: 450px) {
+  .menu-link {
+    padding: 25px 8px; }
+
+  .btn {
+    padding: 15px 20px; } }
 
 /*# sourceMappingURL=style.css.map */
