@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +77,7 @@
       <workItem from="1661406195556" duration="178000" />
       <workItem from="1661430384223" duration="25350000" />
       <workItem from="1661917762216" duration="56539000" />
+      <workItem from="1662380661918" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>
