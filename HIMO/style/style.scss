@@ -662,8 +662,19 @@ ul.spec-list {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
+  .form__bike-price {
 
+
+
+
+  }
+  .footer{
+    @include adaptiv-font(16,8);
+  }
+  .form__bike-price{
+    display: none;
+  }
 }
 
 
@@ -691,6 +702,9 @@ ul.spec-list {
   }
   .inner-slider {
     max-width: 100%;
+  }
+  .contact-text{
+    font-size: clamp(6px,9px, 10px);
   }
 
 }
@@ -780,8 +794,18 @@ ul.spec-list {
   .inner-slider {
     max-width: 100%;
   }
-}
+  .social{
+    gap: 7px;
+    flex-direction: column;
 
+  }
+
+}
+@media (max-width: 600px){
+  .footer_polit{
+    max-width: 130px;
+  }
+}
 
 @media (max-width: 530px) {
   .bike-slider .slick-dots {
@@ -810,9 +834,11 @@ ul.spec-list {
     max-width: 225px;
   }
   .gallery {
-    margin: 71px 0 0 0px;
+    margin: 71px 0 0 0;
   }
-
+  .social{
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 491px) {
@@ -851,6 +877,10 @@ ul.spec-list {
   .btn {
     padding: 15px 20px;
   }
+
+  .contact-rel {
+    gap: 4px;
+  }
 }
 
 @media (max-width: 356px) {
@@ -858,4 +888,8 @@ ul.spec-list {
   .slick-dots li + li {
     margin-top: 1px;
   }
+  .footer_polit{
+    display: none;
+  }
+
 }

@@ -457,6 +457,12 @@ ul.spec-list {
 .form__input__radio:checked + .form_bike {
   display: block; }
 
+@media (max-width: 1230px) {
+  .footer {
+    font-size: calc(8px + 8 * ((100vw - 320px) / 1600)); }
+
+  .form__bike-price {
+    display: none; } }
 @media (max-width: 1115px) {
   .bike {
     flex-direction: column-reverse;
@@ -480,7 +486,10 @@ ul.spec-list {
     align-items: center; }
 
   .inner-slider {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .contact-text {
+    font-size: clamp(6px, 9px, 10px); } }
 @media (max-width: 1080px) {
   .info-sup-text {
     padding-top: 15px; }
@@ -543,7 +552,14 @@ ul.spec-list {
     gap: 20px; }
 
   .inner-slider {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .social {
+    gap: 7px;
+    flex-direction: column; } }
+@media (max-width: 600px) {
+  .footer_polit {
+    max-width: 130px; } }
 @media (max-width: 530px) {
   .bike-slider .slick-dots {
     top: 0; }
@@ -561,7 +577,10 @@ ul.spec-list {
     max-width: 225px; }
 
   .gallery {
-    margin: 71px 0 0 0px; } }
+    margin: 71px 0 0 0; }
+
+  .social {
+    padding: 0 8px; } }
 @media (max-width: 491px) {
   .bike-list-item {
     gap: 4px; }
@@ -591,9 +610,15 @@ ul.spec-list {
     padding: 25px 8px; }
 
   .btn {
-    padding: 15px 20px; } }
+    padding: 15px 20px; }
+
+  .contact-rel {
+    gap: 4px; } }
 @media (max-width: 356px) {
   .slick-dots li + li {
-    margin-top: 1px; } }
+    margin-top: 1px; }
+
+  .footer_polit {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
