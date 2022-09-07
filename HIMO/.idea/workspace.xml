@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +87,7 @@
       <workItem from="1662380661918" duration="87000" />
       <workItem from="1662383771457" duration="5496000" />
       <workItem from="1662427278855" duration="2352000" />
+      <workItem from="1662521274749" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>
