@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff; }
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif; }
+
+.present {
+  position: relative; }
+
+.present-slider {
+  background-color: rgba(0, 0, 0, 0.47); }
+
+.present-slider .slick-dots {
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  gap: 20px; }
+
+.slick-dots li {
+  font-size: 1px;
+  bottom: 13px;
+  left: 0;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  cursor: pointer; }
+
+.present_product {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.29);
+  height: 100%; }
+
+.slider-img {
+  z-index: -1;
+  object-fit: cover; }
+
+.product-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px; }
+
+.roadster {
+  margin-top: 29px; }
+
+.roadster-title {
+  font-size: 96px;
+  line-height: 112px; }
+
+.roadster-text {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  max-width: 213px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400; }
+
+.btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 30px 62px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  transition: background-color .3s;
+  color: #fff; }
+  .btn:hover {
+    background-color: #690102;
+    border-color: #690102; }
+
+.spec {
+  min-height: 2899px;
+  background-color: #0B0B0B; }
+
+.spec_img {
+  object-fit: cover; }
+
+.spec-items {
+  padding-top: 105px;
+  display: flex;
+  justify-content: space-between; }
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 193px; }
+  .spec-item__title {
+    font-size: 24px;
+    line-height: 28px; }
+  .spec-item__num {
+    font-size: 24px;
+    line-height: 28px; }
+    .spec-item__num span {
+      font-size: 96px;
+      line-height: 112px; }
+  .spec-item__text {
+    font-size: 24px;
+    line-height: 28px;
+    /* Красный */
+    color: #B70021; }
+
+.spec-speed {
+  display: flex; }
+
+/*# sourceMappingURL=style.css.map */
