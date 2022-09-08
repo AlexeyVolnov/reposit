@@ -252,7 +252,7 @@ a {
   max-width: 456px; }
 
 .gallery {
-  margin: 150px 0 0 0px; }
+  margin: 150px 0 0 0; }
 
 .order {
   margin-top: 55px;
@@ -329,7 +329,8 @@ a {
     left: 0; }
 
 .footer-block {
-  background-color: #131313; }
+  background-color: #131313;
+  width: 100%; }
 
 .info-img {
   object-fit: cover;
@@ -339,7 +340,7 @@ a {
 .footer {
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #FFFFFF;
   margin-top: 100px;
   align-items: center; }
@@ -476,6 +477,12 @@ ul.spec-list {
 .form__input__radio:checked + .form_bike {
   display: block; }
 
+@media (max-width: 1270px) {
+  body {
+    padding: 0; }
+
+  .box {
+    padding-left: 20px; } }
 @media (max-width: 1230px) {
   .footer {
     font-size: calc(8px + 8 * ((100vw - 320px) / 1600)); }

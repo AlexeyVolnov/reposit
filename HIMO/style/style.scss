@@ -353,7 +353,7 @@ a {
 }
 
 .gallery {
-  margin: 150px 0 0 0px;
+  margin: 150px 0 0 0;
 
 }
 
@@ -473,6 +473,7 @@ a {
 
 .footer-block {
   background-color: #131313;
+  width: 100%;
 
 }
 
@@ -485,7 +486,7 @@ a {
 .footer {
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   color: #FFFFFF;
   margin-top: 100px;
@@ -668,7 +669,14 @@ ul.spec-list {
 .form__input__radio:checked + .form_bike {
   display: block;
 }
-
+@media (max-width: 1270px){
+  body{
+    padding: 0;
+  }
+  .box{
+    padding-left: 20px;
+  }
+}
 
 @media (max-width: 1230px) {
   .footer {
