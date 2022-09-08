@@ -65,6 +65,10 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
+a {
+  text-decoration: none;
+  color: inherit; }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff; }
@@ -139,13 +143,14 @@ body {
   transition: background-color .3s;
   color: #fff; }
   .btn:hover {
-    background-color: #690102;
+    background-color: #770302;
     border-color: #690102; }
 
 .spec {
-  min-height: 2899px;
   background-color: #0B0B0B; }
 
+.spec_img_full {
+  margin: 100px auto 100px; }
 .spec_img {
   object-fit: cover; }
 
@@ -157,9 +162,9 @@ body {
 .spec-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-height: 193px; }
+  min-height: 193px;
+  justify-content: space-between; }
   .spec-item__title {
     font-size: 24px;
     line-height: 28px; }
@@ -169,6 +174,11 @@ body {
     .spec-item__num span {
       font-size: 96px;
       line-height: 112px; }
+    .spec-item__num sup {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px; }
   .spec-item__text {
     font-size: 24px;
     line-height: 28px;
@@ -176,6 +186,77 @@ body {
     color: #B70021; }
 
 .spec-speed {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+
+.speed-title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #B70021; }
+
+.speed-text {
+  margin-top: 101px;
+  max-width: 192px; }
+
+.spec-advantage {
+  display: flex;
+  gap: 58px;
+  margin: 100px 0 100px 0; }
+
+.advantage_title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #B70021;
+  margin-left: 100px; }
+
+.advantage-block {
+  display: flex;
+  align-items: flex-end; }
+
+.advantage_list {
+  align-self: center;
+  font-size: 24px;
+  line-height: 28px; }
+
+.spec-card-block {
+  display: grid;
+  grid-gap: 100px 74px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 100px; }
+
+.spec-card_image {
+  grid-column: 1/-1; }
+
+.spec_card {
+  display: flex;
+  gap: 75px; }
+.spec_card-num {
+  color: #B70021; }
+.spec_card_text {
+  max-width: 450px; }
+
+.footer {
+  background-color: #690102; }
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.footer_btn {
+  margin: 83px  auto  83px;
+  width: 284px; }
+
+.polit-list {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  gap: 7px;
+  justify-content: center; }
+
+.polit-item + .polit-item {
+  border-left: 1px solid white;
+  padding-left: 7px; }
 
 /*# sourceMappingURL=style.css.map */

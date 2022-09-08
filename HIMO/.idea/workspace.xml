@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
-      <change afterPath="$PROJECT_DIR$/../tesla/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/.idea/tesla.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/.sass-cache/da65be99a020ee9e38df6f8ef17f05a0a7d8e163/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/css/.sass-cache/5f7594dd3d3f25d7facd5f87d36eef491b5c9e84/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/present-slider/slider-bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/present-slider/slider-bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/present-slider/slider-bg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/product-nav/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/spec/spec-img-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/sources/spec/speed-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla/sources/spec/advantage__img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla/sources/spec/spec-card.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tesla/css/.sass-cache/5f7594dd3d3f25d7facd5f87d36eef491b5c9e84/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/../tesla/css/.sass-cache/5f7594dd3d3f25d7facd5f87d36eef491b5c9e84/style.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tesla/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tesla/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tesla/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../tesla/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tesla/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../tesla/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tesla/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tesla/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
