@@ -369,6 +369,7 @@ body {
   &_card {
     display: flex;
     gap: 75px;
+    height: 300px;
   }
 
   // .spec_card-num
@@ -378,7 +379,8 @@ body {
 
   // .spec_card_text
   &_card_text {
-    max-width: 450px;
+    max-width: 400px;
+    padding-top: 30px;
   }
 }
 
@@ -392,7 +394,7 @@ body {
 }
 .footer_btn {
   margin: 83px  auto  83px;
-  width: 284px;
+  max-width: 319px;
 }
 
 .polit-list {

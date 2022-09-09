@@ -229,11 +229,13 @@ body {
 
 .spec_card {
   display: flex;
-  gap: 75px; }
+  gap: 75px;
+  height: 300px; }
 .spec_card-num {
   color: #B70021; }
 .spec_card_text {
-  max-width: 450px; }
+  max-width: 400px;
+  padding-top: 30px; }
 
 .footer {
   background-color: #690102; }
@@ -245,7 +247,7 @@ body {
 
 .footer_btn {
   margin: 83px  auto  83px;
-  width: 284px; }
+  max-width: 319px; }
 
 .polit-list {
   font-weight: 700;

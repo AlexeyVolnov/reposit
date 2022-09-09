@@ -730,6 +730,7 @@ ul.spec-list {
   letter-spacing: 1.1em;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: calc(14px + 6 * ((100vw - 320px) / 1600)); }
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+  width: 400px; }
 
 /*# sourceMappingURL=style.css.map */
