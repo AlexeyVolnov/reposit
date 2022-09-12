@@ -108,6 +108,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   padding: 0 15px;
 
+
 }
 
 
@@ -116,8 +117,6 @@ body {
 
 .present {
   position: relative;
-  height: 100vh;
-
 }
 
 .present_product {
@@ -130,8 +129,6 @@ body {
 
 .present-slider {
 
-  position: absolute;
-
 }
 
 .present-slider .slick-dots {
@@ -139,22 +136,25 @@ body {
   position: absolute;
   display: flex;
   gap: 20px;
+  bottom: 26px;
+  left: 160px;
 
 
 }
 
-.slick-dots li {
-  font-size: 1px;
-  bottom: 13px;
-  left: 0;
-  position: relative;
-  display: inline-block;
+.slick-dots li button{
   width: 15px;
   height: 15px;
+  border-radius: 50%;
+  background: #0B0B0B;
+  font-size: 1px;
+  border: none;
   padding: 0;
-  cursor: pointer;
-}
 
+}
+.slick-dots .slick-active button{
+  background: #fff;
+}
 .slider-img {
 }
 

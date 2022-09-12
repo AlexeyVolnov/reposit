@@ -5,7 +5,7 @@ $(function () {
         autoplaySpeed:2000,
         dots: true,
         infinite: true,
-        speed: 2000,
+        speed: 300,
         fade: true,
 
 
