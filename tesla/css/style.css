@@ -88,30 +88,36 @@ body {
   position: relative; }
 
 .present_product {
-  background-color: rgba(0, 0, 0, 0.29);
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.present-slider .slick-dots {
   z-index: 5;
   position: absolute;
-  display: flex;
-  gap: 20px;
-  bottom: 26px;
-  left: 160px; }
+  background-color: rgba(11, 11, 11, 0.27);
+  top: 0;
+  bottom: -30px;
+  left: 0;
+  right: 0; }
 
-.slick-dots li button {
+.present-slider .slick-dots {
+  position: relative;
+  margin: -55px auto 0;
+  gap: 20px;
+  max-width: 1200px;
+  z-index: 9; }
+
+.present-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px; }
+
+.present-slider .slick-dots li button {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #0B0B0B;
   font-size: 1px;
   border: none;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
-.slick-dots .slick-active button {
+.present-slider .slick-dots .slick-active button {
   background: #fff; }
 
 .slider-img {
@@ -133,9 +139,9 @@ body {
   align-items: center;
   cursor: pointer; }
   .product-nav_menu div {
-    width: 36px;
+    width: 70%;
     height: 0;
-    border: 2px solid #FFFFFF; }
+    border: 1px solid #FFFFFF; }
 
 .roadster {
   margin-top: 29px; }
@@ -148,13 +154,13 @@ body {
   margin-top: 40px;
   margin-bottom: 25px;
   max-width: 213px;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   line-height: 28px;
   font-weight: 400; }
 
 .btn {
   font-weight: 700;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   line-height: 28px;
   padding: 30px 62px;
   background: rgba(255, 255, 255, 0.15);
@@ -183,21 +189,21 @@ body {
   min-height: 193px;
   justify-content: space-between; }
   .spec-item__title {
-    font-size: 24px;
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
     line-height: 28px; }
   .spec-item__num {
-    font-size: 24px;
+    font-size: calc(14px + 10 * ((100vw - 320px) / 1600));
     line-height: 28px; }
     .spec-item__num span {
-      font-size: 96px;
+      font-size: calc(32px + 64 * ((100vw - 320px) / 1600));
       line-height: 112px; }
     .spec-item__num sup {
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
+      font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
       line-height: 28px; }
   .spec-item__text {
-    font-size: 24px;
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
     line-height: 28px;
     /* Красный */
     color: #B70021; }
@@ -206,14 +212,20 @@ body {
   display: flex;
   justify-content: space-between; }
 
+.speed-block {
+  min-width: 50%;
+  padding-right: 15px; }
+
 .speed-title {
-  font-size: 36px;
+  font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
   line-height: 42px;
-  color: #B70021; }
+  color: #B70021;
+  align-self: start; }
 
 .speed-text {
   margin-top: 101px;
-  max-width: 192px; }
+  max-width: 192px;
+  align-self: center; }
 
 .spec-advantage {
   display: flex;
@@ -221,7 +233,7 @@ body {
   margin: 100px 0 100px 0; }
 
 .advantage_title {
-  font-size: 36px;
+  font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
   line-height: 42px;
   color: #B70021;
   margin-left: 100px; }
@@ -232,7 +244,7 @@ body {
 
 .advantage_list {
   align-self: center;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   line-height: 28px; }
 
 .spec-card-block {
@@ -270,7 +282,7 @@ body {
 
 .polit-list {
   font-weight: 700;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   line-height: 28px;
   display: flex;
   gap: 7px;
@@ -279,5 +291,131 @@ body {
 .polit-item + .polit-item {
   border-left: 1px solid white;
   padding-left: 7px; }
+
+@media screen and (max-width: 1245px) {
+  .present-slider .slick-dots {
+    position: absolute;
+    right: 5px;
+    bottom: 5px; } }
+@media screen and (max-width: 1160px) {
+  .roadster-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 534px; }
+
+  .roadster-title {
+    line-height: 70px;
+    font-size: 76px; }
+
+  .present-slider .slick-dots li button {
+    width: 10px;
+    height: 10px; } }
+@media screen and (max-width: 850px) {
+  .btn {
+    padding: 15px 25px; }
+
+  .product-nav_menu {
+    width: 50px;
+    height: 50px; }
+
+  .speed-text {
+    margin-top: 59px; } }
+@media screen and (max-width: 770px) {
+  .btn {
+    padding: 10px 25px; }
+
+  .roadster-title {
+    font-size: 56px; }
+
+  .product-nav_menu {
+    width: 40px;
+    height: 40px; }
+
+  .roadster-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 534px; } }
+@media screen and (max-width: 700px) {
+  .product-nav {
+    margin-top: 8px; } }
+@media screen and (max-width: 640px) {
+  .roadster-title {
+    line-height: 30px;
+    font-size: 36px; }
+
+  .product-nav_Logo {
+    width: 150px;
+    height: 40px; }
+
+  .product-nav_menu {
+    width: 30px;
+    height: 30px; }
+
+  .speed-block {
+    min-width: 40%; } }
+@media screen and (max-width: 530px) {
+  .roadster {
+    margin-top: 15px; }
+
+  .btn {
+    padding: 5px 10px; }
+
+  .roadster-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 534px; }
+
+  .spec-item__num span {
+    line-height: 80px; }
+
+  .spec-item {
+    min-height: 130px; }
+
+  .speed-text {
+    margin-top: 20px; } }
+@media screen and (max-width: 460px) {
+  .spec-speed {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; } }
+@media screen and (max-width: 440px) {
+  .roadster-text {
+    line-height: 20px;
+    font-size: 13px; }
+
+  .roadster-title {
+    line-height: 20px;
+    font-size: 18px; }
+
+  .btn {
+    font-size: 12px; }
+
+  .present-slider .slick-dots li button {
+    width: 5px;
+    height: 5px; }
+
+  .product-nav_Logo {
+    width: 80px; }
+
+  .product-nav_menu {
+    width: 20px;
+    height: 20px; }
+
+  .roadster {
+    margin-top: 0; }
+
+  .spec-items {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px; }
+
+  .spec_img_full {
+    margin: 50px auto 50px; } }
+@media screen and (max-width: 360px) {
+  .btn {
+    padding: 0 15px; }
+
+  .product-nav {
+    margin-top: 3px; } }
 
 /*# sourceMappingURL=style.css.map */
