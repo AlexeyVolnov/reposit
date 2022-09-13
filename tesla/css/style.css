@@ -233,7 +233,7 @@ body {
   margin: 100px 0 100px 0; }
 
 .advantage_title {
-  font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
+  font-size: calc(10px + 26 * ((100vw - 320px) / 1600));
   line-height: 42px;
   color: #B70021;
   margin-left: 100px; }
@@ -244,7 +244,7 @@ body {
 
 .advantage_list {
   align-self: center;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  font-size: calc(10px + 14 * ((100vw - 320px) / 1600));
   line-height: 28px; }
 
 .spec-card-block {
@@ -310,6 +310,14 @@ body {
   .present-slider .slick-dots li button {
     width: 10px;
     height: 10px; } }
+@media screen and (max-width: 960px) {
+  .spec-advantage {
+    display: flex;
+    gap: 30px;
+    margin: 70px 0 70px 0; }
+
+  .advantage_title {
+    margin-left: 25px; } }
 @media screen and (max-width: 850px) {
   .btn {
     padding: 15px 25px; }
@@ -334,7 +342,10 @@ body {
   .roadster-text {
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 534px; } }
+    max-width: 534px; }
+
+  .advantage_list {
+    line-height: 18px; } }
 @media screen and (max-width: 700px) {
   .product-nav {
     margin-top: 8px; } }
@@ -353,6 +364,18 @@ body {
 
   .speed-block {
     min-width: 40%; } }
+@media screen and (max-width: 557px) {
+  .spec-advantage {
+    gap: 10px; }
+
+  .advantage_title {
+    margin-left: 10px; }
+
+  .spec-card-block {
+    display: grid;
+    grid-gap: 50px 74px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px; } }
 @media screen and (max-width: 530px) {
   .roadster {
     margin-top: 15px; }
@@ -377,7 +400,15 @@ body {
   .spec-speed {
     display: flex;
     flex-direction: column;
-    gap: 15px; } }
+    gap: 15px; }
+
+  .spec-advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+
+  .advantage_title {
+    margin-left: 100px; } }
 @media screen and (max-width: 440px) {
   .roadster-text {
     line-height: 20px;

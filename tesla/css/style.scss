@@ -208,7 +208,7 @@ body {
   margin-top: 40px;
   margin-bottom: 25px;
   max-width: 213px;
-  @include adaptiv-font(24,16);
+  @include adaptiv-font(24, 16);
   line-height: 28px;
   font-weight: 400;
 
@@ -217,7 +217,7 @@ body {
 
 .btn {
   font-weight: 700;
-  @include adaptiv-font(24,16);
+  @include adaptiv-font(24, 16);
   line-height: 28px;
   padding: 30px 62px;
   background: rgba(255, 255, 255, 0.15);
@@ -269,32 +269,32 @@ body {
   justify-content: space-between;
   // .spec-item__title
   &__title {
-    @include adaptiv-font(24,16);
+    @include adaptiv-font(24, 16);
     line-height: 28px;
 
   }
 
   // .spec-item__num
   &__num {
-    @include adaptiv-font(24,14);
+    @include adaptiv-font(24, 14);
     line-height: 28px;
 
     & span {
-      @include adaptiv-font(96,32);
+      @include adaptiv-font(96, 32);
       line-height: 112px;
     }
 
     & sup {
       font-style: normal;
       font-weight: 400;
-      @include adaptiv-font(24,16);
+      @include adaptiv-font(24, 16);
       line-height: 28px;
     }
   }
 
   // .spec-item__text
   &__text {
-    @include adaptiv-font(24,16);
+    @include adaptiv-font(24, 16);
     line-height: 28px;
 
 
@@ -309,13 +309,13 @@ body {
   justify-content: space-between;
 }
 
-.speed-block{
+.speed-block {
   min-width: 50%;
   padding-right: 15px;
 }
 
 .speed-title {
-  @include adaptiv-font(36,24);
+  @include adaptiv-font(36, 24);
   line-height: 42px;
   color: #B70021;
   align-self: start;
@@ -342,7 +342,7 @@ body {
 
   // .advantage_title
   &_title {
-    @include adaptiv-font(36,24);
+    @include adaptiv-font(36, 10);
     line-height: 42px;
     color: #B70021;
     margin-left: 100px;
@@ -365,7 +365,7 @@ body {
 
 .advantage_list {
   align-self: center;
-  @include adaptiv-font(24,16);
+  @include adaptiv-font(24, 10);
   line-height: 28px;
   // .advantage_list__item
   &__item {
@@ -429,7 +429,7 @@ body {
 
 .polit-list {
   font-weight: 700;
-  @include adaptiv-font(24,16);
+  @include adaptiv-font(24, 16);
   line-height: 28px;
   display: flex;
   gap: 7px;
@@ -441,15 +441,16 @@ body {
   padding-left: 7px;
 }
 
-@media screen and (max-width:1245px) {
-  .present-slider .slick-dots{
+@media screen and (max-width: 1245px) {
+  .present-slider .slick-dots {
     position: absolute;
     right: 5px;
     bottom: 5px;
   }
 
 }
-@media screen and (max-width:1160px) {
+
+@media screen and (max-width: 1160px) {
   .roadster-text {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -464,8 +465,21 @@ body {
     height: 10px;
   }
 }
-@media screen and (max-width:850px) {
-  .btn{
+
+@media screen and (max-width: 960px) {
+  .spec-advantage {
+    display: flex;
+    gap: 30px;
+    margin: 70px 0 70px 0;
+  }
+  .advantage_title {
+    margin-left: 25px;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .btn {
     padding: 15px 25px;
   }
   .product-nav_menu {
@@ -478,11 +492,12 @@ body {
     margin-top: 59px;
   }
 }
-@media screen and (max-width:770px) {
-  .btn{
+
+@media screen and (max-width: 770px) {
+  .btn {
     padding: 10px 25px;
   }
-  .roadster-title{
+  .roadster-title {
     font-size: 56px;
   }
   .product-nav_menu {
@@ -495,20 +510,25 @@ body {
     margin-bottom: 20px;
     max-width: 534px;
   }
+  .advantage_list {
+    line-height: 18px;
+  }
 
 }
-@media screen and (max-width:700px) {
+
+@media screen and (max-width: 700px) {
   .product-nav {
     margin-top: 8px;
   }
 
 }
-@media screen and (max-width:640px) {
+
+@media screen and (max-width: 640px) {
   .roadster-title {
     line-height: 30px;
     font-size: 36px;
   }
-  .product-nav_Logo{
+  .product-nav_Logo {
     width: 150px;
     height: 40px;
   }
@@ -519,8 +539,26 @@ body {
   .speed-block {
     min-width: 40%;
   }
+
+  
 }
-@media screen and (max-width:530px) {
+
+@media screen and (max-width: 557px) {
+  .spec-advantage {
+    gap: 10px;
+  }
+  .advantage_title {
+    margin-left: 10px;
+  }
+  .spec-card-block {
+    display: grid;
+    grid-gap: 50px 74px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 530px) {
   .roadster {
     margin-top: 15px;
   }
@@ -540,60 +578,66 @@ body {
   }
   .speed-text {
     margin-top: 20px;
-  }
-
-}
 
 
-@media screen and (max-width:460px){
-  .spec-speed {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-
-@media screen and (max-width:440px) {
-  .roadster-text {
-    line-height: 20px;
-    font-size: 13px;
-  }
-  .roadster-title {
-    line-height: 20px;
-    font-size: 18px;
-  }
-  .btn{
-    font-size: 12px;
-  }
-  .present-slider .slick-dots li button {
-    width: 5px;
-    height: 5px;
-  }
-  .product-nav_Logo{
-    width: 80px;
-  }
-  .product-nav_menu {
-    width: 20px;
-    height: 20px;
-  }
-  .roadster {
-    margin-top: 0;
-  }
-  .spec-items{
-    flex-direction: column;
-    gap: 15px;
-    padding-top: 30px;
-  }
-  .spec_img_full {
-    margin: 50px auto 50px;
+  }}
+  @media screen and (max-width: 460px) {
+    .spec-speed {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .spec-advantage {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .advantage_title {
+      margin-left: 100px;
+    }
   }
 
-}
-@media screen and (max-width:360px) {
-  .btn{
-    padding: 0 15px;
+  @media screen and (max-width: 440px) {
+    .roadster-text {
+      line-height: 20px;
+      font-size: 13px;
+    }
+    .roadster-title {
+      line-height: 20px;
+      font-size: 18px;
+    }
+    .btn {
+      font-size: 12px;
+    }
+    .present-slider .slick-dots li button {
+      width: 5px;
+      height: 5px;
+    }
+    .product-nav_Logo {
+      width: 80px;
+    }
+    .product-nav_menu {
+      width: 20px;
+      height: 20px;
+    }
+    .roadster {
+      margin-top: 0;
+    }
+    .spec-items {
+      flex-direction: column;
+      gap: 15px;
+      padding-top: 30px;
+    }
+    .spec_img_full {
+      margin: 50px auto 50px;
+    }
+
   }
-  .product-nav {
-    margin-top: 3px;
+  @media screen and (max-width: 360px) {
+    .btn {
+      padding: 0 15px;
+    }
+    .product-nav {
+      margin-top: 3px;
+    }
   }
-}
