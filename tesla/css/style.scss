@@ -540,7 +540,11 @@ body {
     min-width: 40%;
   }
 
-  
+  .spec_card {
+
+    gap: 20px;
+
+  }
 }
 
 @media screen and (max-width: 557px) {
@@ -580,64 +584,76 @@ body {
     margin-top: 20px;
 
 
-  }}
-  @media screen and (max-width: 460px) {
-    .spec-speed {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .spec-advantage {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .advantage_title {
-      margin-left: 100px;
-    }
+  }
+  .spec-card-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .spec-card-block .spec-card {
+    
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .spec-speed {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .spec-advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .advantage_title {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .roadster-text {
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .roadster-title {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .present-slider .slick-dots li button {
+    width: 5px;
+    height: 5px;
+  }
+  .product-nav_Logo {
+    width: 80px;
+  }
+  .product-nav_menu {
+    width: 20px;
+    height: 20px;
+  }
+  .roadster {
+    margin-top: 0;
+  }
+  .spec-items {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+  }
+  .spec_img_full {
+    margin: 50px auto 50px;
   }
 
-  @media screen and (max-width: 440px) {
-    .roadster-text {
-      line-height: 20px;
-      font-size: 13px;
-    }
-    .roadster-title {
-      line-height: 20px;
-      font-size: 18px;
-    }
-    .btn {
-      font-size: 12px;
-    }
-    .present-slider .slick-dots li button {
-      width: 5px;
-      height: 5px;
-    }
-    .product-nav_Logo {
-      width: 80px;
-    }
-    .product-nav_menu {
-      width: 20px;
-      height: 20px;
-    }
-    .roadster {
-      margin-top: 0;
-    }
-    .spec-items {
-      flex-direction: column;
-      gap: 15px;
-      padding-top: 30px;
-    }
-    .spec_img_full {
-      margin: 50px auto 50px;
-    }
+}
 
+@media screen and (max-width: 360px) {
+  .btn {
+    padding: 0 15px;
   }
-  @media screen and (max-width: 360px) {
-    .btn {
-      padding: 0 15px;
-    }
-    .product-nav {
-      margin-top: 3px;
-    }
+  .product-nav {
+    margin-top: 3px;
   }
+}

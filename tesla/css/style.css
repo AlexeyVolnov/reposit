@@ -363,7 +363,10 @@ body {
     height: 30px; }
 
   .speed-block {
-    min-width: 40%; } }
+    min-width: 40%; }
+
+  .spec_card {
+    gap: 20px; } }
 @media screen and (max-width: 557px) {
   .spec-advantage {
     gap: 10px; }
@@ -395,7 +398,15 @@ body {
     min-height: 130px; }
 
   .speed-text {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .spec-card-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+
+  .spec-card-block .spec-card {
+    height: 100px; } }
 @media screen and (max-width: 460px) {
   .spec-speed {
     display: flex;
