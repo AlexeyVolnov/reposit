@@ -315,7 +315,7 @@ body {
 }
 
 .speed-title {
-  @include adaptiv-font(36, 24);
+  @include adaptiv-font(24, 16);
   line-height: 42px;
   color: #B70021;
   align-self: start;
@@ -432,6 +432,7 @@ body {
   @include adaptiv-font(24, 16);
   line-height: 28px;
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
   justify-content: center;
 }
@@ -477,7 +478,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 850px) {
   .btn {
     padding: 15px 25px;
@@ -513,7 +513,14 @@ body {
   .advantage_list {
     line-height: 18px;
   }
+  .footer {
+    max-height: 200px;
 
+  }
+  .footer_btn {
+    margin: 40px auto 40px;
+    max-width: 319px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -588,11 +595,14 @@ body {
   .spec-card-block {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   .spec-card-block .spec-card {
-    
-    height: 100px;
+
+
+  }
+  .spec_card {
+    height: max-content;
   }
 }
 
