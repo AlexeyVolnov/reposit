@@ -96,6 +96,36 @@ body {
   left: 0;
   right: 0; }
 
+.present_nav {
+  background-color: #0B0B0B;
+  height: 100vh;
+  z-index: 12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.present-nav-block {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between; }
+
+.present-close_btn {
+  width: 30px;
+  height: 30px;
+  background-color: white; }
+
+.nav-list {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px; }
+
+.nav__link {
+  border-bottom: 3px solid #B70021;
+  display: block;
+  padding: 30px 0 14px;
+  min-width: 368px; }
+
 .present-slider .slick-dots {
   position: relative;
   margin: -55px auto 0;
@@ -129,7 +159,7 @@ body {
   justify-content: space-between;
   margin-top: 36px; }
 
-.product-nav_menu {
+.product-menu {
   width: 60px;
   height: 60px;
   border: 1px solid #fff;
@@ -138,7 +168,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer; }
-  .product-nav_menu div {
+  .product-menu div {
     width: 70%;
     height: 0;
     border: 1px solid #FFFFFF; }
@@ -323,7 +353,7 @@ body {
   .btn {
     padding: 15px 25px; }
 
-  .product-nav_menu {
+  .product-menu {
     width: 50px;
     height: 50px; }
 
@@ -336,7 +366,7 @@ body {
   .roadster-title {
     font-size: 56px; }
 
-  .product-nav_menu {
+  .product-menu {
     width: 40px;
     height: 40px; }
 
@@ -366,7 +396,7 @@ body {
     width: 150px;
     height: 40px; }
 
-  .product-nav_menu {
+  .product-menu {
     width: 30px;
     height: 30px; }
 
@@ -447,7 +477,7 @@ body {
   .product-nav_Logo {
     width: 80px; }
 
-  .product-nav_menu {
+  .product-menu {
     width: 20px;
     height: 20px; }
 
