@@ -85,7 +85,8 @@ body {
   padding: 0 15px; }
 
 .present {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 .present_product {
   z-index: 5;
@@ -99,7 +100,7 @@ body {
 .present_nav {
   background-color: #0B0B0B;
   height: 100vh;
-  z-index: 12;
+  z-index: 9;
   position: absolute;
   top: 0;
   left: 0;
@@ -110,20 +111,42 @@ body {
   display: flex;
   justify-content: space-between; }
 
-.present-close_btn {
-  width: 30px;
-  height: 30px;
-  background-color: white; }
+.nav-close_btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: relative; }
+  .nav-close_btn:before, .nav-close_btn:after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: left; }
+  .nav-close_btn::before {
+    transform: rotate(45deg); }
+  .nav-close_btn::after {
+    transform: rotate(-45deg);
+    bottom: 0; }
 
 .nav-list {
   font-weight: 700;
   font-size: 48px;
-  line-height: 56px; }
+  line-height: 56px;
+  padding: 5px; }
+
+.nav-item {
+  border-bottom: 3px solid #B70021;
+  transition: all .3s; }
+  .nav-item:hover {
+    border-color: #fff;
+    transform: scale(1.04);
+    border-radius: 5px;
+    margin-left: 21px; }
 
 .nav__link {
-  border-bottom: 3px solid #B70021;
   display: block;
-  padding: 30px 0 14px;
+  padding: 30px 25px 14px 0;
   min-width: 368px; }
 
 .present-slider .slick-dots {
