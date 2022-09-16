@@ -113,7 +113,8 @@ body {
 
 .present {
   position: relative;
-  height: 100vh;
+  max-height: 100vh;
+
 }
 
 .present_product {
@@ -121,24 +122,35 @@ body {
   position: absolute;
   background-color: rgba(11, 11, 11, 0.27);
   top: 0;
-  bottom: -30px;
+  bottom: 0;
   left: 0;
   right: 0;
+  max-height: 100%;
 
 
 }
 
 .present_nav {
-  background-color: #0B0B0B;
-  height: 100vh;
+  background-color: rgba(11, 11, 11, 0.95);
+  max-height: 100%;
+  height: 100%;
+  max-width: 100vw;
   z-index: 9;
   position: absolute;
-  top: 0;
+  top: -900%;
   left: 0;
   right: 0;
 
+  transition: all .6s;
+
+
 }
 
+.present_nav.active {
+  top: 0;
+
+
+}
 
 .present-nav-block {
   margin-top: 55px;
@@ -154,11 +166,13 @@ body {
   cursor: pointer;
   position: relative;
 
+  top: -15px;
+
 
   &:before,
   &:after {
     content: "";
-    width:70px;
+    width: 70px;
     height: 2px;
     background-color: #fff;
     position: absolute;
@@ -173,7 +187,7 @@ body {
 
   &::after {
     transform: rotate(-45deg);
-bottom: 0;
+    bottom: 0;
   }
 }
 
@@ -266,6 +280,7 @@ bottom: 0;
   align-items: center;
   cursor: pointer;
 
+
   & div {
     width: 70%;
     height: 0;
@@ -320,22 +335,17 @@ bottom: 0;
 }
 
 
-.spec {
-  &_img_full {
-    margin: 100px auto 100px;
-  }
+.spec_video {
+  margin: 100px auto 100px;
+  min-width: 100%;
+  max-height: 400px;
 
-
-  &_img {
-    object-fit: cover;
-  }
 }
 
-
 .spec-items {
-  padding-top: 105px;
   display: flex;
   justify-content: space-between;
+  margin: 100px 0 100px 0;
 }
 
 .spec-item {
@@ -525,7 +535,22 @@ bottom: 0;
     right: 5px;
     bottom: 5px;
   }
+  .present_nav {
+    font-size: 8px;
+    max-height: 100%;
+    height: 100%;
 
+  }
+  .nav-list {
+
+    font-size: 32px;
+
+  }
+  .nav__link {
+    display: block;
+    padding: 15px 10px 14px 0;
+    min-width: 368px;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -542,6 +567,7 @@ bottom: 0;
     width: 10px;
     height: 10px;
   }
+
 }
 
 @media screen and (max-width: 960px) {
@@ -552,6 +578,12 @@ bottom: 0;
   }
   .advantage_title {
     margin-left: 25px;
+  }
+  .nav-list {
+    font-size: 24px;
+  }
+  .nav__link {
+    padding: 0 0 0 15px;
   }
 }
 
@@ -598,13 +630,25 @@ bottom: 0;
     margin: 40px auto 40px;
     max-width: 319px;
   }
+  .present-nav-block {
+    margin-top: 30px;
+  }
+  .nav-close_btn {
+    width: 25px;
+    height: 25px;
+
+  }
 }
 
 @media screen and (max-width: 700px) {
   .product-nav {
     margin-top: 8px;
   }
-
+  .nav-list {
+    line-height: 18px;
+    font-size: 14px;
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -623,7 +667,10 @@ bottom: 0;
   .speed-block {
     min-width: 40%;
   }
+  .spec-items {
 
+    margin: 50px 0 50px 0;
+  }
   .spec_card {
 
     gap: 20px;
@@ -681,6 +728,10 @@ bottom: 0;
   .spec_card {
     height: max-content;
   }
+  .spec-items {
+
+    margin: 25px 0 25px 0;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -733,6 +784,10 @@ bottom: 0;
   .spec_img_full {
     margin: 50px auto 50px;
   }
+  .spec-items {
+
+    margin: 15px 0 0 0;
+  }
 
 }
 
@@ -742,5 +797,12 @@ bottom: 0;
   }
   .product-nav {
     margin-top: 3px;
+  }
+  .product-nav_Logo {
+    height: 26px;
+  }
+  .roadster-text {
+    line-height: 16px;
+    font-size: 13px;
   }
 }

@@ -86,25 +86,32 @@ body {
 
 .present {
   position: relative;
-  height: 100vh; }
+  max-height: 100vh; }
 
 .present_product {
   z-index: 5;
   position: absolute;
   background-color: rgba(11, 11, 11, 0.27);
   top: 0;
-  bottom: -30px;
+  bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  max-height: 100%; }
 
 .present_nav {
-  background-color: #0B0B0B;
-  height: 100vh;
+  background-color: rgba(11, 11, 11, 0.95);
+  max-height: 100%;
+  height: 100%;
+  max-width: 100vw;
   z-index: 9;
   position: absolute;
-  top: 0;
+  top: -900%;
   left: 0;
-  right: 0; }
+  right: 0;
+  transition: all .6s; }
+
+.present_nav.active {
+  top: 0; }
 
 .present-nav-block {
   margin-top: 55px;
@@ -115,7 +122,8 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  top: -15px; }
   .nav-close_btn:before, .nav-close_btn:after {
     content: "";
     width: 70px;
@@ -225,15 +233,15 @@ body {
     background-color: #770302;
     border-color: #690102; }
 
-.spec_img_full {
-  margin: 100px auto 100px; }
-.spec_img {
-  object-fit: cover; }
+.spec_video {
+  margin: 100px auto 100px;
+  min-width: 100%;
+  max-height: 400px; }
 
 .spec-items {
-  padding-top: 105px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 100px 0 100px 0; }
 
 .spec-item {
   display: flex;
@@ -350,7 +358,20 @@ body {
   .present-slider .slick-dots {
     position: absolute;
     right: 5px;
-    bottom: 5px; } }
+    bottom: 5px; }
+
+  .present_nav {
+    font-size: 8px;
+    max-height: 100%;
+    height: 100%; }
+
+  .nav-list {
+    font-size: 32px; }
+
+  .nav__link {
+    display: block;
+    padding: 15px 10px 14px 0;
+    min-width: 368px; } }
 @media screen and (max-width: 1160px) {
   .roadster-text {
     margin-top: 20px;
@@ -371,7 +392,13 @@ body {
     margin: 70px 0 70px 0; }
 
   .advantage_title {
-    margin-left: 25px; } }
+    margin-left: 25px; }
+
+  .nav-list {
+    font-size: 24px; }
+
+  .nav__link {
+    padding: 0 0 0 15px; } }
 @media screen and (max-width: 850px) {
   .btn {
     padding: 15px 25px; }
@@ -406,10 +433,22 @@ body {
 
   .footer_btn {
     margin: 40px auto 40px;
-    max-width: 319px; } }
+    max-width: 319px; }
+
+  .present-nav-block {
+    margin-top: 30px; }
+
+  .nav-close_btn {
+    width: 25px;
+    height: 25px; } }
 @media screen and (max-width: 700px) {
   .product-nav {
-    margin-top: 8px; } }
+    margin-top: 8px; }
+
+  .nav-list {
+    line-height: 18px;
+    font-size: 14px;
+    max-width: 200px; } }
 @media screen and (max-width: 640px) {
   .roadster-title {
     line-height: 30px;
@@ -425,6 +464,9 @@ body {
 
   .speed-block {
     min-width: 40%; }
+
+  .spec-items {
+    margin: 50px 0 50px 0; }
 
   .spec_card {
     gap: 20px; } }
@@ -467,7 +509,10 @@ body {
     gap: 30px; }
 
   .spec_card {
-    height: max-content; } }
+    height: max-content; }
+
+  .spec-items {
+    margin: 25px 0 25px 0; } }
 @media screen and (max-width: 460px) {
   .spec-speed {
     display: flex;
@@ -513,12 +558,22 @@ body {
     padding-top: 30px; }
 
   .spec_img_full {
-    margin: 50px auto 50px; } }
+    margin: 50px auto 50px; }
+
+  .spec-items {
+    margin: 15px 0 0 0; } }
 @media screen and (max-width: 360px) {
   .btn {
     padding: 0 15px; }
 
   .product-nav {
-    margin-top: 3px; } }
+    margin-top: 3px; }
+
+  .product-nav_Logo {
+    height: 26px; }
+
+  .roadster-text {
+    line-height: 16px;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
