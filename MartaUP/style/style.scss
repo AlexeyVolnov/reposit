@@ -1,80 +1,125 @@
-/* Указываем box sizing */
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Source Sans Pro', sans-serif;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+.conteiner {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+button{
+  cursor: pointer;
+}
+
+.header {
+  padding-top: 32px;
+  background-image: url("../sourse/images/header/header-bg.svg");
+  background-position: center;
+  background-size: cover;
+  min-height: 783px;
+  height: 100%;
+}
+
+.header-box {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-items: center;
+  color: #fff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  max-height: 40px;
+  height: 100%;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.header-logo__img {
+}
+
+.header-logo__text {
+  text-transform: none;
+}
+
+.header-nav {
+}
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-item {
+
+}
+
+.login-button {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+
+}
+
+.login__btn {
+}
+
+.login-link {
+}
+
+.sign-up__btn {
+  color: #250F8A;
+  padding: 8px 44px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  max-height: 40px;
+  min-width: 143px;
+  overflow: hidden;
+}
+
+.header-content {
+  margin-top: 142px;
+  color: #fff;
+  font-family: 'Source Sans Pro' ,sans-serif;
+  max-width: 562px;
 }
 
 
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
+.header-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
 }
 
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
+.header-sub-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  margin-top: 10px;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.header-btn {
+  background: #FFCA00;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #250F8A;
+  margin-top: 73px;
+  padding: 13px 39px;
 }
