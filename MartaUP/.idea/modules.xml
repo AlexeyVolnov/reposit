@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/grid-block.iml" filepath="$PROJECT_DIR$/.idea/grid-block.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MartaUP.iml" filepath="$PROJECT_DIR$/.idea/MartaUP.iml" />
     </modules>
   </component>
 </project>
