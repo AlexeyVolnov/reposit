@@ -173,4 +173,27 @@ button {
   max-width: 270px;
   margin-top: 13.75px; }
 
+.expert {
+  background-color: #F4F9FD; }
+
+.expert-items {
+  font-family: 'Source Sans Pro',sans-serif;
+  padding-top: 90px; }
+
+.expert-item {
+  display: flex;
+  gap: 35px;
+  align-items: center; }
+
+.expert__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px; }
+
+.expert__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 15px; }
+
 /*# sourceMappingURL=style.css.map */
