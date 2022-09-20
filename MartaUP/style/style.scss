@@ -7,17 +7,16 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-button{
+
+button {
   cursor: pointer;
 }
 
 .header {
   padding-top: 32px;
-  background-image: url("../sourse/images/header/header-bg.svg");
-  background-position: center;
-  background-size: cover;
+  background: url("../sourse/images/header/header-bg.svg") no-repeat left top  /cover;
   min-height: 783px;
-  height: 100%;
+
 }
 
 .header-box {
@@ -60,9 +59,19 @@ button{
   display: flex;
   gap: 50px;
   align-items: center;
+
 }
 
 .nav-item {
+  transition: all .2s;
+  //padding: 0 10px;
+  opacity: 0.5;
+  padding: 10px 0;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 
 }
 
@@ -90,11 +99,23 @@ button{
   overflow: hidden;
 }
 
+.header-text {
+  max-width: 562px;
+
+}
+
+.header-slider {
+  min-width: 290px;
+}
+
 .header-content {
   margin-top: 142px;
   color: #fff;
-  font-family: 'Source Sans Pro' ,sans-serif;
-  max-width: 562px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 67px;
+  width: 100%;
 }
 
 
@@ -109,6 +130,7 @@ button{
   font-size: 24px;
   line-height: 55px;
   margin-top: 10px;
+  margin-bottom: 73px;
 }
 
 .header-btn {
@@ -120,6 +142,95 @@ button{
   line-height: 24px;
   text-transform: uppercase;
   color: #250F8A;
-  margin-top: 73px;
+  cursor: pointer;
+
   padding: 13px 39px;
+  transition: all .2s;
+
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(56, 52, 45, 0.65);
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 0;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.slick-dots button {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  background-color: #ffffff;
+  width: 35px;
+  height: 13px;
+  border-radius: 16px;
+}
+
+
+//////////spec
+
+
+.spec {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 24px;
+  margin-bottom: 100px;
+}
+
+.spec-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  margin-top: 50px;
+}
+.spec-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spec-items {
+  display: flex;
+  gap:100px;
+  margin-top: 113px;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spec-item__img {
+}
+
+.spec-item__title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.spec-item__text {
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 270px;
+  margin-top: 13.75px;
 }
