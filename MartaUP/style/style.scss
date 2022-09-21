@@ -241,6 +241,7 @@ button {
 
 .expert {
   background-color: #F4F9FD;
+
 }
 
 .expert-block {
@@ -253,36 +254,189 @@ button {
   //align-items: center;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 90px;
-
+  padding-bottom: 50px;
 }
 
 .expert-item {
   display: flex;
-  gap: 35px;
+  gap: 100px;
   align-items: center;
+}
 
+#expert__title_img-revert {
+  transform: rotate(180deg);
+  top: 0;
+  left: -22px;
+}
+
+
+.expert-text-info {
+  display: flex;
+  flex-direction: column;
 }
 
 //.expert-items:nth-child() {
 //  flex-direction: row-reverse;
 //}
 
-.expert-text-info {
+.expert-text-info span {
+  margin-top: 40px;
+  display: block;
+}
+
+.expert-item-revert {
+  flex-direction: row-reverse;
+}
+
+.expert-item + .expert-item {
+  margin-top: 100px;
 }
 
 .expert__title {
   font-weight: 700;
   font-size: 35px;
   line-height: 45px;
+  max-width: 375px;
+  position: relative;
+}
 
+.expert__title_img {
+  position: absolute;
+  top: -54px;
+  left: -39px;
 }
 
 .expert__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  margin-top: 15px;
+  margin-top: 45px;
+  max-width: 420px;
 }
 
 .expert-img {
 }
+
+
+//footer
+
+
+.footer {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 519px;
+  background: url("../sourse/images/footer/footer-bg.jpg") no-repeat top center / cover;
+  color: #fff;
+}
+
+.footer-block {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  max-width: 383px;
+  margin: 0 auto;
+}
+
+.footer-items {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.footer-item {
+  max-width: 300px;
+  width: 100%;
+  padding: 35px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  min-height: 261px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+
+}
+
+.footer-item__autor {
+  display: flex;
+  gap: 20px;
+}
+
+.autor-img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: none;
+
+}
+
+.autor_name span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+  text-align: left;
+}
+
+.autor_name span+span{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 0.5;
+}
+.text_autor{
+  position: relative;
+}
+.text_autor:before {
+  content: "“";
+  display: block;
+  position: absolute;
+  font-size: 40px;
+  line-height: 55px;
+  top: -33px;
+  left: 121px;
+}
+
+
+
+///polit
+.polit{
+  padding: 20px 0;
+}
+.polit-box {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #272727;
+  display: flex;
+  justify-content: space-between;
+}
+
+.polit-link_items {
+  display: flex;
+  gap:20px;
+}
+
+.polit-link_item {
+}
+
+.link {
+}
+
+.polit-cert {
+}
+
+
+
+
