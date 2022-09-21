@@ -1,6 +1,8 @@
 //font-family: 'Roboto', sans-serif;
 //font-family: 'Source Sans Pro', sans-serif;
-
+.body {
+  transition: all .3s;
+}
 
 .conteiner {
   max-width: 1230px;
@@ -386,15 +388,17 @@ button {
   text-align: left;
 }
 
-.autor_name span+span{
+.autor_name span + span {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   opacity: 0.5;
 }
-.text_autor{
+
+.text_autor {
   position: relative;
 }
+
 .text_autor:before {
   content: "“";
   display: block;
@@ -406,13 +410,13 @@ button {
 }
 
 
-
 ///polit
-.polit{
+.polit {
   padding: 20px 0;
 }
+
 .polit-box {
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -425,7 +429,7 @@ button {
 
 .polit-link_items {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
 
 .polit-link_item {
@@ -436,6 +440,13 @@ button {
 
 .polit-cert {
 }
+
+
+
+
+
+
+
 
 
 

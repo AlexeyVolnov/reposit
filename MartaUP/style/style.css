@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.body {
+  transition: all .3s; }
+
 .conteiner {
   max-width: 1230px;
   padding: 0 15px;
@@ -300,7 +303,7 @@ button {
   padding: 20px 0; }
 
 .polit-box {
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
