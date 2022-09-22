@@ -441,13 +441,42 @@ button {
 .polit-cert {
 }
 
+.nav-buter-list {
+  display: none;
+}
 
+@media screen and (max-width: 900px) {
+  .header-nav {
+    display: none;
+  }
+  .header-top {
+    display: flex;
+    gap: 100px;
+  }
 
+  .nav-buter {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px;
 
+  }
+  .nav-buter div {
+    width: 70%;
+    background-color: #fff;
+    height: 3px;
 
+  }
 
+  .nav-buter-list {
+  }
 
+  .nav-buter-link {
+  }
 
-
-
-
+}
