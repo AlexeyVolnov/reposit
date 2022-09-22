@@ -440,43 +440,98 @@ button {
 
 .polit-cert {
 }
-
-.nav-buter-list {
-  display: none;
+@media screen and (max-width: 1349px){
+  .expert-item {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+  }
+  .expert{
+    padding: 0 40px;
+  }
+  .expert-img{
+    flex: 0 1 auto;
+  }
+}
+@media screen and (max-width: 1049px){
+  .expert-item{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 902px) {
+  .header-title {
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .header-sub-title {
+    font-size: 18px;
+  }
+  .header-content {
+    gap: 0;
+  }
 }
 
-@media screen and (max-width: 900px) {
-  .header-nav {
-    display: none;
+@media screen and (max-width: 834px) {
+  .login-button {
+    flex-direction: column;
+    gap: 10px;
   }
-  .header-top {
-    display: flex;
-    gap: 100px;
+}
+
+@media screen and (max-width: 726px) {
+  .header-content{
+    margin-top: 90px;
+    gap: 40px;
+  }
+  .header-text {
+    grid-column: 1/-1;
+  }
+  .header-slider {
+    grid-column: 1/-1;
+
   }
 
-  .nav-buter {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.28);
-    border-radius: 8px;
+}
+@media screen and (max-width: 738px){
+  .spec-items {
+    gap: 20px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 726px) {
+  .nav-items {
+    gap: 18px;
+  }
+  .sign-up__btn {
+    padding: 6px 24px;
+    min-width: 107px;
+  }
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 0 10px;
+  }
+  .nav-item {
+    padding: 0;
+  }
+  .header-logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 5px;
+    gap: 12px;
 
   }
-  .nav-buter div {
-    width: 70%;
-    background-color: #fff;
-    height: 3px;
+}
+@media screen and (max-width: 583px){
+  .spec-items {
+    flex-direction: column;
 
   }
-
-  .nav-buter-list {
+}
+@media screen and (max-width: 507px) {
+  .header-top {
+    margin-top: 20px;
   }
-
-  .nav-buter-link {
+  .sign-up__btn {
+    padding: 6px 5px;
+    min-width: 85px;
   }
-
 }

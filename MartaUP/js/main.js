@@ -9,11 +9,10 @@ $(document).ready(function () {
 
     });
 
-    $('.nav-buter').on('click', function () {
-        $('.nav-buter-list').toggleClass('active')
-    })
 
 
-});
 
 
+
+
+})
