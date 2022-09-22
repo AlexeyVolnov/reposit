@@ -431,14 +431,23 @@ button {
   display: flex;
   gap: 20px;
 }
-
-.polit-link_item {
+.footer-item:hover{
+  transform: scale(1.1);
+}
+.autor-img:hover {
+transform: scale(1.5);
 }
 
-.link {
+.autor-img ,.footer-item{
+  transition: all .3s;
 }
+.spec-item:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.spec-item{
+  transition: all .3s;
 
-.polit-cert {
 }
 @media screen and (max-width: 1349px){
   .expert-item {

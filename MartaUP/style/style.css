@@ -317,6 +317,22 @@ button {
   display: flex;
   gap: 20px; }
 
+.footer-item:hover {
+  transform: scale(1.1); }
+
+.autor-img:hover {
+  transform: scale(1.5); }
+
+.autor-img, .footer-item {
+  transition: all .3s; }
+
+.spec-item:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.spec-item {
+  transition: all .3s; }
+
 @media screen and (max-width: 1349px) {
   .expert-item {
     display: flex;
