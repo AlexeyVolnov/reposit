@@ -288,6 +288,13 @@ body {
   max-width: 192px;
   align-self: center; }
 
+.spec-item {
+  transition: all .3s;
+  cursor: pointer; }
+
+.spec-item:hover {
+  transform: rotate(-45deg); }
+
 .spec-advantage {
   display: flex;
   gap: 58px;

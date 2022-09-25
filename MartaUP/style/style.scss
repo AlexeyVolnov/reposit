@@ -468,6 +468,11 @@ transform: scale(1.5);
     flex: 0 1 auto;
   }
 }
+@media screen and (max-width: 1163px){
+  .spec {
+    background-image: none;
+  }
+}
 @media screen and (max-width: 1049px){
   .expert-item{
     flex-direction: column;
@@ -539,6 +544,17 @@ transform: scale(1.5);
   .spec-items {
     flex-direction: column;
 
+  }
+}
+@media screen and (max-width: 520px){
+  .polit-link_items {
+
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .polit-box{
+    gap: 15px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 507px) {
