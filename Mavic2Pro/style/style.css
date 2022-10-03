@@ -79,8 +79,9 @@ a {
   color: #fff; }
 
 .conteiner {
-  max-width: 1238px;
-  margin: 0 auto; }
+  max-width: 1268px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .header {
   display: flex;
@@ -165,5 +166,55 @@ a {
 .mavic-list {
   display: flex;
   gap: 50px; }
+
+.mavic-present {
+  min-height: 110vh;
+  height: 100%;
+  background: url("../sourse/present/bg.jpg") no-repeat 100%/cover;
+  color: #fff; }
+
+.present {
+  display: flex;
+  gap: 133px;
+  padding-top: 155px;
+  min-height: 700px;
+  padding-right: 30px; }
+
+.present-text {
+  max-width: 450px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 150%; }
+
+.present_title {
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 53px; }
+
+.present-text + .present-text {
+  margin-top: 20px; }
+
+.mavic-present_slider {
+  align-self: flex-end; }
+
+.slider {
+  min-width: 560px;
+  min-height: 280px; }
+
+.slider {
+  position: relative;
+  z-index: 2; }
+
+.slider:before {
+  content: "";
+  display: block;
+  border: 4px solid #fff;
+  min-width: 560px;
+  min-height: 290px;
+  position: absolute;
+  top: -19px;
+  right: -19px;
+  z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */
