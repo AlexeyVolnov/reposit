@@ -78,7 +78,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
+* *{
+  transition: all .3s;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -154,7 +156,8 @@ a {
   align-items: center;
 }
 
-.nav-list-item {
+.nav-list-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-link {
@@ -172,8 +175,12 @@ a {
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
-}
 
+}
+.mavic-buy__btn:hover{
+background-color: #fff;
+  color: black;
+}
 .mavic-phone {
   font-weight: 700;
   font-size: 16px;
@@ -242,9 +249,12 @@ a {
   gap: 50px;
 }
 
-.mavic-list-item {
+.mavic-list-item:hover {
+  transform: scale(1.1);
 }
-
+.mavic-list-item:hover .mavic-link path{
+  fill-opacity: 1;
+}
 .mavic-link {
 }
 
@@ -307,8 +317,10 @@ a {
 }
 
 .slider {
-  min-width: 560px;
-  min-height: 280px;
+  max-width: 560px;
+  max-height: 280px;
+  width: 100%;
+  height: 100%;
 
 }
 .slider{
@@ -320,13 +332,23 @@ a {
   content: "";
   display: block;
   border: 4px solid #fff;
-  min-width: 560px;
-  min-height: 290px;
+  max-width: 560px;
+  max-height: 288px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: -19px;
-  right: -19px;
+  top: -13px;
+  right: -11px;
   z-index: -1;
 
+
+}
+.slider .slick-arrow{
+position: absolute;
+  bottom: 0;
+  transform: translate(-50%,-50%);
+  right: 0;
+  content: "";
 }
 .slider-img{
 
