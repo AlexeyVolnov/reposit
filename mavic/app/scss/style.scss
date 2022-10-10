@@ -131,14 +131,19 @@ a {
   font-size: 96px;
   line-height: 115px;
   text-align: center;
-  margin-top: 151px;
+  margin-top: 100px;
+ color: #d67184;
 }
 
 
 
 
 
-
+.scroll_btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
 
 
 .mavic-center {
@@ -147,7 +152,10 @@ a {
   align-items: center;
 }
 
-
+.scroll_btn:hover a svg{
+  opacity: 1;
+  transform: scale(1.2);
+}
 
 .mavic-img {
 }
@@ -163,18 +171,18 @@ a {
 .mavic-bottom {
 }
 
-.mavic-list {
+.mavic-social {
   display: flex;
   gap: 50px;
 }
 
-.mavic-list-item:hover {
+.mavic-social-item:hover {
   transform: scale(1.1);
 }
-.mavic-list-item:hover .mavic-link path{
+.mavic-social-item:hover .mavic-social-link path{
   fill-opacity: 1;
 }
-.mavic-link {
+.mavic-social-link {
 }
 
 
