@@ -13,8 +13,9 @@ a {
 
 }
 
+
 .mavic {
-  min-height: 100vh;
+  min-height: 110vh;
   height: 100%;
   background: url("../images/mavic/bg.jpg") no-repeat center 100% /cover;
   color: #fff;
@@ -161,9 +162,11 @@ a {
 
 .mavic-bottom {
 }
-.social{
+
+.social {
   display: flex;
 }
+
 .mavic-social {
   gap: 50px;
 }
@@ -181,8 +184,6 @@ a {
 
 
 .mavic-present {
-  min-height: 110vh;
-  height: 100%;
   background: url("../images/present/bg_2.jpg") no-repeat 100% / cover;
   color: #fff;
 }
@@ -210,11 +211,13 @@ a {
   margin-bottom: 55px;
 
 }
-.title{
+
+.title {
   font-weight: 400;
   font-size: 44px;
   line-height: 53px;
 }
+
 .present-text p + p {
   margin-top: 20px;
 }
@@ -263,11 +266,16 @@ a {
 }
 
 
+.page {
+  min-height: 110vh;
+  height: 100%;
+  background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
+  color: #fff;
+}
 
-
-
-
-
+.title {
+  padding-top: 102px;
+}
 
 
 //ADVANTAGES____________________________________________________
@@ -313,14 +321,84 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-.mavic-contact{
+.mavic-contact {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*SPEC________________________________________________________*/
+.mavic-spec {
+}
+
+.page {
+}
+
+.conteiner {
+}
+
+.spec-title {
+}
+
+.title {
+}
+
+.spec {
+  margin-top: 77px;
+}
+
+.spec-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  row-gap: 140px;
+}
+
+.spec-item {
+  max-width: 279px;
+}
+
+.spec-item_1 {
+  grid-row: 1/3;
+  grid-column:1/2 ;
+}
+
+.spec-item_2 {
+  grid-row: 1/3;
+  grid-column:4/5 ;
+}
+
+.spec-item_3 {
+  grid-row: 3/5;
+  grid-column:1/2 ;
+}
+
+.spec-item_4 {
+  grid-row: 3/5;
+  grid-column:4/5 ;
+}
+
+.spec-item-title {
+}
+
+.spec-item-text {
+  margin-top: 13px;
+}
+
+.spec-image {
+  grid-column: 2/4;
+  grid-row: 1/-1;
+
+}
+
+.spec-img {
+}
+
+.scroll_btn {
+}
+.text{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
 }
