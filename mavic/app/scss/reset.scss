@@ -1,10 +1,9 @@
-/* Указываем box sizing */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 
 /* Убираем внутренние отступы */
 ul[class],
@@ -35,6 +34,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
