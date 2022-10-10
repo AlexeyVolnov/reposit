@@ -15,23 +15,22 @@ a {
 .mavic {
   min-height: 100vh;
   height: 100%;
-  background: url("../images/mavic/bg.jpg") no-repeat 100% top /cover;
+  background: url("../images/mavic/bg.jpg") no-repeat  center 100% /cover;
   color: #fff;
 
-}
 
+}
+.header{
+  display: flex;
+  flex-direction: column;
+
+}
 .conteiner {
   max-width: 1268px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
 
 .mavic-top {
   padding-top: 43px;
