@@ -1,6 +1,7 @@
-* *{
+* * {
   transition: all .3s;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,16 +16,18 @@ a {
 .mavic {
   min-height: 100vh;
   height: 100%;
-  background: url("../images/mavic/bg.jpg") no-repeat  center 100% /cover;
+  background: url("../images/mavic/bg.jpg") no-repeat center 100% /cover;
   color: #fff;
 
 
 }
-.header{
+
+.header {
   display: flex;
   flex-direction: column;
 
 }
+
 .conteiner {
   max-width: 1268px;
   margin: 0 auto;
@@ -96,10 +99,12 @@ a {
   text-align: center;
 
 }
-.mavic-buy__btn:hover{
+
+.mavic-buy__btn:hover {
   background-color: #fff;
   color: black;
 }
+
 .mavic-phone {
   font-weight: 700;
   font-size: 16px;
@@ -116,30 +121,16 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.mavic-title{
+.mavic-title {
   font-weight: 600;
   font-size: 96px;
   line-height: 115px;
   text-align: center;
   margin-top: 100px;
- color: #d67184;
 }
 
 
-
-
-
-.scroll_btn{
+.scroll_btn {
   display: flex;
   justify-content: center;
   margin-top: 13px;
@@ -152,7 +143,7 @@ a {
   align-items: center;
 }
 
-.scroll_btn:hover a svg{
+.scroll_btn:hover a svg {
   opacity: 1;
   transform: scale(1.2);
 }
@@ -161,7 +152,7 @@ a {
 }
 
 .mavic-text {
-  margin: 25.4px  auto 35px;
+  margin: 25.4px auto 35px;
   text-align: center;
   font-weight: 300;
   font-size: 17px;
@@ -170,38 +161,23 @@ a {
 
 .mavic-bottom {
 }
-
-.mavic-social {
+.social{
   display: flex;
+}
+.mavic-social {
   gap: 50px;
 }
 
-.mavic-social-item:hover {
+.social:hover {
   transform: scale(1.1);
 }
-.mavic-social-item:hover .mavic-social-link path{
+
+.mavic-social-item:hover .mavic-social-link path {
   fill-opacity: 1;
 }
+
 .mavic-social-link {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .mavic-present {
@@ -214,48 +190,55 @@ a {
 
 .mavic-present_text {
 }
-.present{
+
+.present {
   display: flex;
   gap: 133px;
   padding-top: 155px;
   min-height: 700px;
   padding-right: 30px;
 }
-.present-text{
+
+.present-text {
   max-width: 450px;
   font-weight: 300;
   font-size: 17px;
   line-height: 150%;
 }
+
 .present_title {
   margin-bottom: 55px;
+
+}
+.title{
   font-weight: 400;
   font-size: 44px;
   line-height: 53px;
 }
-
-.present-text + .present-text {
+.present-text p + p {
   margin-top: 20px;
 }
 
-.mavic-present_slider {
+.present-slider {
 
   align-self: flex-end;
 }
 
-.slider {
+.present-slider {
   max-width: 560px;
   max-height: 280px;
   width: 100%;
   height: 100%;
 
 }
-.slider{
+
+.present-slider {
   position: relative;
   z-index: 2;
 
 }
-.slider:before{
+
+.present-slider:before {
   content: "";
   display: block;
   border: 4px solid #fff;
@@ -270,13 +253,74 @@ a {
 
 
 }
-.slider .slick-arrow{
+
+.present-slider .slick-arrow {
   position: absolute;
   bottom: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   right: 0;
   content: "";
 }
-.slider-img{
 
+
+
+
+
+
+
+
+
+//ADVANTAGES____________________________________________________
+
+
+.mavic-advant {
+}
+
+.conteiner {
+}
+
+.advant {
+}
+
+.anvant-title {
+}
+
+.title {
+}
+
+.advant-items {
+}
+
+.advant-item {
+}
+
+.advant-item_number {
+}
+
+.advant-item_image {
+}
+
+.advant-item_img {
+}
+
+.advant-item_info {
+}
+
+.advant-title {
+}
+
+.advant-text {
+}
+
+
+
+
+
+
+
+
+
+
+.mavic-contact{
+  background-color: rgba(0, 0, 0, 0.4);
 }
