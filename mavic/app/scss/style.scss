@@ -83,6 +83,7 @@ h4 {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-list-item:hover {
@@ -229,7 +230,6 @@ h4 {
 }
 
 .present-slider {
-
   align-self: flex-end;
 }
 
@@ -502,6 +502,11 @@ h4 {
 .form-quest {
   grid-column: 1/-1;
   min-height: 144px;
+  background: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .contact-form__btn {
@@ -535,7 +540,7 @@ h4 {
 .mavic-social-item {
 }
 
-.mavic-social-link path{
+.mavic-social-link path {
   fill-opacity: 1;
 }
 
