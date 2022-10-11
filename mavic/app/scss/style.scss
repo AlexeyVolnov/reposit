@@ -21,7 +21,7 @@ h4 {
 }
 
 .mavic {
-  min-height: 110vh;
+  min-height: 100vh;
   height: 100%;
   background: url("../images/mavic/bg.jpg") no-repeat center 100% /cover;
   color: #fff;
@@ -120,6 +120,7 @@ h4 {
 }
 
 .mavic-center {
+
 }
 
 .mavic-bottom {
@@ -157,6 +158,8 @@ h4 {
 }
 
 .mavic-img {
+  max-width: 660px;
+  max-height: 198px;
 }
 
 .mavic-text {
@@ -273,7 +276,8 @@ h4 {
 
 
 .page {
-  min-height: 110vh;
+
+  min-height: 100vh;
   height: 100%;
   background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
   color: #fff;
@@ -297,21 +301,40 @@ h4 {
 }
 
 .anvant-title {
-}
+  margin-bottom: 45px;
 
+}
+.advant-row-title{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
 .title {
 }
 
-.advant-items {
-}
+.advant-items-row{
+  min-height: 170px;
+  display: flex;
+  gap:40px ;
 
-.advant-item {
+
+
+}
+.advant-item{
+  display: flex;
+  &:last-child{
+    align-items: center;
+  }
 }
 
 .advant-item_number {
+  margin-right: 5px;
+
 }
 
 .advant-item_image {
+  margin-right: 32px;
 }
 
 .advant-item_img {
@@ -320,10 +343,15 @@ h4 {
 .advant-item_info {
 }
 
-.advant-title {
+h5{
+  margin: 0;
 }
 
 .advant-text {
+  max-width: 300px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130%;
 }
 
 
@@ -431,6 +459,7 @@ h4 {
 .contact {
   display: flex;
   margin-top: 56px;
+  margin-left: 30px;
 }
 
 .contact-list {
