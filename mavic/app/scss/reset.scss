@@ -75,6 +75,19 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
+}
+* * {
+  transition: all .3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  scroll-behavior:smooth ;
+}
+button {
+  color: inherit;
 }
