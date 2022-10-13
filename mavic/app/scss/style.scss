@@ -6,13 +6,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+html{
+  scroll-behavior:smooth ;
+}
 button {
   color: inherit;
 }
 
 .wrapper {
   font-family: 'Ubuntu', sans-serif;
+  position: relative;
 
 }
 
@@ -25,8 +28,8 @@ h4 {
   height: 100%;
   background: url("../images/mavic/bg.jpg") no-repeat center 100% /cover;
   color: #fff;
-
-
+  position: relative;
+  padding-bottom: 60px;
 }
 
 .header {
@@ -143,8 +146,16 @@ h4 {
   display: flex;
   justify-content: center;
   margin-top: 13px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
 }
 
+.scroll_btn:hover a svg {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
 .mavic-center {
   display: flex;
@@ -152,10 +163,6 @@ h4 {
   align-items: center;
 }
 
-.scroll_btn:hover a svg {
-  opacity: 1;
-  transform: scale(1.2);
-}
 
 .mavic-img {
   max-width: 660px;
@@ -235,7 +242,7 @@ h4 {
 }
 
 .mavic-present_slider {
-   align-self: end;
+  align-self: end;
 }
 
 .present-slider {
@@ -283,9 +290,9 @@ h4 {
   height: 100%;
   background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
   color: #fff;
+  position: relative;
+  padding: 0 0 65px;
 }
-
-
 
 
 //ADVANTAGES____________________________________________________
@@ -304,7 +311,8 @@ h4 {
   margin-bottom: 45px;
 
 }
-.advant-row-title{
+
+.advant-row-title {
   font-weight: 700;
   font-size: 21px;
   line-height: 24px;
@@ -312,17 +320,18 @@ h4 {
 }
 
 
-.advant-items-row{
+.advant-items-row {
   min-height: 170px;
   display: flex;
-  gap:40px ;
-
+  gap: 40px;
 
 
 }
-.advant-item{
+
+.advant-item {
   display: flex;
-  &:last-child{
+
+  &:last-child {
     align-items: center;
   }
 }
@@ -342,7 +351,7 @@ h4 {
 .advant-item_info {
 }
 
-h5{
+h5 {
   margin: 0;
 }
 
@@ -371,7 +380,6 @@ h5{
 
 .spec-title {
 }
-
 
 
 .spec {
@@ -426,8 +434,6 @@ h5{
 .spec-img {
 }
 
-.scroll_btn {
-}
 
 .text {
   font-family: "Ubuntu", sans-serif;
@@ -450,7 +456,6 @@ h5{
 
 .contact-title {
 }
-
 
 
 .contact {
@@ -570,5 +575,3 @@ h5{
   fill-opacity: 1;
 }
 
-.scroll_btn {
-}
