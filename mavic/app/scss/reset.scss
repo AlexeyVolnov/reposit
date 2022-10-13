@@ -32,6 +32,8 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
+  min-width: 320px;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 

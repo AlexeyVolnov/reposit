@@ -206,8 +206,10 @@ h4 {
   display: flex;
   gap: 133px;
   padding-top: 155px;
-  min-height: 700px;
+  max-height: 517px;
+  height: 100%;
   padding-right: 30px;
+  align-items: start;
 }
 
 .present-text {
@@ -232,8 +234,8 @@ h4 {
   margin-top: 20px;
 }
 
-.present-slider {
-  align-self: flex-end;
+.mavic-present_slider {
+   align-self: end;
 }
 
 .present-slider {
@@ -283,9 +285,7 @@ h4 {
   color: #fff;
 }
 
-.title {
-  padding-top: 102px;
-}
+
 
 
 //ADVANTAGES____________________________________________________
@@ -310,8 +310,7 @@ h4 {
   line-height: 24px;
   margin-bottom: 10px;
 }
-.title {
-}
+
 
 .advant-items-row{
   min-height: 170px;
@@ -373,8 +372,7 @@ h5{
 .spec-title {
 }
 
-.title {
-}
+
 
 .spec {
   margin-top: 77px;
@@ -453,8 +451,7 @@ h5{
 .contact-title {
 }
 
-.title {
-}
+
 
 .contact {
   display: flex;
