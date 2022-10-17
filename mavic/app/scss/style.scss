@@ -26,7 +26,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 11%;
+  margin-top: calc(43px + 31px + 44px);
 }
 .conteiner {
   max-width: 1268px;
@@ -185,6 +185,7 @@ h4 {
 .mavic-present {
   background: url("../images/present/bg_2.jpg") no-repeat 100% / cover;
   color: #fff;
+
 }
 
 
@@ -221,8 +222,9 @@ h4 {
 }
 
 .mavic-present_slider {
-  align-self: end;
+  margin-top: 100px;
 }
+
 
 .present-slider {
   max-width: 560px;
