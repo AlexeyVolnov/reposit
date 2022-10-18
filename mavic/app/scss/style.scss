@@ -323,82 +323,72 @@ h4 {
 }
 
 
-
 .advant-items {
   margin-top: 65px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 167px;
-  row-gap:86px;
+  row-gap: 86px;
 }
 
 .advant-item {
   display: flex;
   align-items: end;
-  &:nth-child(odd){
+
+  &:nth-child(odd) {
     align-items: start;
   }
 }
-.advant-item-1{
-position: relative;
 
-  &::before{
-    content: "";
-    position: absolute;
-    height: 45px;
-    width: 100%;
-    background-image: url("../images/advant/line-1.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    right: -387px;
-    top: 38px;
-    z-index: 1;
-  }
-
-}
 .advant-item_number {
   font-weight: 700;
   font-size: 36px;
 }
-.advant-item-1,.advant-item-3{
-  &:before,&:after{
-    
-  }
 
-}
-
-.advant-item-3{
+.advant-item-1, .advant-item-3 {
   position: relative;
-
-  &:before{
+  &:before, &:after {
     content: "";
     position: absolute;
     width: 100%;
     background-position: 0 0;
     background-repeat: no-repeat;
-    position: absolute;
+    z-index: 1;
+  }
+
+}
+
+.advant-item-1 {
+  &::before {
+    height: 45px;
+    background-image: url("../images/advant/line-1.svg");
+    right: -387px;
+    top: 38px;
+  }
+
+}
+
+.advant-item-3 {
+  &:before {
     background-image: url("../images/advant/line-2.svg");
     height: 62.5px;
     top: -85px;
     right: -166px;
   }
-  &:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    position: absolute;
+
+  &:after {
     background-image: url("../images/advant/line-3.svg");
     height: 39px;
     right: -375px;
     top: 34px;
   }
 }
+
 .advant-item_image {
   margin-left: 8px;
   position: relative;
   z-index: 1;
+
   &::before {
     content: "";
     position: absolute;
@@ -529,7 +519,6 @@ h5 {
 .page {
   padding-left: 60px;
 }
-
 
 
 .contact-title {
