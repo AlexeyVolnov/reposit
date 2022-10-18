@@ -190,15 +190,16 @@ h4 {
 
 
 .mavic-present_text {
+  position: relative;
 }
 
 .present {
   display: flex;
   gap: 133px;
-  padding-top: 55px;
+  padding: 55px 30px;
   max-height: 517px;
   height: 100%;
-  padding-right: 30px;
+
   align-items: start;
 }
 
@@ -239,7 +240,20 @@ h4 {
   z-index: 2;
 
 }
+.slick-prev{
+}
 
+.present-text-center{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 281px;
+  text-align: right;
+  position: absolute;
+  right: -180px;
+  bottom: -94px;
+  z-index: 17;
+}
 .present-slider:before {
   content: "";
   display: block;
@@ -256,14 +270,34 @@ h4 {
 
 }
 
-.present-slider .slick-arrow {
+.slider-btn{
+  padding: 16px 25px;
+  max-width: 60px;
+  max-height: 48px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #1C1C1C;
   position: absolute;
-  bottom: 0;
-  transform: translate(-50%, -50%);
+  bottom: -68px;
   right: 0;
-  content: "";
-}
 
+  &:hover{
+    background-color: #fff;
+    cursor: pointer;
+  }
+  &:hover path{
+    stroke: black;
+
+  }
+}
+.slider-btn-left{
+right: 60px;
+}
+.slider-btn-right{
+
+}
 
 .page {
 
@@ -284,46 +318,16 @@ h4 {
 
 .conteiner {
 }
-
-.advant {
-}
-
-.anvant-title {
-  margin-bottom: 45px;
-
-}
-
-.advant-row-title {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-
-
 .advant-items-row {
-  min-height: 170px;
-  display: flex;
-  gap: 40px;
-
-
 }
 
 .advant-item {
-  display: flex;
-
-  &:last-child {
-    align-items: center;
-  }
 }
 
 .advant-item_number {
-  margin-right: 5px;
-
 }
 
 .advant-item_image {
-  margin-right: 32px;
 }
 
 .advant-item_img {
@@ -332,15 +336,16 @@ h4 {
 .advant-item_info {
 }
 
-h5 {
-  margin: 0;
+.advant-row-title {
 }
 
 .advant-text {
-  max-width: 300px;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 130%;
+}
+
+
+
+h5 {
+  margin: 0;
 }
 
 
