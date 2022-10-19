@@ -20,5 +20,8 @@
     "jquery": "^3.6.1",
     "sass": "^1.55.0",
     "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "fullpage.js": "^4.0.11"
   }
 }

@@ -17,6 +17,7 @@ function browsersync() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/fullpage.js/dist/fullpage.js',
         'app/js/main.js',
         'app/js/slick.js'
     ])
@@ -26,7 +27,10 @@ function scripts() {
         .pipe(browserSync.stream());
 }
 function styles() {
-    return src('app/scss/*.scss',)
+    return src([
+        'app/scss/*.scss',
+        'node_modules/fullpage.js/dist/fullpage.css'
+    ])
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({

@@ -8,6 +8,9 @@ $(document).ready(function () {
             '</svg></button>',
         infinite: false,
     })
-
+$('.questions-item-title').on('click',function (){
+    $('.questions-item').removeClass('questions-item--active');
+    $(this).parent().addClass('questions-item--active');
+});
 
 })
