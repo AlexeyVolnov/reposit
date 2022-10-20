@@ -8,9 +8,15 @@ $(document).ready(function () {
             '</svg></button>',
         infinite: false,
     })
-$('.questions-item-title').on('click',function (){
-    $('.questions-item').removeClass('questions-item--active');
-    $(this).parent().addClass('questions-item--active');
-});
+    $('.questions-item-title').on('click', function () {
+        $('.questions-item').removeClass('questions-item--active');
+        $(this).parent().addClass('questions-item--active');
+    });
+    $('#fullpage').fullpage({
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        sectionSelector:'.page',
+    });
 
 })
