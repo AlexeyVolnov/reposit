@@ -17,6 +17,8 @@ $(document).ready(function () {
         autoScrolling: true,
         scrollHorizontally: true,
         sectionSelector:'.page',
+        scrollingSpeed: 700,
+        easing: 'easeInOutCubic',
     });
 
 })

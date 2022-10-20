@@ -46,8 +46,6 @@ h4 {
   display: flex;
   font-weight: 500;
   align-items: center;
-  position: fixed;
-  z-index: 12;
   justify-content: space-between;
   max-width: 1238px;
   width: 100%;
@@ -303,10 +301,17 @@ h4 {
 .slider-btn-right {
 
 }
-
+.conteiner{
+  position: relative;
+}
+.mavic-top{
+  position: sticky;
+  z-index: 12;
+  top: 30px;
+}
 .page {
 
-  min-height: 100vh;
+  min-height: 110vh;
   height: 100%;
   background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
   color: #fff;
