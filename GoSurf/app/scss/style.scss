@@ -1,3 +1,32 @@
-.header{
-  color: red;
+/*
+font-family: 'Fira Sans', sans-serif;
+*/
+.row {
+  background-color: rgba(165, 159, 159, 0.39);
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px 50px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.city {
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(197, 234, 234, 0.56);
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid #946f6f;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.reka {
 }
