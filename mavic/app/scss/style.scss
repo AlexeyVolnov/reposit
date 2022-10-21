@@ -1,458 +1,425 @@
-
 .wrapper {
-  font-family: 'Ubuntu', sans-serif;
-  position: relative;
-
+   font-family: "Ubuntu", sans-serif;
+   position: relative;
 }
 
 h4 {
-  font-size: 21px;
+   font-size: 21px;
 }
 
 .mavic {
-  background: url("../images/mavic/bg.jpg") no-repeat center 100% /cover;
-  color: #fff;
-  position: relative;
-  padding-bottom: 60px;
-  height: 100%;
+   background: url("../images/mavic/bg.jpg") no-repeat center 100% / cover;
+   color: #fff;
+   position: relative;
+   padding-bottom: 60px;
+   height: 100%;
 }
 
 .header {
-
-
 }
 
 .mavic-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: calc(43px + 31px + 44px);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: calc(43px + 31px + 44px);
 }
 
 .conteiner {
-  max-width: 1268px;
-  margin: 0 auto;
-  padding: 0 15px;
+   max-width: 1268px;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
-
 .mavic-top {
-  padding-top: 43px;
-  font-size: 15px;
-  line-height: 17px;
+   padding-top: 43px;
+   font-size: 15px;
+   line-height: 17px;
 }
 
 .mavic-head {
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1238px;
-  width: 100%;
+   display: flex;
+   font-weight: 500;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1238px;
+   width: 100%;
 }
 
 .mavic-logo-block {
-  display: flex;
-  gap: 11px;
-  align-items: center;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+   display: flex;
+   gap: 11px;
+   align-items: center;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
 }
 
 .mavic-logo-image {
-  object-fit: cover;
+   object-fit: cover;
 }
 
 .mavic-logo-text {
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
 }
 
 .mavic-nav {
 }
 
 .nav-list {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
 .nav-list-item:hover {
-  transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .nav-link {
 }
 
 .mavic-buy {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+   display: flex;
+   gap: 8px;
+   align-items: center;
 }
 
 .mavic-buy__btn {
-  padding: 7px 28px;
-  border: 1px solid #FFFFFF;
-  border-radius: 3px;
-  cursor: pointer;
-  text-align: center;
-
+   padding: 7px 28px;
+   border: 1px solid #ffffff;
+   border-radius: 3px;
+   cursor: pointer;
+   text-align: center;
 }
 
 .mavic-buy__btn:hover {
-  background-color: #fff;
-  color: black;
+   background-color: #fff;
+   color: black;
 }
 
 .mavic-phone {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 18px;
 }
-
 
 .mavic-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-
 
 .mavic-title {
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 115px;
-  text-align: center;
+   font-weight: 600;
+   font-size: 96px;
+   line-height: 115px;
+   text-align: center;
 }
 
-
 .scroll_btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 13px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 30px;
+   display: flex;
+   justify-content: center;
+   margin-top: 13px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 30px;
 }
 
 .scroll_btn:hover a svg {
-  opacity: 1;
-  transform: scale(1.2);
+   opacity: 1;
+   transform: scale(1.2);
 }
 
-
 .mavic-img {
-  max-width: 660px;
-  max-height: 198px;
+   max-width: 660px;
+   max-height: 198px;
 }
 
 .mavic-text {
-  margin: 25.4px auto 35px;
-  text-align: center;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 150%;
+   margin: 25.4px auto 35px;
+   text-align: center;
+   font-weight: 300;
+   font-size: 17px;
+   line-height: 150%;
 }
 
 .mavic-bottom {
 }
 
 .social {
-  display: flex;
+   display: flex;
 }
 
 .mavic-social {
-  gap: 50px;
+   gap: 50px;
 }
 
-
 .mavic-social-item:hover .mavic-social-link path {
-  fill-opacity: 1;
+   fill-opacity: 1;
 }
 
 .mavic-social-link {
 }
 
-
 .mavic-present {
-  background: url("../images/present/bg_2.jpg") no-repeat 100% / cover;
-  color: #fff;
-
+   background: url("../images/present/bg_2.jpg") no-repeat 100% / cover;
+   color: #fff;
 }
 
-
 .mavic-present_text {
-  position: relative;
+   position: relative;
 }
 
 .present {
-  display: flex;
-  gap: 133px;
-  padding: 55px 30px;
-  max-height: 517px;
-  height: 100%;
+   display: flex;
+   gap: 133px;
+   padding: 55px 30px;
+   max-height: 517px;
+   height: 100%;
 
-  align-items: start;
+   align-items: start;
 }
 
 .present-text {
-  max-width: 450px;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 150%;
+   max-width: 450px;
+   font-weight: 300;
+   font-size: 17px;
+   line-height: 150%;
 }
 
-
 .title {
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 53px;
-  padding-top: 150px;
+   font-weight: 400;
+   font-size: 44px;
+   line-height: 53px;
+   padding-top: 150px;
 }
 
 .present-text p + p {
-  margin-top: 20px;
+   margin-top: 20px;
 }
 
 .mavic-present_slider {
-  margin-top: 100px;
-}
-
-
-.present-slider {
-  max-width: 560px;
-  max-height: 280px;
-  width: 100%;
-  height: 100%;
-
+   margin-top: 100px;
 }
 
 .present-slider {
-  position: relative;
-  z-index: 2;
+   max-width: 560px;
+   max-height: 280px;
+   width: 100%;
+   height: 100%;
+}
 
+.present-slider {
+   position: relative;
+   z-index: 2;
 }
 
 .slick-prev {
 }
 
 .present-text-center {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  max-width: 281px;
-  text-align: right;
-  position: absolute;
-  right: -180px;
-  bottom: -94px;
-  z-index: 17;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   max-width: 281px;
+   text-align: right;
+   position: absolute;
+   right: -180px;
+   bottom: -94px;
+   z-index: 17;
 }
 
 .present-slider:before {
-  content: "";
-  display: block;
-  border: 4px solid #fff;
-  max-width: 560px;
-  max-height: 288px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -13px;
-  right: -11px;
-  z-index: -1;
-
-
+   content: "";
+   display: block;
+   border: 4px solid #fff;
+   max-width: 560px;
+   max-height: 288px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: -13px;
+   right: -11px;
+   z-index: -1;
 }
 
 .slider-btn {
-  padding: 16px 25px;
-  max-width: 60px;
-  max-height: 48px;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  background-color: #1C1C1C;
-  position: absolute;
-  bottom: -68px;
-  right: 0;
+   padding: 16px 25px;
+   max-width: 60px;
+   max-height: 48px;
+   width: 100%;
+   height: 100%;
+   border: none;
+   outline: none;
+   background-color: #1c1c1c;
+   position: absolute;
+   bottom: -68px;
+   right: 0;
 
-  &:hover {
-    background-color: #fff;
-    cursor: pointer;
-  }
+   &:hover {
+      background-color: #fff;
+      cursor: pointer;
+   }
 
-  &:hover path {
-    stroke: black;
-
-  }
+   &:hover path {
+      stroke: black;
+   }
 }
 
 .slider-btn-left {
-  right: 60px;
+   right: 60px;
 }
 
 .slider-btn-right {
-
 }
-.conteiner{
-  position: relative;
+.conteiner {
+   position: relative;
 }
-.mavic-top{
-  position: sticky;
-  z-index: 12;
-  top: 30px;
+.mavic-top {
+   position: sticky;
+   z-index: 12;
+   top: 30px;
 }
 .page {
-
-  min-height: 110vh;
-  height: 100%;
-  background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
-  color: #fff;
-  position: relative;
-  padding: 0 0 65px;
+   min-height: 110vh;
+   height: 100%;
+   background: url("../images/present/bg_2.jpg") no-repeat center 100% / cover;
+   color: #fff;
+   position: relative;
+   padding: 0 0 65px;
 }
 
-
 //ADVANTAGES____________________________________________________
-
 
 .mavic-advant {
 }
 
-
 .advant-items {
-  margin-top: 65px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 167px;
-  row-gap: 86px;
+   margin-top: 65px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: 167px;
+   row-gap: 86px;
 }
 
 .advant-item {
-  display: flex;
-  align-items: end;
+   display: flex;
+   align-items: end;
 
-  &:nth-child(odd) {
-    align-items: start;
-  }
+   &:nth-child(odd) {
+      align-items: start;
+   }
 }
 
 .advant-item_number {
-  font-weight: 700;
-  font-size: 36px;
+   font-weight: 700;
+   font-size: 36px;
 }
 
-.advant-item-1, .advant-item-3 {
-  position: relative;
+.advant-item-1,
+.advant-item-3 {
+   position: relative;
 
-  &:before, &:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
+   &:before,
+   &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      z-index: 1;
+   }
 }
 
 .advant-item-1 {
-  &::before {
-    height: 45px;
-    background-image: url("../images/advant/line-1.svg");
-    right: -387px;
-    top: 38px;
-  }
-
+   &::before {
+      height: 45px;
+      background-image: url("../images/advant/line-1.svg");
+      right: -387px;
+      top: 38px;
+   }
 }
 
 .advant-item-3 {
-  &:before {
-    background-image: url("../images/advant/line-2.svg");
-    height: 62.5px;
-    top: -85px;
-    right: -166px;
-  }
+   &:before {
+      background-image: url("../images/advant/line-2.svg");
+      height: 62.5px;
+      top: -85px;
+      right: -166px;
+   }
 
-  &:after {
-    background-image: url("../images/advant/line-3.svg");
-    height: 39px;
-    right: -375px;
-    top: 34px;
-  }
+   &:after {
+      background-image: url("../images/advant/line-3.svg");
+      height: 39px;
+      right: -375px;
+      top: 34px;
+   }
 }
 
 .advant-item-3,
 .advant-item-4 {
-  justify-self: center;
+   justify-self: center;
 }
 
 .advant-item_image {
-  margin-left: 8px;
-  position: relative;
-  z-index: 1;
+   margin-left: 8px;
+   position: relative;
+   z-index: 1;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 195px;
-    height: 130px;
-    top: -12px;
-    right: -12px;
-    z-index: -1;
-    border: 2px solid #fff;
-  }
-
+   &::before {
+      content: "";
+      position: absolute;
+      width: 195px;
+      height: 130px;
+      top: -12px;
+      right: -12px;
+      z-index: -1;
+      border: 2px solid #fff;
+   }
 }
 
 .advant-item_img {
-  min-width: 195px;
-  min-height: 130px;
-
+   min-width: 195px;
+   min-height: 130px;
 }
 
 .advant-item_info {
-  margin-left: 32px;
+   margin-left: 32px;
 }
 
 .advant-row-title {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 24px;
-  padding-top: 10px;
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 24px;
+   padding-top: 10px;
 }
 
 .advant-text {
-  max-width: 300px;
-  margin-top: 10px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+   max-width: 300px;
+   margin-top: 10px;
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-size: 15px;
 }
-
 
 h5 {
-  margin: 0;
+   margin: 0;
 }
-
 
 .mavic-contact {
-  background-color: rgba(0, 0, 0, 0.4);
+   background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 /*SPEC________________________________________________________*/
 .mavic-spec {
 }
-
-
 
 .conteiner {
 }
@@ -460,118 +427,108 @@ h5 {
 .spec-title {
 }
 
-
 .spec {
-  margin-top: 77px;
+   margin-top: 77px;
 }
 
 .spec-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  align-items: center;
-  row-gap: 100px;
-  justify-items: center;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   align-items: center;
+   row-gap: 100px;
+   justify-items: center;
 }
 
 .spec-item {
-  max-width: 279px;
-  position: relative;
+   max-width: 279px;
+   position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
+   &:before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+   }
 }
 
 .spec-item_1 {
-  grid-row: 1/3;
-  grid-column: 1/2;
-  justify-self: end;
+   grid-row: 1/3;
+   grid-column: 1/2;
+   justify-self: end;
 
-  z-index: 1;
+   z-index: 1;
 
-  &::before {
-    background-image: url("../images/spec/pointer-1.svg");
-    right: -165px;
-    top: 10px;
-
-  }
-
+   &::before {
+      background-image: url("../images/spec/pointer-1.svg");
+      right: -165px;
+      top: 10px;
+   }
 }
 
 .spec-item_2 {
-  grid-row: 1/3;
-  grid-column: 4/5;
+   grid-row: 1/3;
+   grid-column: 4/5;
 
-  &::before {
-    background-image: url("../images/spec/pointer-3.svg");
-    left: -288px;
-    top: 10px;
-
-  }
+   &::before {
+      background-image: url("../images/spec/pointer-3.svg");
+      left: -288px;
+      top: 10px;
+   }
 }
 
 .spec-item_3 {
-  grid-row: 3/5;
-  grid-column: 1/2;
-  justify-self: end;
+   grid-row: 3/5;
+   grid-column: 1/2;
+   justify-self: end;
 
-  &::before {
-    background-image: url("../images/spec/pointer-2.svg");
-    left: 267px;
-    top: -114px;
-
-  }
+   &::before {
+      background-image: url("../images/spec/pointer-2.svg");
+      left: 267px;
+      top: -114px;
+   }
 }
 
 .spec-item_4 {
-  grid-row: 3/5;
-  grid-column: 4/5;
+   grid-row: 3/5;
+   grid-column: 4/5;
 
-  &::before {
-    background-image: url("../images/spec/pointer-4.svg");
-    left: -140px;
-    top: -78px;
-
-  }
+   &::before {
+      background-image: url("../images/spec/pointer-4.svg");
+      left: -140px;
+      top: -78px;
+   }
 }
 
 .spec-item-title {
 }
 
 .spec-item-text {
-  margin-top: 13px;
+   margin-top: 13px;
 }
 
 .spec-image {
-  grid-column: 2/4;
-  grid-row: 1/-1;
-
+   grid-column: 2/4;
+   grid-row: 1/-1;
 }
 
 .spec-img {
 }
 
-
 .text {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 150%;
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 150%;
 }
 
 /*QUESTION___________________________________________________*/
 
 .mavic-questions {
 }
-
-
 
 .questions {
 }
@@ -583,195 +540,186 @@ h5 {
 }
 
 .questions-items {
-  max-width: 757px;
-  margin: 38px 0 20px;
+   max-width: 757px;
+   margin: 38px 0 20px;
 }
 
 .questions-item {
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0.95;
-  max-width: 690px;
-  position: relative;
-  &:nth-child(3):before {
-    content: "";
-    position: absolute;
-    background: url("../images/questions/dron-qest.png") no-repeat 100% / cover;
-    width: 319px;
-    height: 125px;
-    z-index: 2;
-    top: -34px;
-    right: -393px;
-  }
+   background: rgba(0, 0, 0, 0.3);
+   opacity: 0.95;
+   max-width: 690px;
+   position: relative;
+   &:nth-child(3):before {
+      content: "";
+      position: absolute;
+      background: url("../images/questions/dron-qest.png") no-repeat 100% /
+         cover;
+      width: 319px;
+      height: 125px;
+      z-index: 2;
+      top: -34px;
+      right: -393px;
+   }
 }
 
 .questions-item {
-  margin-bottom: 5px;
+   margin-bottom: 5px;
 }
 
 .questions-item-title {
-  padding: 20px 30px 24px 39px;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 28px;
-  color: rgba(#fff, 0.8);
-  max-height: 72px;
-  position: relative;
-  cursor: pointer;
+   padding: 20px 30px 24px 39px;
+   font-weight: 500;
+   font-size: 21px;
+   line-height: 28px;
+   color: rgba(#fff, 0.8);
+   max-height: 72px;
+   position: relative;
+   cursor: pointer;
 
-  &::after {
-    content: "";
-    background-image: url("../images/questions/title-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 72px;
-    height: 67px;
-    position: absolute;
-    right: -72px;
-    top: 0;
-    background-color: #fff;
-  }
+   &::after {
+      content: "";
+      background-image: url("../images/questions/title-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 72px;
+      height: 67px;
+      position: absolute;
+      right: -72px;
+      top: 0;
+      background-color: #fff;
+   }
 }
-
-
 
 .questions-item-text {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 150%;
-  padding: 20px 10px 20px 50px;
-  display: none;
-  font-family:"Ubuntu", sans-serif ;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 150%;
+   padding: 20px 10px 20px 50px;
+   display: none;
+   font-family: "Ubuntu", sans-serif;
 }
-.questions-item.questions-item--active{
-  .questions-item-text{
-    display: block;
-  }
-  .questions-item-title{
-    &:after{
-      transform: rotate(180deg);
-    }
-  }
-
+.questions-item.questions-item--active {
+   .questions-item-text {
+      display: block;
+   }
+   .questions-item-title {
+      &:after {
+         transform: rotate(180deg);
+      }
+   }
 }
-
-
-
 
 /*CONTACTS_______________________________________________________________________________*/
 
-
 .contact {
-  display: flex;
-  margin-top: 56px;
-  margin-left: 30px;
+   display: flex;
+   margin-top: 56px;
+   margin-left: 30px;
 }
 
 .contact-list__item {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 130%;
-  display: flex;
-  flex-direction: column;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 130%;
+   display: flex;
+   flex-direction: column;
 }
 
 .contact-list__item + .contact-list__item {
-  margin-top: 30px;
+   margin-top: 30px;
 }
 
 .contact_sity {
-  font-size: 21px;
-  font-weight: 700;
+   font-size: 21px;
+   font-weight: 700;
 }
 
 .contact_phone {
-  margin: 13px 0 5px 0;
-  display: inline-block;
+   margin: 13px 0 5px 0;
+   display: inline-block;
 }
 
 .contact_email {
 }
 
 .contact-form-block {
-  margin: 0 106px 0 60px;
+   margin: 0 106px 0 60px;
 }
 
 .contact-form-title {
 }
 
 .contact-form-text {
-  margin: 13px 0;
+   margin: 13px 0;
 }
 
 .contact-form input {
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0.95;
-  outline: none;
-  border: none;
-  color: #fff;
-  padding: 10px;
+   background: rgba(0, 0, 0, 0.5);
+   opacity: 0.95;
+   outline: none;
+   border: none;
+   color: #fff;
+   padding: 10px;
 }
 
 .contact-form input::placeholder {
-  padding: 15px 0 0 15px;
+   padding: 15px 0 0 15px;
 }
 
 .contact-form {
-  display: grid;
-  grid-template-columns: 280px 280px;
-  column-gap: 10px;
-  row-gap: 10px;
+   display: grid;
+   grid-template-columns: 280px 280px;
+   column-gap: 10px;
+   row-gap: 10px;
 }
 
 .form-name {
-  min-height: 46px;
+   min-height: 46px;
 }
 
 .form-mail {
-  min-height: 46px;
+   min-height: 46px;
 }
 
 .form-quest {
-  grid-column: 1/-1;
-  min-height: 144px;
-  background: rgba(0, 0, 0, 0.5);
-  outline: none;
-  border: none;
-  padding: 20px;
-  box-sizing: border-box;
-  color: #fff;
-  resize: none;
-
+   grid-column: 1/-1;
+   min-height: 144px;
+   background: rgba(0, 0, 0, 0.5);
+   outline: none;
+   border: none;
+   padding: 20px;
+   box-sizing: border-box;
+   color: #fff;
+   resize: none;
 }
 
 .contact-form__btn {
-  max-width: 120px;
-  max-height: 34px;
-  width: 100%;
-  height: 100%;
-  padding: 9px 15px;
-  text-transform: uppercase;
-  border: 1px solid #FFFFFF;
-  border-radius: 2px;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  background-color: inherit;
-  margin-top: 20px;
+   max-width: 120px;
+   max-height: 34px;
+   width: 100%;
+   height: 100%;
+   padding: 9px 15px;
+   text-transform: uppercase;
+   border: 1px solid #ffffff;
+   border-radius: 2px;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   background-color: inherit;
+   margin-top: 20px;
 }
 
 .contact-form__btn:hover {
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: black;
+   cursor: pointer;
+   background-color: #ffffff;
+   color: black;
 }
 
 .contact-social {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  justify-content: center;
-
-
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   justify-content: center;
 }
 
 .social {
@@ -781,14 +729,14 @@ h5 {
 }
 
 .mavic-social-link path {
-  fill-opacity: 1;
+   fill-opacity: 1;
 }
 
-.footer{
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 130%;
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: 136px;
-  text-align: end;
+.footer {
+   font-weight: 300;
+   font-size: 13px;
+   line-height: 130%;
+   font-family: "Ubuntu", sans-serif;
+   margin-top: 136px;
+   text-align: end;
 }
