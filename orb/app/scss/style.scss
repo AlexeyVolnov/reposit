@@ -1,0 +1,70 @@
+$Inter: "Inter", sans-serif;
+$Raleway: "Raleway", sans-serif;
+$Rubik: "Rubik", sans-serif;
+$accent-color: #ec5863;
+$accent-color-2: #4285f4;
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#check-item {
+  display: none;
+}
+
+#check-item:checked ~ .fff {
+  background-color: #000;
+  & p {
+    display: block;
+  }
+}
+.menu-body{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.pop {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.fff {
+  width: 400px;
+  height: 100vh;
+  color: antiquewhite;
+
+
+
+  & p {
+    display: none;
+  }
+
+
+}
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+  &:before,
+  &:after{
+    content: "";
+    height: 2px;
+    background-color: black;
+  }
+}
+
+.button span{
+  height: 2px;
+  background-color: black;
+}

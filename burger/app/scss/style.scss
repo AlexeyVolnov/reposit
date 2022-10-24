@@ -1,0 +1,99 @@
+$Inter: "Inter", sans-serif;
+$Raleway: "Raleway", sans-serif;
+$Rubik: "Rubik", sans-serif;
+$accent-color: #ec5863;
+$accent-color-2: #4285f4;
+
+html,
+body {
+   margin: 0;
+   height: 100%;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.top-nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #00baf0;
+   background: linear-gradient(to left, #f46b45, #eea849);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: #fff;
+   height: 50px;
+   padding: 1em;
+}
+
+.menu {
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.menu-button-container {
+   display: none;
+   height: 100%;
+   width: 30px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#menu-toggle {
+   display: none;
+}
+
+.menu-button {
+   width: 30px;
+   height: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   &:before,
+   &:after {
+      content: "";
+      height: 2px;
+      background-color: #000;
+   }
+}
+
+.menu-button span {
+   background-color: #000;
+   height: 2px;
+   width: 20px;
+   align-self: center;
+}
+
+@media (max-width: 700px) {
+   .menu-button-container {
+      display: flex;
+   }
+   .menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 50px;
+      width: 100%;
+      flex-direction: column;
+   }
+   #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+   }
+   #menu-toggle:checked ~ .menu li {
+      height: 80px;
+   }
+   .menu > li {
+      width: 100%;
+      color: white;
+      background-color: #222;
+   }
+}
