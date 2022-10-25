@@ -10,13 +10,16 @@ body {
   color: #616161;
   background: #fafbfd;
   line-height: 1;
-}
 
+}
+* *{
+  transition: all .3s;
+}
 .conteiner {
   max-width: 1087px;
   margin: 0 auto;
   position: relative;
-  padding: 0 15px;
+
 }
 
 .wrapper {
@@ -49,7 +52,6 @@ body {
 }
 
 
-
 .logo-img {
 }
 
@@ -75,11 +77,13 @@ body {
 .menu__link {
   line-height: 1.2;
 }
-.header__logo{
+
+.header__logo {
   background: url("../images/logo.svg");
   width: 140px;
   height: 40px;
 }
+
 .header__button {
   flex: 0 0 281px;
   justify-content: end;
@@ -103,82 +107,35 @@ body {
 
 .button-link {
 }
-
-// PC
-@media screen and (max-width: 1087px) {
-  .conteiner {
-    max-width: 970px;
-  }
+#menu-check{
+  display: none;
 }
 
-// Tablet
-@media screen and (max-width: 991.98px) {
-  .conteiner {
-    max-width: 750px;
-  }
-  .header__button {
-    flex-basis: 150px;
-  }
-  .menu__items {
-    gap: 20px;
-    justify-content: center;
-  }
-}
-
-// Mobile
 
 
-/*
-.icon-menu {
-  flex: 0 0 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  justify-content: space-between;
 
-  &:before,
-  &:after {
-    content: "";
-    background-color: #000;
-    height: 2px;
-    width: 30px;
-  }
-}
 
-.icon-menu span {
-  background-color: #000;
-  height: 2px;
-}
-*/
-@media screen and (max-width: 714px) {
-  .header__logo{
-    flex: 0 0 40px;
-    overflow: hidden;
-  }
-  .header{
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 529.98px) {
-  .menu__body{
-    position: absolute;
-    background-color: #4285f4;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-top: 60px;
-    font-size: 24px;
-    color: rgba(243, 243, 243, 0.77);
-  }
-  .menu__items{
-    flex-direction: column;
 
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";
