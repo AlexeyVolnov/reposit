@@ -12,9 +12,11 @@ body {
   line-height: 1;
 
 }
-* *{
+
+* * {
   transition: all .3s;
 }
+
 .conteiner {
   max-width: 1087px;
   margin: 0 auto;
@@ -103,39 +105,115 @@ body {
 .header-btn {
   background-color: $accent-color-2;
   padding: 17px 28px 18px;
+  &:hover{
+    background-color: rgb(112, 163, 248);
+  }
 }
 
 .button-link {
 }
-#menu-check{
+
+#menu-check {
   display: none;
 }
 
+.main-box {
+}
+
+.conteiner {
+}
+
+.main-body {
+  margin-top: 151px;
+  display: flex;
+  gap: 20px;
+  color: #000;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  font-family: $Rubik;
+}
+
+.main-text {
+  max-width: 400px;
+  margin-top: 110px;
+}
+
+.main-title {
 
 
+  & span {
+    color: $accent-color-2;
+  }
+}
 
+.main-subtitle {
+  margin: 25px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  font-family: $Raleway;
+  letter-spacing: 0.08em;
+}
 
+.main-button {
+  background-color: $accent-color;
+  padding: 18px 42px;
+  &:hover{
+    background-color: #fb858e;
+  }
 
+}
 
+.btn {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: $Raleway;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
 
+.main-media {
+  margin-top: 103px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
 
+.media__image {
+}
 
+.media-icon {
+  &:hover{
+    transform: scale(1.1);
+  }
+}
 
+.media-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
 
+}
 
+.media-autor {
+  color: #B0B0B0;
+}
 
+.media-name {
+}
 
+.main-image {
 
+}
 
-
-
-
-
-
-
-
-
-
+.main-img {
+}
 
 
 @import "media";
