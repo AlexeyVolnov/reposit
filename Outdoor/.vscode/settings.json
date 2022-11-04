@@ -1,0 +1,35 @@
+{
+ "workbench.iconTheme": "eq-material-theme-icons-light",
+ "workbench.colorTheme": "Community Material Theme High Contrast",
+ "editor.minimap.enabled": false,
+ "editor.renderWhitespace": "none",
+ "editor.tabSize": 1,
+ "html.hover.documentation": false,
+ "css.hover.references": false,
+ "html.hover.references": false,
+ "editor.mouseWheelZoom": true,
+ "editor.formatOnSave": true,
+ "editor.formatOnType": true,
+ "prettier.tabWidth": 3,
+ "editor.fontSize": 20,
+ "files.autoSave": "afterDelay",
+ "window.zoomLevel": 0,
+ "editor.formatOnSaveMode": "modifications",
+ "editor.linkedEditing": true,
+ "editor.bracketPairColorization.enabled": true,
+ "files.autoSaveDelay": 1,
+ "editor.wordWrap": "on",
+ "prettier.printWidth": 120,
+ "editor.defaultFormatter": "vscode.json-language-features",
+ "editor.formatOnPaste": true,
+ "[scss]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "editor.guides.bracketPairs": true,
+ "[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+}

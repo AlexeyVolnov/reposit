@@ -17,6 +17,29 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 800px) {
+.header-box{
+  position:relative;
+  &:before{
+    display: none;
+  }
+}
+.main-body{
+  flex-direction: column;
+  gap: 70px;
+  
+
+}
+.block-text{
+  max-width: none;
+}
+.main-image img{
+  max-width: 60%;
+}
+.main-image{
+  padding-left: 85px;
+}
+}
 
 @media screen and (max-width: 714px) {
   .header__logo {
@@ -41,7 +64,7 @@
     width: 100vw;
     height: 100vh;
     top: 0;
-    right: -200%;
+    right: -1000%;
     bottom: 0;
     display: flex;
     justify-content: center;

@@ -25,7 +25,6 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -74,6 +73,9 @@ body {
 }
 
 .menu__item {
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .menu__link {
@@ -109,6 +111,23 @@ body {
     background-color: rgb(112, 163, 248);
   }
 }
+.header-box{
+  position:relative;
+  &::before{
+    content: "";
+    top: 0;
+    right: 0;
+    background-color:$accent-color;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    transform: translateX(71%);
+
+
+  }
+}
 
 .button-link {
 }
@@ -117,48 +136,53 @@ body {
   display: none;
 }
 
-.main-box {
-}
-
-.conteiner {
+/*_++++++++++++++++++++++++_+_++++++++++++++++++===========================*/
+.main-box{
+  padding: 150px 0 10px 0;
 }
 
 .main-body {
-  margin-top: 151px;
-  display: flex;
-  gap: 20px;
   color: #000;
+  display: flex;
+  padding-bottom: 40px;
+  gap: 20px;
 }
+.main-top{
+}
+.main-title{
 
+}
 .title {
   font-weight: 700;
   font-size: 44px;
   line-height: 126%;
   font-family: $Rubik;
 }
-
 .main-text {
-  max-width: 400px;
-  margin-top: 110px;
+  flex: 0 1 48%;
+  align-self: center;
+  padding-left: 85px;
 }
-
-.main-title {
-
-
-  & span {
-    color: $accent-color-2;
-  }
+.main-image{
+  flex: 0 1 52%;
 }
-
+.title-blue span{
+  color: $accent-color-2;
+}
+.title-pink span{
+  color: $accent-color;
+}
 .main-subtitle {
   margin: 25px 0;
+  max-width: 376px;
+}
+.block-text{
   font-weight: 400;
   font-size: 12px;
   line-height: 138.5%;
   font-family: $Raleway;
   letter-spacing: 0.08em;
 }
-
 .main-button {
   background-color: $accent-color;
   padding: 18px 42px;
@@ -167,7 +191,6 @@ body {
   }
 
 }
-
 .btn {
   font-weight: 700;
   font-size: 10px;
@@ -176,23 +199,21 @@ body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-
 .main-media {
-  margin-top: 103px;
   display: flex;
   gap: 18px;
   align-items: center;
+  padding-left: 85px;
 }
-
 .media__image {
+  
 }
-
 .media-icon {
+  flex: 0 0 44px;
   &:hover{
     transform: scale(1.1);
   }
 }
-
 .media-text {
   font-weight: 400;
   font-size: 12px;
@@ -200,20 +221,10 @@ body {
   letter-spacing: 0.08em;
 
 }
-
 .media-autor {
   color: #B0B0B0;
 }
 
-.media-name {
-}
-
-.main-image {
-
-}
-
-.main-img {
-}
 
 
 @import "media";
