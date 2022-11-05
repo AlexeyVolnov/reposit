@@ -23,7 +23,7 @@
  "editor.defaultFormatter": "vscode.json-language-features",
  "editor.formatOnPaste": true,
  "[scss]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "vscode.css-language-features"
  },
  "[html]": {
   "editor.defaultFormatter": "vscode.html-language-features"
