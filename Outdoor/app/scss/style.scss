@@ -179,6 +179,7 @@ font-family: 'Roboto', sans-serif;
 .about-image {
    flex: 1 1 50%;
    position: relative;
+
    &:before,
    &:after {
       content: "";
@@ -306,6 +307,7 @@ font-family: 'Roboto', sans-serif;
    gap: 10px;
    color: #575445;
    cursor: pointer;
+
    &:hover {
       opacity: 0.8;
    }
@@ -325,6 +327,7 @@ font-family: 'Roboto', sans-serif;
       line-height: 20px;
    }
 }
+
 /* ===================================== */
 
 .family-store-box {
@@ -354,17 +357,22 @@ font-family: 'Roboto', sans-serif;
       margin-bottom: 21px;
    }
 }
+
 .suptitle {
 }
+
 .title {
 }
+
 .text {
 }
+
 .family-store-items {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 16px;
 }
+
 .family-store-item {
    min-width: 379px;
    min-height: 473px;
@@ -415,27 +423,35 @@ font-family: 'Roboto', sans-serif;
    &__img {
    }
 }
+
 .family-store-item * {
    max-width: 252px;
 }
+
 .family-store-item:nth-child(1) {
    background: url("../images/store/image1.jpg") no-repeat 100% / cover;
 }
+
 .family-store-item:nth-child(2) {
    background: url("../images/store/image2.jpg") no-repeat 100% / cover;
 }
+
 .family-store-item:nth-child(3) {
    background: url("../images/store/image3.jpg") no-repeat 100% / cover;
 }
+
 .family-store-item:nth-child(4) {
    background: url("../images/store/image4.jpg") no-repeat 100% / cover;
 }
+
 .family-store-item:nth-child(5) {
    background: url("../images/store/image5.jpg") no-repeat 100% / cover;
 }
+
 .family-store-item:nth-child(6) {
    background: url("../images/store/image6.jpg") no-repeat 100% / cover;
 }
+
 .family-store-categories {
    display: flex;
    gap: 4px;
@@ -445,6 +461,53 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* =========================================== */
+.check-product__img {
+   position: relative;
+}
+
+.check-product-box {
+   // .check-product-box__panel
+
+   &__panel {
+      min-height: 50px;
+      background-color: #292c32;
+      border-radius: 16px;
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      max-width: 626px;
+      width: 100%;
+      font-size: 12px;
+      line-height: 12px;
+      color: #fff;
+      padding: 21px 22px 15px;
+   }
+}
+
+.panel {
+   // .panel__items
+
+   &__items {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      min-height: 20px;
+      height: 100%;
+   }
+}
+
+.item-icon {
+   align-self: flex-end;
+}
+
+.item-link {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   align-items: flex-start;
+}
+
+/* ========================================================================= */
 
 .check-product__img {
    width: 100%;
@@ -505,4 +568,281 @@ font-family: 'Roboto', sans-serif;
       font-size: 15px;
       line-height: 22px;
    }
+}
+
+/* ======================================================== */
+
+.guides-box {
+   margin: 100px 0;
+}
+
+.conteiner {
+}
+
+.guides {
+   // .guides__suptitle
+
+   &__suptitle {
+   }
+
+   // .guides__title
+
+   &__title {
+   }
+
+   // .guides__text
+
+   &__text {
+      max-width: 538px;
+   }
+
+   // .guides__item
+
+   &__item:hover {
+      opacity: 0.9;
+   }
+}
+
+.suptitle {
+}
+
+.title {
+}
+
+.text {
+}
+
+.guides-items {
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: 450px;
+   gap: 32px;
+
+   // .guides-items__images
+
+   &__images {
+   }
+
+   // .guides-items__img
+
+   &__img {
+   }
+
+   // .guides-items__info-text
+
+   &__info-text {
+      margin: 18px 0 12px;
+      font-size: 20px;
+      line-height: 24px;
+      color: #575445;
+      max-width: 465px;
+   }
+
+   // .guides-items__autor
+
+   &__autor {
+      display: flex;
+   }
+}
+
+.autor-img {
+   margin-right: 12px;
+}
+
+.autor-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 510px;
+   width: 100%;
+}
+
+.autor-name {
+   display: flex;
+   flex-direction: column;
+   font-size: 13px;
+   line-height: 18px;
+   font-family: "Roboto", sans-serif;
+}
+
+.autor-name p:last-child {
+   font-size: 11px;
+   line-height: 15px;
+   color: #e6b939;
+}
+
+.autor-data {
+   font-size: 13px;
+   line-height: 18px;
+   color: #6f7278;
+}
+.guides-more {
+   text-align: center;
+}
+/* ======================================================= */
+
+.reading-box {
+   margin: 200px 0 100px;
+}
+
+.reading {
+   display: flex;
+   align-items: center;
+   gap: 104px;
+
+   // .reading__images
+
+   &__images {
+      flex: 0 1 50%;
+      position: relative;
+
+      &:before {
+         content: "";
+         display: block;
+         position: absolute;
+         background-repeat: no-repeat;
+         z-index: -1;
+         background-image: url("../images/about/about-decor.svg");
+         top: -115px;
+         right: -325px;
+         width: 470px;
+         height: 423px;
+      }
+   }
+
+   // .reading__img
+
+   &__img {
+   }
+
+   // .reading__text
+
+   &__text {
+      flex: 0 1 50%;
+      max-width: 384px;
+   }
+
+   // .reading__suptitle
+
+   &__suptitle {
+   }
+
+   // .reading__title
+
+   &__title {
+      max-width: 295px;
+   }
+
+   // .reading__more-info
+
+   &__more-info {
+      margin-top: 20px;
+   }
+}
+.suptitle {
+}
+.title {
+}
+.text {
+}
+/* ================================================ */
+
+.footer-box {
+   background: #575445;
+}
+
+.footer {
+   text-align: center;
+
+   padding: 100px 0 100px;
+   color: #fff;
+   // .footer__logo
+
+   &__logo {
+   }
+
+   // .footer__columns
+
+   &__columns {
+      margin-top: 75px;
+      display: grid;
+      grid-template-columns: 220px 220px 220px 458px;
+      text-align: left;
+   }
+
+   // .footer__column
+
+   &__column {
+   }
+
+   // .footer__column-suptitle
+
+   &__column-suptitle {
+      color: #e6b939;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+   }
+
+   // .footer__column-items
+
+   &__column-items {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+   }
+
+   // .footer__column-item
+
+   &__column-item {
+      font-size: 14px;
+      line-height: 20px;
+   }
+
+   // .footer__column-text
+
+   &__column-text {
+   }
+
+   // .footer__form
+
+   &__form {
+   }
+
+   // .footer__pr
+
+   &__pr {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+   }
+
+   // .footer__a
+
+   &__a {
+   }
+
+   // .footer__social
+
+   &__social {
+      display: flex;
+      gap: 20px;
+   }
+}
+.conteiner {
+}
+.logo-img {
+}
+.social-in {
+}
+.footer__column:last-child {
+   flex: 0 1 458px;
+}
+
+.footer__column-text {
+   max-width: 438px;
+   margin-bottom: 9px;
 }
