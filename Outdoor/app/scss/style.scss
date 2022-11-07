@@ -9,10 +9,7 @@ font-family: 'Roboto', sans-serif;
   overflow: hidden;
 }
 
-.header {
-  max-height: 100vh;
-  max-width: 100vw;
-}
+
 
 .conteiner {
   max-width: 1230px;
@@ -30,6 +27,8 @@ font-family: 'Roboto', sans-serif;
 
 
 .header {
+  max-height: 100vh;
+  max-width: 100vw;
   &__logo {
     flex: 0 1 380px;
   }
@@ -224,8 +223,7 @@ font-family: 'Roboto', sans-serif;
   padding-left: 104px;
 }
 
-.suptitle {
-}
+
 
 .about-info {
   margin-top: 20px;
@@ -369,14 +367,7 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-.suptitle {
-}
 
-.title {
-}
-
-.text {
-}
 
 .family-store-items {
   display: grid;
@@ -515,7 +506,7 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   gap: 8px;
   align-items: center;
-  align-items: flex-start;
+
 
 }
 
