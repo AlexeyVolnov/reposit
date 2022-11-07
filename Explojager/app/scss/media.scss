@@ -1,0 +1,17 @@
+@media (max-width: 825px) {
+  .stories__items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .stories__item{
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 593px) {
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
