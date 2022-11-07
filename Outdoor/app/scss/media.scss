@@ -1,51 +1,234 @@
-@media (max-width: 1208px) {
- .header__logo {
-  flex: 0 1 128px;
- }
-  .header-top {
-   justify-content: space-between;
+@media (max-width: 1215px) {
+  .family-store-items {
+    padding: 0 15px;
+    grid-template-columns: 1fr 1fr;
   }
-  .header__buttons{
-   margin-left: 20px;
-   gap: 10px;
+}
+
+@media (max-width: 1208px) {
+  .header__logo {
+    flex: 0 1 128px;
+  }
+
+  .header-top {
+    justify-content: space-between;
+  }
+
+  .header__buttons {
+    margin-left: 20px;
+    gap: 10px;
+  }
+  .autor-images {
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 1141px) {
+  .footer__columns {
+    grid-template-columns: 1fr 1fr 1fr  auto;
+    column-gap: 10px;
+  }
+  .header-inner {
+    height: calc(60vh - 80px);
+  }
+
+}
+
+@media (max-width: 977px) {
+  .footer__columns {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    row-gap: 50px;
+
+    .header-inner {
+      height: calc(50vh - 80px);
+    }
+
   }
 }
 
 @media (max-width: 926px) {
- 
- .header__menu{
-  display: none;
- }
- .burger{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40px;
-  height: 20px;
-  margin-left: 20px;
- }
-.burger span{
- width: 80%;
- height: 2px;
- background-color: rgb(36, 29, 29);
+  .conteiner {
+    position: relative;
+  }
+
+  .menu.menu-active {
+    top: 80px;
+
+  }
+
+  .menu {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: #e8e9ec;
+    top: -1000%;
+    padding: 100px 30px;
+    right: 0;
+    z-index: 5;
+    font-size: 24px;
+    border-radius: 20px;
+
+
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .menu__item:not(:last-child) {
+      position: relative;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 40px;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: rgba(36, 29, 29, 0.24);
+        bottom: -20px;
+      }
+    }
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    margin-left: 20px;
+  }
+
+  .burger span {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(36, 29, 29);
+  }
+  .spec-items {
+    column-gap: 30px;
+  }
+  .reading {
+    gap: 20px;
+  }
 }
-#bg:checked{
- .menu-body{
-  right: 0;
- }
+
+@media (max-width: 809px) {
+  .family-store-items {
+    grid-template-columns: 1fr;
+  }
+  .header-inner {
+    height: calc(50vh - 80px);
+  }
 }
- 
+
+@media (max-width: 706px) {
+  .panel__items {
+    flex-direction: column;
+
+  }
+  .check-product-box__panel {
+    max-width: 190px;
+  }
+  .footer__columns {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .footer__social {
+    padding-left: 10px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 636px) {
+  .guides-items {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    grid-auto-rows: auto;
+  }
+  .guides-more {
+    margin-top: 30px;
+  }
+  .reading-box {
+    margin: 50px 0;
+  }
+  .reading {
+    flex-direction: column-reverse;
+
+  }
+}
+
+@media (max-width: 762px) {
+  .header-inner__text {
+    max-width: 350px;
+  }
+  .about-text {
+    padding-left: 20px;
+  }
+  .spec-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 581px) {
+  .spec-items {
+    grid-template-columns: 1fr;
+  }
+  .spec-item__text {
+    max-width: none;
+  }
+}
+
+@media (max-width: 581px) {
+  .about {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .about-text {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 526px) {
 
- .header__logo {
-   display: none;
+  .header__logo {
+    display: none;
   }
 }
-@media (max-width: 390px) {
-.header__buttons{
- flex-wrap: wrap;
+
+@media (max-width: 423px) {
+  .family-store-item {
+    max-width: 319px;
+    min-width: auto;
+  }
+
 }
- 
+
+@media (max-width: 390px) {
+  .header__buttons {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 386px) {
+  .menu {
+    top: 120px;
+  }
+
+  .header-top {
+    min-height: 120px;
+  }
+
+  .header-inner {
+    padding-right: 50px;
+  }
 }
