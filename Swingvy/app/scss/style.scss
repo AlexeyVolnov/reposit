@@ -1,0 +1,261 @@
+/*
+font-family: 'Roboto', sans-serif;
+ */
+
+$accent-color: #0A61F7;
+.wrapper {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+
+.conteiner {
+  max-width: 1121px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/*ALL++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.btn-blue {
+  background-color: $accent-color;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+}
+.title{
+  font-size: 39px;
+  line-height: 48px;
+  letter-spacing: 0.8px;
+  color: #1C202B;
+  font-weight: 400;
+}
+.suptitle {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #657085;
+  font-weight: 400;
+
+}
+.btn{
+  cursor: pointer;
+}
+.blue span {
+  color: $accent-color;
+}
+/*ALL------------------------------------------------------*/
+
+
+/*START+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.start-box {
+}
+
+.start {
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  // .header__logo
+  &__logo {
+  }
+
+  // .header__nav
+  &__nav {
+    margin-left: 36px;
+  }
+
+  // .header__buttons
+  &__buttons {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.conteiner {
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1072px;
+  margin-left: 19px;
+  min-height: 75px;
+  align-items: center;
+}
+
+.nav {
+  // .nav__items
+  &__items {
+    display: flex;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    gap: 32px;
+    color: #1C202B;
+
+  }
+
+  // .nav__item
+  &__item {
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 28px;
+  // .buttons__sign-in
+  &__sign-in {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  // .buttons__demo
+  &__demo {
+    padding: 15px 24px 16px;
+
+  }
+}
+
+.btn-blue {
+}
+
+.start-content {
+
+  background-image: url("../images/start-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  // .start-content__suptitle
+  &__suptitle {
+  }
+
+  // .start-content__title
+  &__title {
+    font-size: 57px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: #1C202B;
+    max-width: 507px;
+  }
+
+  // .start-content__btn
+  &__btn {
+    margin-top: 25px;
+    padding: 20px 48px 19px;
+
+  }
+}
+
+.start-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 802px;
+}
+
+.suptitle {
+}
+
+
+/*START-------------------------------------------------------------*/
+
+/*MAIN------------------------------------------------------------------*/
+.main {
+  font-weight: 400;
+  // .main__suptitle
+  &__suptitle {
+  }
+
+  // .main__title
+  &__title {
+  }
+
+  // .main__table
+  &__table {
+  }
+}
+
+.suptitle {
+}
+
+.title {
+}
+
+.blue {
+}
+
+.operating-table {
+  // .operating-table__cels
+  &__cels {
+  }
+
+  // .operating-table__cel
+  &__cel {
+  }
+
+  // .operating-table__images
+  &__images {
+  }
+
+  // .operating-table__img
+  &__img {
+  }
+
+  // .operating-table__text
+  &__text {
+  }
+
+  // .operating-table__button
+  &__button {
+  }
+}
+
+.btn {
+}
+
+.btn-blue {
+}
+/*MAIN------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media.scss";
