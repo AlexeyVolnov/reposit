@@ -27,13 +27,16 @@ $accent-color: #0A61F7;
   display: inline-block;
   border-radius: 4px;
 }
-.title{
+
+.title {
   font-size: 39px;
   line-height: 48px;
   letter-spacing: 0.8px;
   color: #1C202B;
   font-weight: 400;
+  margin-top: 18px;
 }
+
 .suptitle {
   font-size: 18px;
   line-height: 18px;
@@ -43,12 +46,15 @@ $accent-color: #0A61F7;
   font-weight: 400;
 
 }
-.btn{
+
+.btn {
   cursor: pointer;
 }
+
 .blue span {
   color: $accent-color;
 }
+
 /*ALL------------------------------------------------------*/
 
 
@@ -186,6 +192,8 @@ $accent-color: #0A61F7;
 
   // .main__title
   &__title {
+
+    max-width: 883px;
   }
 
   // .main__table
@@ -205,7 +213,36 @@ $accent-color: #0A61F7;
 .blue {
 }
 
+.operating-table__cel:nth-child(1) {
+  background-color: #EAF3FF;
+}
+
+.operating-table__cel:nth-child(2) {
+  background-color: #FFF8E4;
+}
+
+.operating-table__cel:nth-child(3) {
+
+}
+
+.operating-table__cel:nth-child(4) {
+  background-color: #E2FBF2;
+}
+
+.operating-table__cel:nth-child(5) {
+
+}
+
+.operating-table__cel:nth-child(6) {
+  background-color: #F3E5F5;
+}
+
+.operating-table__cel:nth-child(7) {
+  background-color: #FFE5ED;
+}
+
 .operating-table {
+  gap: 42px;
   // .operating-table__cels
   &__cels {
     flex: 0 1 338px;
@@ -222,7 +259,30 @@ $accent-color: #0A61F7;
     display: flex;
     gap: 20px;
     align-items: center;
-    
+    border-radius: 8px;
+    padding: 16px 24px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background-color: #fff;
+      bottom: 1px;
+      width: 80%;
+      left: 17px;
+      transition: all .3s;
+
+    }
+
+    &:hover:after{
+      transition: all .3s;
+      background-color: $accent-color;
+    }
   }
 
   // .operating-table__images
@@ -236,33 +296,175 @@ $accent-color: #0A61F7;
 
   // .operating-table__text
   &__text {
+    margin-top: 31px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
   }
 
   // .operating-table__button
   &__button {
+    margin-top: 39px;
   }
 }
 
 .btn {
+  padding: 15px 24px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .btn-blue {
 }
+
 /*MAIN------------------------------------------------------------------*/
 
 
 
 
+/*COMANDS*/
+
+.comands {
+  padding: 125px 0 100px;
+  // .comands__suptitle
+  &__suptitle {
+
+  }
+
+  // .comands__title
+  &__title {
+    max-width: 504px;
+  }
+
+  // .comands__items
+  &__items {
+    margin-top: 83px;
+    display: flex;
+    gap: 58px;
+  }
+}
+
+.suptitle {
+}
+
+.title {
+}
+
+.comand {
+  // .comand__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .comand__item-img
+  &__item-img {
+    max-width: 256px;
+    max-height: 256px;
+  }
+
+  // .comand__item-prof
+  &__item-prof {
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2.08px;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin: 20px 0 35px;
+  }
+
+  // .comand__item-text
+  &__item-text {
+    font-size: 20px;
+    line-height: 26px;
+    color: #1C202B;
+  }
+}
+
+
+/*COMANDS*/
+
+
+/*APPROVED*/
+.approved-box{
+  background-color: #FEC33E;
+}
+.approved {
+  display: flex;
+  gap:142px;
+  min-height: 802px;
+  align-items: center;
+  justify-content: space-between;
+  // .approved__suptitle
+  &__suptitle {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #1C202B;
+    font-weight: 400;
+  }
+
+  // .approved__title
+  &__title {
+    margin: 18px 0 20px;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: 0.8px;
+    color: #1C202B;
+  }
+
+  // .approved__text
+  &__text {
+    font-size: 22px;
+    line-height: 27px;
+    color: #1C202B;
+    display: block;
+    max-width: 497px;
+  }
+
+  // .approved__btn
+  &__btn {
+    margin-top: 37px;
+    padding: 20px 48px 19px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #1C202B;
+    background-color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  // .approved__img
+  &__img {
+  }
+}
+
+.approved-info {
+  flex: 0 1 60%;
+  margin-left: 19px;
+}
+
+.approved-image {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
 
 
 
 
 
 
-
-
-
-
+/*APPROVED*/
 
 
 
