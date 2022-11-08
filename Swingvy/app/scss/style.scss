@@ -178,6 +178,7 @@ $accent-color: #0A61F7;
 
 /*MAIN------------------------------------------------------------------*/
 .main {
+  padding: 125px 19px 100px;
   font-weight: 400;
   // .main__suptitle
   &__suptitle {
@@ -189,6 +190,9 @@ $accent-color: #0A61F7;
 
   // .main__table
   &__table {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -204,14 +208,25 @@ $accent-color: #0A61F7;
 .operating-table {
   // .operating-table__cels
   &__cels {
+    flex: 0 1 338px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 
   // .operating-table__cel
   &__cel {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    gap: 20px;
+    
   }
 
   // .operating-table__images
   &__images {
+    flex: 0 1 100%;
   }
 
   // .operating-table__img
