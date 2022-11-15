@@ -27,14 +27,13 @@
 //
 
 
-
 // 3 Функция при передаче строки в качестве аргумента выводит значения символов по их кодам в UTF-16 от начального до конечного
-//   Используется метод, получения веса символа          str.codePointAt(1);
+//   Используется метод, получения веса символа   str.codePointAt(1);
 
 /*****************************************************************************
 
-let str = 'Каждый';
-function utf16(str) {
+ let str = 'Каждый';
+ function utf16(str) {
     let mass = {};
     let allCounttt = 0;
     if (str.constructor === String) {
@@ -50,16 +49,43 @@ function utf16(str) {
     return [mass, allCounttt];
 }
 
-console.log(utf16(str));
+ console.log(utf16(str));
 
  ********************************************************************************/
-
 
 //
 
 
-
 // 4
+// Функция получает строку и делает букву заглавной
+/*
+function ucFierst(str) {
+    let t, result;
+    result = str.toUpperCase().slice(0, 1) + str.slice(1, str.length);
+    return result
+}
+console.log(ucFierst('mama'))
+*/
+
+//
+
+// 5
+// Функция проверяет наличие подстроки в строке и возвращает true || false
+// str.includes
+/*
+
+function checkSpam(str) {
+    let str1 = str.toLowerCase();
+    return str1.includes('viagra') || str1.includes('xxx');
+}
+
+*/
+//
+
+
+// 6
+//
+//
 
 
 
