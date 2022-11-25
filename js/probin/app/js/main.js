@@ -77,9 +77,9 @@ function createTree(conteiner, data) {
 
 "use strict"
 //угадай число попытка 1
-/*
-/!*
 
+
+/*
 let btnCheck = document.querySelector('.check');
 let score = Number(document.querySelector('.score').innerHTML);
 let startGame = document.querySelector('.again');
@@ -124,12 +124,13 @@ function reset() {
     score = '20'
     guessMessage.innerHTML = "Начни угадывать"
     question.innerHTML = '???';
-}*!/
+}*/
 
 //угадай число попытка 2
 let userInput = document.querySelector('.number-input');
 let btnCheck = document.querySelector('.check');
 let score = document.querySelector('.score');
+let scoreNumber = 20;
 let startGame = document.querySelector('.again');
 let guessMessage = document.querySelector('.guess-message');
 let question = document.querySelector('.question');
@@ -154,17 +155,18 @@ function valueCheck() {
     atempts()
 }
 function atempts() {
-    if (!Number(score.innerHTML)) {
+    if (!scoreNumber) {
         guessMessage.innerHTML = "Колличество попыток закончилось начните снова";
         btnCheck.style.display = 'none'
     }
-    score.innerHTML = Number(score.innerHTML) - 1
+    score.innerHTML = --scoreNumber
 }
 function winner() {
     guessMessage.innerHTML = "Вы победили";
     body.style.backgroundColor = 'green';
-    highscore.innerHTML = score.innerHTML;
+    highscore.innerHTML = --scoreNumber;
     question.innerHTML = randomNumber;
+    btnCheck.style.display = 'none'
 }
 startGame.addEventListener('click',resetGame)
 function resetGame(){
@@ -173,8 +175,9 @@ function resetGame(){
     question.innerHTML = '???';
     userInput.value = '';
     score.innerHTML='20'
+    btnCheck.style.display = 'block'
 }
-*/
+
 
 //вешаем события на кнопки
 /*

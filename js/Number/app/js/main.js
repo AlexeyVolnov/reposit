@@ -77,7 +77,7 @@ function createTree(conteiner, data) {
 
 "use strict"
 //угадай число попытка 1
-/*
+ /*
 /!*
 
 let btnCheck = document.querySelector('.check');
@@ -185,4 +185,23 @@ for (let element of btn) {
         event.target.classList.toggle('active')})
 }
 */
+
+
+///////////////////////////////////
+
+
+let wrapper = document.body.appendChild(document.createElement('div'))
+wrapper.classList.add('wrapper');
+
+let ul = `<ul class="list">
+<li class="list-item">1</li>
+<li class="list-item">2</li>
+<li class="list-item">3</li>
+<li class="list-item">4</li>
+<li class="list-item">5</li>
+</ul>`
+
+
+wrapper.insertAdjacentHTML('afterend', ul);
+
 
