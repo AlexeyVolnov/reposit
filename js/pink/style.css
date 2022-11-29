@@ -66,6 +66,7 @@ main {
 }
 .player--active .name {
   font-weight: 700;
+  color: #ea7fb6;
 }
 .player--active .score {
   font-weight: 400;
