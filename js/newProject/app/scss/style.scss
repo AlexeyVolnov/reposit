@@ -1,17 +1,24 @@
-
 .wrapper {
   min-width: 100vw;
   min-height: 100vh;
+  padding: 50px;
 }
 
 .grid-layout {
   display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+  row-gap: 30px;
+  grid-template-rows: auto;
+
 }
 
 .box {
-  width: 400px;
+  max-width: 400px;
+  min-width: 350px;
   height: 700px;
-  background: linear-gradient(to bottom right, #a2458d, #667a0b, #0cbad2);
+  margin-right: 20px;
+  background-image: linear-gradient(to bottom left,#436434,#9745);
+  );
   border-radius: 15px;
 }
 
