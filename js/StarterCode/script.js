@@ -1,5 +1,10 @@
 'use strict';
-
+(function() {
+  let button = document.querySelectorAll(`[class*='btn']`);
+  for (const buttonElement of button) {
+    buttonElement.setAttribute('type', 'button');
+  }
+})();
 // Simply Bank App
 const account1 = {
   userName: 'Cecil Ireland', transactions: [500, 250, -300, 5000, -850, -110, -170, 1100], interest: 1.5, pin: 1111
@@ -43,35 +48,48 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-
+//userName: 'Corey Martinez', transactions: [900, -200, 280, 300, -200, 150, 1400, -400], interest: 0.8, pin: 3333
 
 btnLogin.addEventListener('click', LogIn);
 
 function LogIn() {
   for (const account of accounts) {
-    if (account.userName === inputLoginUsername.value && account.pin === +inputLoginPin.value) {
+    let nickName = account.userName.toLowerCase().split(' ').map(word => word[0]).join('')
+    console.log(nickName);
+    if ((account.userName === inputLoginUsername.value) || (inputLoginUsername.value === nickName)
+      && account.pin === +inputLoginPin.value) {
       containerApp.style.opacity = '1';
-      inputLoginUsername.style.width = '200px';
-      inputLoginUsername.style.backgroundColor = 'green';
-      inputLoginUsername.style.color = 'white';
+      inputLoginUsername.value = account.userName;
+     inputLoginUsername.classList.add('logined');
       inputLoginPin.value = '';
       inputLoginPin.remove();
       btnLogin.remove();
       addTransaction(account);
+      getBalance(account);
     }
   }
 }
-  
+//create function add element nickname in array
 
 function addTransaction(account) {
-  let transactionRow = document.querySelector();
-  for (const transaction of account.transactions) {
-    if (transaction < 0) {
-//нужно дабавлять сюда депозиты и классы в зависимости от суммы
-    }
-  }
+  containerTransactions.innerHTML = '';
+  account.transactions.forEach((transaction, index) => {
+    const transType = transaction > 0 ? 'deposit' : 'withdrawal';
+    const operationsName = transaction > 0 ? 'ДЕПОЗИТ' : 'ВЫВОД СРЕДСТВ';
 
+    let row = `<div class='transactions__row'>
+      <div class='transactions__type transactions__type--${transType}'>
+      ${index + 1} ${operationsName}
+      </div>
+      <div class='transactions__date'>9 дней назад</div>
+      <div class='transactions__value'>${transaction}$</div>
+    </div>`;
+    containerTransactions.insertAdjacentHTML('afterbegin', row);
+  });
 
 }
 
+function getBalance(account) {
+  labelBalance.innerHTML = account.transactions.reduce((acc,item)=>acc+item) + '$'
+}
 

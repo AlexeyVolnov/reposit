@@ -1,0 +1,20 @@
+
+.wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.grid-layout {
+  display: grid;
+}
+
+.box {
+  width: 400px;
+  height: 700px;
+  background: linear-gradient(to bottom right, #a2458d, #667a0b, #0cbad2);
+  border-radius: 15px;
+}
+
+.grid-item {
+
+}
