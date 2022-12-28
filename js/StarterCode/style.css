@@ -87,28 +87,25 @@ nav {
     grid-template-columns: 4fr 3fr;
     grid-template-rows: auto repeat(3, 15rem) auto;
     gap: 2rem;
-    background-image: linear-gradient(
-            to bottom left,
-            hsla(253, 47%, 57%, 0.6) 20%,
-            hsla(311, 52%, 53%, 0.20) 14%,
-            hsla(5, 100%, 63%, 0.30) 36%,
-            hsla(27, 100%, 60%, 0.63) 44%,
-            hsla(202, 48%, 60%, 0.62) 100%,
-            hsla(23, 100%, 40%, 0.8) 30%
+    background-image: linear-gradient(to bottom left,
+    hsla(253, 47%, 57%, 0.6) 20%,
+    hsla(311, 52%, 53%, 0.20) 14%
     );
     border-radius: 10px;
 
     /* Create fade anumation */
-    opacity: 0;
+    opacity: 1;
     transition: all 1s;
     padding: 50px 25px 150px;
 }
-.logined{
+
+.logined {
     width: 200px;
-    background-image: linear-gradient(to top right, #d36c71,#042877);
+    background-image: linear-gradient(to top right, #d36c71, #042877);
     color: white;
     padding: 15px 0 15px;
 }
+
 .balance {
     grid-column: 1 / span 2;
     display: flex;

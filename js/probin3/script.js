@@ -243,18 +243,44 @@ function verifyCats(catsJane, catsJulia) {
   cats.forEach(((cat, index) => {
     console.log(
       `Кошка № ${index + 1} ${cat >= 2
-        ? `взрослая, ей ${cat} лет`
-        : `еще котенок`}`);
+        ?
+        `взрослая, ей ${cat} лет`
+        :
+        `еще котенок`}`);
   }));
-
 }
 
-verifyCats(catsJane, catsJulia);
-
-const transactions = [-300, 500, 9000, -600, 760, 432, 6823, -1222];
+// verifyCats(catsJane, catsJulia);
 
 
-const balance = transactions.reduce((acc, item) => acc + item);
-const min = transactions.reduce((acc, item) => acc > item ? item : acc);
+function getAverageHumanAges(arrayCat) {
+  let cats2 = [];
+  for (let arrayCatElement of arrayCat) {
+    if (arrayCatElement <= 2) {
+      cats2.push(arrayCatElement * 10);
+    } else {
+      cats2.push(arrayCatElement * 7);
+    }
+  }
+  let cats3 = cats2.filter((item) => item > 18);
+  let allcats = 0;
+  for (const cats3Element of cats3) {
+    allcats += cats3Element;
+  }
+}
 
-console.log(min);
+
+let getAverageHumanAge = arrayCat => {
+  let currentCat = arrayCat.map(catAge => catAge <= 2 ? catAge * 10 : catAge * 7)
+                           .filter(catAge => catAge > 18);
+  console.log(currentCat);
+  return currentCat.reduce((acc, catAge) => acc + catAge) / currentCat.length;
+};
+
+
+
+
+
+console.log(getAverageHumanAge([7, 3, 2, 4, 1, 15, 8, 1, 9, 2]));
+
+console.log(getAverageHumanAge([1, 16, 12, 4, 5, 1, 3, 11, 7, 2]));

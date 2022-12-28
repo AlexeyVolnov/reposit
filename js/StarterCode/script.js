@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use strict';
 (function() {
   let button = document.querySelectorAll(`[class*='btn']`);
@@ -7,7 +8,7 @@
 })();
 // Simply Bank App
 const account1 = {
-  userName: 'Cecil Ireland', transactions: [500, 250, -300, 5000, -850, -110, -170, 1100], interest: 1.5, pin: 1111
+  userName: 'Cecil Ireland', transactions: [500, 250, -300, 5000, -850, -110, -170, 1100], interest: 1.1, pin: 1111
 };
 const account2 = {
   userName: 'Amani Salt', transactions: [2000, 6400, -1350, -70, -210, -2000, 5500, -30], interest: 1.3, pin: 2222
@@ -54,21 +55,21 @@ btnLogin.addEventListener('click', LogIn);
 
 function LogIn() {
   for (const account of accounts) {
-    let nickName = account.userName.toLowerCase().split(' ').map(word => word[0]).join('')
-    console.log(nickName);
+    let nickName = account.userName.toLowerCase().split(' ').map(word => word[0]).join('');
     if ((account.userName === inputLoginUsername.value) || (inputLoginUsername.value === nickName)
       && account.pin === +inputLoginPin.value) {
       containerApp.style.opacity = '1';
       inputLoginUsername.value = account.userName;
-     inputLoginUsername.classList.add('logined');
+      inputLoginUsername.classList.add('logined');
       inputLoginPin.value = '';
       inputLoginPin.remove();
       btnLogin.remove();
       addTransaction(account);
-      getBalance(account);
+      displayTotal(account);
     }
   }
 }
+
 //create function add element nickname in array
 
 function addTransaction(account) {
@@ -89,7 +90,17 @@ function addTransaction(account) {
 
 }
 
-function getBalance(account) {
-  labelBalance.innerHTML = account.transactions.reduce((acc,item)=>acc+item) + '$'
+function displayTotal(account) {
+  labelBalance.innerHTML = account.transactions.reduce((acc, trans) => acc + trans) + '$';
+  labelSumIn.innerHTML = account.transactions.filter(trans => trans > 0).reduce((acc, trans) => acc + trans) + '$';
+  labelSumInterest.innerHTML = account.transactions
+    .filter(trans => trans > 0)
+    .map(depos => (depos * account.interest) / 100).filter(item => item > 5)
+    .reduce((acc, depos) => acc + depos)
+    .toFixed(2) + '$';
+  labelSumOut.innerHTML = account.transactions
+    .filter(trans => trans < 0)
+    .reduce((acc, trans) => acc + trans) + '$';
 }
+
 

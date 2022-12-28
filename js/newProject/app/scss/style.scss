@@ -5,11 +5,10 @@
 }
 
 .grid-layout {
-  display: grid;
-  grid-template-columns: repeat(3,1fr) ;
-  row-gap: 30px;
-  grid-template-rows: auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
 }
 
 .box {
@@ -17,8 +16,7 @@
   min-width: 350px;
   height: 700px;
   margin-right: 20px;
-  background-image: linear-gradient(to bottom left,#436434,#9745);
-  );
+  background-image: linear-gradient(to bottom left,#3453, rgba(124, 81, 17, 0.63));
   border-radius: 15px;
 }
 
