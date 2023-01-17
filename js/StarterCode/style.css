@@ -99,13 +99,14 @@ nav {
     padding: 50px 25px 150px;
 }
 
-.logined {
-    width: 200px;
-    background-image: linear-gradient(to top right, #d36c71, #042877);
-    color: white;
-    padding: 15px 0 15px;
-}
 
+.welcomeUser{
+    width: auto;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 7px;
+    background: linear-gradient(to top left, rgb(102, 140, 225), rgb(213, 67, 74), rgb(208, 253, 5));
+}
 .balance {
     grid-column: 1 / span 2;
     display: flex;

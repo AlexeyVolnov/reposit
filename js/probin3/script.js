@@ -278,9 +278,46 @@ let getAverageHumanAge = arrayCat => {
 };
 
 
+const cats = [
+  { catWeight: 3, foodWeight: 20, owners: ['Наташа'] },
+  { catWeight: 6, foodWeight: 90, owners: ['Марина', 'Алиса'] },
+  { catWeight: 4, foodWeight: 45, owners: ['Алекс', 'Ирина'] },
+  { catWeight: 7, foodWeight: 80, owners: ['Борис'] }
+];
+
+function recomendPortion(catsArray) {
+  catsArray.forEach(cats => {
+    cats.recomendPortion = [cats.catWeight * 0.75 * 12];
+    cats.differenceFood = cats.foodWeight - cats.recomendPortion[0];
+    cats.recomendPortion.push(`Эта кошка ест ${cats.differenceFood > 0 ? 'больше' : 'меньше'} рекомендованной порции на ${Math.abs(cats.differenceFood)} гр`);
+  });
+}
 
 
 
-console.log(getAverageHumanAge([7, 3, 2, 4, 1, 15, 8, 1, 9, 2]));
 
-console.log(getAverageHumanAge([1, 16, 12, 4, 5, 1, 3, 11, 7, 2]));
+console.log(recomendPortion(cats));
+console.log(cats);
+
+console.log('----------2');
+console.log(cats.find(cat => cat.owners.includes('Алекс')));
+console.log(cats.find(cat => cat.owners.includes('Алекс')).recomendPortion);
+
+console.log('========');
+
+
+
+const catsEatTooMuchOwners = cats.filter(cat=>cat.differenceFood > 0);
+const catsEatTooLittleOwners = cats.filter(cat=>cat.differenceFood < 0);
+
+console.log(catsEatTooMuchOwners);
+console.log(catsEatTooLittleOwners);
+console.log('-------------');
+
+console.log(`
+  ${catsEatTooMuchOwners.flatMap(cat=>cat.owners)} хозяева кошек, которые едят слишком много!" и  
+  ${catsEatTooLittleOwners.flatMap(cat=>cat.owners)}  - хозяева кошек, которые едят слишком мало!"`);
+console.log('=============');
+console.log(cats);
+const cat1 = cats.slice().sort((x,y)=> x.recomendPortion[0] - y.recomendPortion[0]);
+console.log(cat1);
