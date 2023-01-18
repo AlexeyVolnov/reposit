@@ -170,24 +170,31 @@ function LogIn() {
     welcomeUser(account);
     addTransaction(account);
     displayTotal(account);
-
+    timeOutApp()
   }
 }
 
 function timeOutApp() {
-  labelTimer.innerHTML = new Intl.DateTimeFormat('ru-RU',{hour:'numeric',minute:'numeric',second:'numeric',}).format(new Date())
-  setInterval(()=>{
+  let time = 300;
+  const LogOutTimer = setInterval(()=>{
+    const minutes = String(Math.trunc(time / 60)).padStart(2,'0');
+    const seconds = String(time % 60).padStart(2,'0')
+    labelTimer.innerHTML = `Выход из приложения через ${minutes}:${seconds}`
 
+    if(time === 0){
+
+      location.reload()
+    }
+    time--
   },1000)
 
 }
-timeOutApp()
+
 function welcomeUser(account) {
   containerApp.style.opacity = '1';
   labelWelcome.classList.add('welcomeUser');
   formLogin.style.display = 'none';
   labelWelcome.textContent = `Welcome ${account.userName}`;
-
 }
 
 function addTransaction(account, sort = false) {
@@ -232,7 +239,7 @@ function displayTotal(account) {
 }
 
 function transferMoney() {
-
+  timeOutApp()
   const recipient = accounts.find(account => account.nickName === inputTransferTo.value || account.userName === inputTransferTo.value);
   const sender = logined;
   const senderBalance = sender.transactions.reduce((acc, trans) => acc + trans);
