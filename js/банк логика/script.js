@@ -219,10 +219,7 @@ function addTransaction(account, sort = false) {
         }).format(date)}`
         : new Intl.DateTimeFormat(account.locale || navigator.language, optionsDate).format(date)}</div>
       
-      <div class='transactions__value'>${new Intl.NumberFormat(account.locale, {
-      style: 'currency',
-      currency: account.currency
-    }).format(transaction)}</div>
+      <div class='transactions__value'>${new Intl.NumberFormat(account.locale, {style: 'currency',currency: account.currency}).format(transaction)}</div>
     </div>`;
     containerTransactions.insertAdjacentHTML('afterbegin', row);
   });
