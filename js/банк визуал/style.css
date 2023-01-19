@@ -671,3 +671,9 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+.btn--close-cookie{
+  border-radius: 15px;
+}
+.reded{
+  background-color: rgba(199, 6, 35, 0.66);
+}
