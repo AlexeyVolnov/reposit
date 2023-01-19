@@ -126,13 +126,13 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 const optionsDate = {
-  hour:'numeric',
-  minute:'numeric',
-  day:'2-digit',
+  hour: 'numeric',
+  minute: 'numeric',
+  day: '2-digit',
   month: 'long',
   year: 'numeric',
-  weekday:'long'
-}
+  weekday: 'long'
+};
 
 let logined = '';
 let sorted = true;
@@ -170,24 +170,23 @@ function LogIn() {
     welcomeUser(account);
     addTransaction(account);
     displayTotal(account);
-    timeOutApp()
+    timeOutApp();
   }
 }
 
 function timeOutApp() {
-  let time = 300;
-  const LogOutTimer = setInterval(()=>{
-    const minutes = String(Math.trunc(time / 60)).padStart(2,'0');
-    const seconds = String(time % 60).padStart(2,'0')
-    labelTimer.innerHTML = `Выход из приложения через ${minutes}:${seconds}`
+  let time = 1800;
+  const LogOutTimer = setInterval(() => {
+    const minutes = String(Math.trunc(time / 60)).padStart(2, '0');
+    const seconds = String(time % 60).padStart(2, '0');
+    labelTimer.innerHTML = `Выход из приложения через ${minutes}:${seconds}`;
+    if (time === 0) {
 
-    if(time === 0){
-
-      location.reload()
+      location.reload();
     }
-    time--
-  },1000)
 
+    time--;
+  }, 1000);
 }
 
 function welcomeUser(account) {
@@ -200,10 +199,10 @@ function welcomeUser(account) {
 function addTransaction(account, sort = false) {
   containerTransactions.innerHTML = '';
   const trans = sort ? account.transactions.slice().sort((x, y) => x - y) : account.transactions;
-  labelDate.innerHTML = new Intl.DateTimeFormat(account.locale||navigator.language,optionsDate).format(new Date())
+  labelDate.innerHTML = new Intl.DateTimeFormat(account.locale || navigator.language, optionsDate).format(new Date());
   trans.forEach((transaction, index) => {
     let date = new Date(account.transactionsDates[index]);
-    const dateDifference = new Date().getDate()-date.getDate()
+    const dateDifference = new Date().getDate() - date.getDate();
     const transType = transaction > 0 ? 'deposit' : 'withdrawal';
     const operationsName = transaction > 0 ? 'ДЕПОЗИТ' : 'ВЫВОД СРЕДСТВ';
 
@@ -214,10 +213,16 @@ function addTransaction(account, sort = false) {
       
       <div class='transactions__date'>${
       dateDifference === 0
-      ? `Сегодня в  + ${new Intl.DateTimeFormat(account.locale||navigator.language,{hour:'numeric',minute:'numeric'}).format(date)}`
-      : new Intl.DateTimeFormat(account.locale||navigator.language, optionsDate).format(date)}</div>
+        ? `Сегодня в  + ${new Intl.DateTimeFormat(account.locale || navigator.language, {
+          hour: 'numeric',
+          minute: 'numeric'
+        }).format(date)}`
+        : new Intl.DateTimeFormat(account.locale || navigator.language, optionsDate).format(date)}</div>
       
-      <div class='transactions__value'>${new Intl.NumberFormat(account.locale,{style:'currency',currency:account.currency}).format(transaction)}</div>
+      <div class='transactions__value'>${new Intl.NumberFormat(account.locale, {
+      style: 'currency',
+      currency: account.currency
+    }).format(transaction)}</div>
     </div>`;
     containerTransactions.insertAdjacentHTML('afterbegin', row);
   });
@@ -229,17 +234,18 @@ function updateUI(account) {
 }
 
 function displayTotal(account) {
-  function currencyFormat(formatted){
-    return new Intl.NumberFormat(account.locale,{style:'currency',currency:account.currency}).format(formatted)
+  function currencyFormat(formatted) {
+    return new Intl.NumberFormat(account.locale, { style: 'currency', currency: account.currency }).format(formatted);
   }
-  labelBalance.innerHTML = currencyFormat(account.transactions.reduce((acc, trans) => acc + trans))
-  labelSumIn.innerHTML = currencyFormat(account.transactions.filter(trans => trans > 0).reduce((acc, trans) => acc + trans))
-  labelSumInterest.innerHTML = currencyFormat(account.transactions.filter(trans => trans > 0).map(depos => (depos * account.interest) / 100).filter(item => item > 5).reduce((acc, depos) => acc + depos))
-  labelSumOut.innerHTML = currencyFormat(account.transactions.filter(trans => trans < 0).reduce((acc, trans) => acc + trans))
+
+  labelBalance.innerHTML = currencyFormat(account.transactions.reduce((acc, trans) => acc + trans));
+  labelSumIn.innerHTML = currencyFormat(account.transactions.filter(trans => trans > 0).reduce((acc, trans) => acc + trans));
+  labelSumInterest.innerHTML = currencyFormat(account.transactions.filter(trans => trans > 0).map(depos => (depos * account.interest) / 100).filter(item => item > 5).reduce((acc, depos) => acc + depos));
+  labelSumOut.innerHTML = currencyFormat(account.transactions.filter(trans => trans < 0).reduce((acc, trans) => acc + trans));
 }
 
 function transferMoney() {
-  timeOutApp()
+
   const recipient = accounts.find(account => account.nickName === inputTransferTo.value || account.userName === inputTransferTo.value);
   const sender = logined;
   const senderBalance = sender.transactions.reduce((acc, trans) => acc + trans);
@@ -251,7 +257,7 @@ function transferMoney() {
     && recipient) {
     sender?.transactions.push(-transferSum);
     recipient?.transactions.push(transferSum);
-    [sender,recipient].forEach(i=>i.transactionsDates.push(new Date().toISOString()))
+    [sender, recipient].forEach(i => i.transactionsDates.push(new Date().toISOString()));
 
     updateUI(sender);
   } else {
@@ -285,7 +291,7 @@ function loanRequest() {
   const maxTransactions = logined.transactions.some(trans => trans > MaxLoanAmount);
   if (maxTransactions) {
     logined.transactions.push(Math.round(inputLoanAmount.value));
-    logined.transactionsDates.push(new Date().toISOString())
+    logined.transactionsDates.push(new Date().toISOString());
     updateUI(logined);
     inputLoanAmount.value = '';
   } else {
