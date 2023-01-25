@@ -654,12 +654,17 @@ h4 {
   border: none;
   background: none;
 }
-
+.nav__link{
+  border-radius: 5px;
+  padding: 5px 10px;
+}
 .hidden {
   visibility: hidden;
   opacity: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Cookie message */
 .cookie-message {
   display: flex;

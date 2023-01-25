@@ -43,8 +43,78 @@ message.classList.add('cookie-message')
 message.innerHTML = `Мы используем на этом сайте cookie для улучшения функциональности. <button class='btn btn--close-cookie'>ОК!</button>`
 
 document.querySelector('.header').before(message)
-message.querySelector('.btn--close-cookie').addEventListener('click', function () {
-        message.remove()
-    })
+message.querySelector('.btn--close-cookie').addEventListener('click', function (e) {
+    message.remove()
+})
 message.style.height = Number.parseFloat(getComputedStyle(message).height) + 50 + 'px';
 document.documentElement.style.setProperty('--color-first', 'rgba(79,40,218,0.46)')
+
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+// плавный скрол до элемента
+/*// старый метод скрола к элементу
+btnScrollTo.addEventListener('click', function (evt) {
+    const section1Coords = section1.getBoundingClientRect();
+
+    evt.preventDefault()
+    window.scrollTo({
+        left: section1Coords.left + window.pageXOffset,
+        top: section1Coords.y + window.pageYOffset,
+        behavior:'smooth'});
+
+    section1.scrollIntoView({behavior: 'smooth'})
+})*/
+
+
+//////скрол
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target.classList.contains('nav__link') && !e.target.classList.contains('btn')) {
+        const href = e.target.getAttribute('href');
+        document.querySelector(`${href}`).scrollIntoView({behavior: 'smooth'})
+    }
+})
+// переключение вкладок
+//первый вариант
+/*
+const buttonTab = document.querySelectorAll('.operations__tab')
+buttonTab.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        const tab = e.target.getAttribute('data-tab');
+        const contentTab = document.querySelector(`.operations__content--${tab}`);
+        document.querySelectorAll('.operations__content').forEach(child=>child.classList.remove('operations__content--active'))
+        contentTab.classList.add('operations__content--active');
+
+    })
+})
+
+*/
+
+
+/*
+const container = document.querySelector('.operations__tab-container');
+const buttons = document.querySelectorAll('.operations__tab');
+const content = document.querySelectorAll('.operations__content');
+container.addEventListener('click',function (e){
+   const index =  +e.target.closest('.operations__tab').getAttribute('data-tab')
+    content.forEach(c=>c.classList.remove('operations__tab--active'))
+    content[index-1].classList.add('operations__tab--active')
+    console.log(content)
+})
+*/
+
+const tabContainer = document.querySelector('.operations__tab-container');
+const contentBlock = document.querySelectorAll('.operations__content')
+const buttons = document.querySelectorAll('.operations__tab');
+
+tabContainer.addEventListener('click', function (e) {
+    const clickedButton = e.target.closest('.operations__tab');
+    if (!clickedButton) {return}
+    buttons.forEach(btn=>btn.classList.remove('operations__tab--active'))
+    contentBlock.forEach(block => block.classList.remove('operations__content--active'));
+
+    const numberBtn = +clickedButton.getAttribute('data-tab')
+
+    document.querySelector(`.operations__content--${numberBtn}`).classList.add('operations__content--active')
+    document.querySelector(`.operations__tab--${numberBtn}`).classList.add('operations__tab--active')
+})
