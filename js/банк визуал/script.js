@@ -224,8 +224,6 @@ const lazyImagesObserver = new IntersectionObserver(lazyLoading, {root: null, th
 lazyLoadingImg.forEach(img => lazyImagesObserver.observe(img))
 
 
-
-
 //Slider
 const sliderContainer = document.querySelector('.slider')
 const sliderItems = document.querySelectorAll('.slide');
