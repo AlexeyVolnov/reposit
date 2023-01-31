@@ -15,8 +15,13 @@ const sections = document.querySelectorAll('.section');
 const section2 = document.querySelector('#section--2');
 const section3 = document.querySelector('#section--3');
 
+const sliderContainer = document.querySelector('.slider')
+const sliderItems = document.querySelectorAll('.slide');
+const sliderLeftBtn = document.querySelector('.slider__btn--left')
+const sliderRightBtn = document.querySelector('.slider__btn--right')
+const sliderDots = document.querySelector('.dots');
 
-const btnsOpenModalWindow = document.querySelectorAll('.btn--show-modal-window');
+const btnOpenModalWindow = document.querySelectorAll('.btn--show-modal-window');
 
 const openModalWindow = function (e) {
     e.preventDefault()
@@ -29,7 +34,7 @@ const closeModalWindow = function () {
     overlay.classList.add('hidden');
 };
 
-btnsOpenModalWindow.forEach((button) => {
+btnOpenModalWindow.forEach((button) => {
     button.addEventListener('click', openModalWindow);
 })
 
@@ -225,19 +230,59 @@ lazyLoadingImg.forEach(img => lazyImagesObserver.observe(img))
 
 
 //Slider
-const sliderContainer = document.querySelector('.slider')
-const sliderItems = document.querySelectorAll('.slide');
-const sliderLeftBtn = document.querySelector('.slider__btn--left')
-const sliderRightBtn = document.querySelector('.slider__btn--right')
-sliderItems.forEach((item,index)=>{
-    if(index !== 0){
-        item.style.display = 'none'
-    }
-})
-sliderContainer.addEventListener('click',function (e){
 
-    if(e.target.classList.contains('slider__btn--left')){
-        e.target.classList.style.display = 'none';
-        e.target.nextSibling.style.display = 'block'
+sliderItems.forEach((slide, index) => {
+    slide.style.transform = `TranslateX(${index * 100}%)`;
+})
+let currentSliderNumber = 0;
+const sliderNumber = sliderItems.length - 1
+
+const leftSliderMove = function () {
+    currentSliderNumber === 0
+        ? currentSliderNumber = sliderNumber
+        : currentSliderNumber--;
+    moveToSlide(currentSliderNumber)
+    dotsMove()
+}
+const rightSliderMove = function () {
+    currentSliderNumber === sliderNumber
+        ? currentSliderNumber = 0
+        : currentSliderNumber++;
+    moveToSlide(currentSliderNumber)
+    dotsMove()
+}
+const moveToSlide = function (currentSlide) {
+    sliderItems.forEach((slide, index) => {
+        slide.style.transform = `TranslateX(${(index - currentSlide) * 100}%)`;
+    })
+    dotsMove()
+}
+sliderItems.forEach((item, index) => {
+    const dotsBtn = `<button class="dots__dot" data-tab="${index + 1}"></button>`
+    sliderDots.insertAdjacentHTML('beforeend', dotsBtn)
+})
+
+const dots = document.querySelectorAll('.dots__dot')
+dots[currentSliderNumber].classList.add('dots__dot--active')
+
+function dotsMove() {
+    dots.forEach(dot => {
+        dot.classList.remove('dots__dot--active')
+    })
+    dots[currentSliderNumber].classList.add('dots__dot--active')
+}
+
+
+sliderLeftBtn.addEventListener('click', leftSliderMove)
+sliderRightBtn.addEventListener('click', rightSliderMove)
+document.addEventListener('keydown', function (e) {
+    if (e.key === "ArrowLeft") leftSliderMove()
+    if (e.key === "ArrowRight") rightSliderMove()
+})
+sliderDots.addEventListener('click', function (e) {
+    if (e.target.closest('.dots__dot')) {
+        const activeDots = +e.target.getAttribute('data-tab')
+        currentSliderNumber = activeDots - 1
+        moveToSlide(currentSliderNumber)
     }
 })
