@@ -286,3 +286,37 @@ sliderDots.addEventListener('click', function (e) {
         moveToSlide(currentSliderNumber)
     }
 })
+
+
+
+////////////////////
+
+
+class Person {
+    constructor(firstName,lastName,age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    hello(){
+        console.log(`Hello i'm ${this.firstName} ${this.lastName} my ${this.age} years`)
+    }
+}
+
+
+const user1 = new Person('Alexey','Volnov',28);
+const user2 = new Person('Tatiana','Volnova',27);
+
+user1.hello()
+user2.hello()
+console.log(Object.getPrototypeOf(user2))
+console.log(Person.prototype)
+
+
+
+
+
+
+
+
+

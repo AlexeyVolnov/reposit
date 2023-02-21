@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
+      <change afterPath="$PROJECT_DIR$/../tesla-2/.sass-cache/da65be99a020ee9e38df6f8ef17f05a0a7d8e163/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/css/.sass-cache/5f7594dd3d3f25d7facd5f87d36eef491b5c9e84/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/css/.sass-cache/a1378b3b4b3287fd813be89b70af731ffe043f33/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/product-nav/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/advantage__img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/spec-card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/spec-img-full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/speed-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tesla/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HIMO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HIMO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/style/.sass-cache/cfeabb9be9146b2d6630f27dca0b25364d9c5114/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк визуал/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк визуал/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк визуал/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/банк логика/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк логика/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +69,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\s079902\Desktop\reposit\HIMO\sources\order" />
@@ -90,6 +111,10 @@
       <workItem from="1662607103387" duration="2475000" />
       <workItem from="1662612167720" duration="25000" />
       <workItem from="1662615237787" duration="853000" />
+      <workItem from="1676284469090" duration="120000" />
+      <workItem from="1676459791100" duration="591000" />
+      <workItem from="1676460406775" duration="39000" />
+      <workItem from="1676971043310" duration="142000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>
