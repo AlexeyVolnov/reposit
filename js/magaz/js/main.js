@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict'
 // slider
 $(function () {
@@ -99,31 +98,3 @@ liveProduct.forEach(prod => {
 //////////////////////////////
 
 
-class Account {
-    locale = navigator.language;
-    #transactions = [100, 200];
-    #pin
-
-    constructor(userName, pin, currency) {
-        this.userName = userName;
-        this.#pin = pin;
-        this.currency = currency;
-    }
-
-    get Trans() {
-
-        console.log(this.#transactions)
-
-    }
-
-    static sub = 12;
-}
-
-const user1 = new Account('11', 'Fred Jonson', 2323, 'RUB');
-
-
-=======
-$(function(){
->>>>>>> parent of 6502f5b (23)
-
-});
