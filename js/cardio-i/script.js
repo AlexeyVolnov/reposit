@@ -6,9 +6,9 @@ const containerWorkouts = document.querySelector('.workouts');
 const inputType = document.querySelector('.form__input--type');
 const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
-const inputCadence = document.querySelector('.form__input--temp');
-const inputElevation = document.querySelector('.form__input--climb');
-let map;
+const inputTemp = document.querySelector('.form__input--temp');
+const inputClimb = document.querySelector('.form__input--climb');
+let map,mapEvent;
 let coords;
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
@@ -23,31 +23,39 @@ if (navigator.geolocation) {
                         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
                 }
             ).addTo(map);
+            map.on('click', function (e) {
+                mapEvent = e
+                form.classList.remove('hidden');
+                inputDistance.focus()
+            })
         },
         function () {
             console.log('Включите доступ к местоположению')
         })
 }
 
-let formInfo = null;
-form.addEventListener('submit',function (){
-    map.on('click', function (e) {
-        const {lat, lng} = e.latlng;
-        L.marker([lat, lng])
-            .addTo(map)
-            .bindPopup(L.popup({
+form.addEventListener('submit',function (e){
+e.preventDefault();
+    const {lat, lng} = mapEvent.latlng;
+    L.marker([lat, lng])
+        .addTo(map)
+        .bindPopup(L.popup(
+            {
                 maxWidth: 350,
                 autoClose: false,
                 closeOnClick: false,
                 className: 'running-popup',
-
             }))
-            .setPopupContent('dsfa')
-            .openPopup();
-
-        form.classList.remove('hidden');
-        inputDistance.focus()
+        .setPopupContent('dsfa')
+        .openPopup();
+    form.querySelectorAll(`.form__input:not(.form__input--type)`).forEach(input=>{
+        input.value = ''
     })
+    form.classList.add('hidden')
 })
 
-console.log(formInfo)
+
+inputType.addEventListener('change',function (){
+    inputClimb.closest('.form__row').classList.toggle('form__row--hidden');
+    inputTemp.closest('.form__row').classList.toggle('form__row--hidden')
+})

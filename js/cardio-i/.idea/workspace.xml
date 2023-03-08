@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="194946d9-e3a0-4188-9adf-6dd6227bc2b9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../magaz/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../magaz/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../magaz/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../magaz/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../magaz/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../magaz/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../magaz/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../magaz/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../magaz/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../magaz/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +61,7 @@
       <workItem from="1677928580333" duration="22969000" />
       <workItem from="1678024251520" duration="1273000" />
       <workItem from="1678097906267" duration="2845000" />
+      <workItem from="1678140755549" duration="6399000" />
     </task>
     <servers />
   </component>
