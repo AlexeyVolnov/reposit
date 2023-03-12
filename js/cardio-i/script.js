@@ -59,3 +59,27 @@ inputType.addEventListener('change',function (){
     inputClimb.closest('.form__row').classList.toggle('form__row--hidden');
     inputTemp.closest('.form__row').classList.toggle('form__row--hidden')
 })
+
+
+class Person {
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    hello(){
+        console.log(this.name)
+    }
+}
+
+
+class Student extends Person{
+    constructor(name,age) {
+        super(dept);
+
+    }
+
+}
+
+const user = new Student('alex',28,'programm');
+console.log(user)
+
