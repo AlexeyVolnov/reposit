@@ -14,8 +14,8 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
         function (position) {
             let {longitude, latitude} = position.coords;
-            coords = [latitude, longitude]
-            map = L.map('map').setView(coords, 14);
+            
+            map = L.map('map').setView([latitude,longitude], 14);
             L.tileLayer(
                 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                 {
@@ -61,25 +61,5 @@ inputType.addEventListener('change',function (){
 })
 
 
-class Person {
-    constructor(name,age) {
-        this.name = name;
-        this.age = age;
-    }
-    hello(){
-        console.log(this.name)
-    }
-}
 
-
-class Student extends Person{
-    constructor(name,age) {
-        super(dept);
-
-    }
-
-}
-
-const user = new Student('alex',28,'programm');
-console.log(user)
 
