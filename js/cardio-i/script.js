@@ -9,7 +9,6 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputTemp = document.querySelector('.form__input--temp');
 const inputClimb = document.querySelector('.form__input--climb');
 let map,mapEvent;
-let coords;
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
         function (position) {
