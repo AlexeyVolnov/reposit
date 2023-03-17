@@ -60,25 +60,25 @@ class App {
         const duration = +inputDuration.value;
         const type = inputType.value
         const distance = +inputDistance.value
-        const checkNumbers = (...numbers)=>{numbers.every(number=>{Number.isFinite(number)})}
-        const checkNumbersPositive = (...numbers)=>{numbers.every(number=>{
-            number>0
-        })}
+        const checkNumbers = (...numbers)=>numbers.every(number=>Number.isFinite(number))
+        const checkNumbersPositive = (...numbers)=>numbers.every(number=>number>0)
 
 
 
         //clearing input fields
         const formFieldsNotType = form.querySelectorAll(`.form__input:not(.form__input--type)`)
 
-        form.classList.add('hidden')
+
 
 
         //  if the workout is a run create object Running
         if (type === 'running') {
             //data validity check
             const temp = +inputTemp.value;
-             if(!checkNumbers(duration,distance,temp)|| !checkNumbersPositive(duration,distance,temp)){
-                alert('Введите положительное число')
+
+             if(!checkNumbers(duration,distance,temp) || !checkNumbersPositive(duration,distance,temp)){
+             alert('Введите положительное число')
+                 console.log(duration,distance,temp)
             }
         }
         // if the workout is a cycling create object Cycling
@@ -86,7 +86,7 @@ class App {
             const climb = +inputClimb.value;
             //data validity check
             if(!checkNumbers(duration,distance,climb) || !checkNumbersPositive(duration,distance)){
-                alert('Введите положительное число')
+              alert('Введите положительное число')
             }
         }
         //add new Object in a workout Array
@@ -98,6 +98,7 @@ class App {
         formFieldsNotType.forEach(input => {
             input.value = ''
         })
+        form.classList.add('hidden')
         const {lat, lng} = this.#mapEvent.latlng;
         L.marker([lat, lng])
             .addTo(this.#map)
@@ -111,6 +112,7 @@ class App {
             .setPopupContent('dsfa')
             .openPopup();
     }
+
 }
 
 
