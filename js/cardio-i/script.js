@@ -8,18 +8,21 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputTemp = document.querySelector('.form__input--temp');
 const inputClimb = document.querySelector('.form__input--climb');
-
-
+const workoutHint = document.querySelector('.workout-hint')
+const resetWorkouts = document.querySelector('.setting-reset-workouts')
 class App {
     #map;
     #mapEvent;
     #workouts = []
 
     constructor() {
-
         this._getPosition();
+        this._localStorageData()
+        this._hintToAddWorkout()
         form.addEventListener('submit', this._newWorkout.bind(this))
         inputType.addEventListener('change', this._toggleClimbField)
+        containerWorkouts.addEventListener('click', this._moveToWorkout.bind(this))
+        resetWorkouts.addEventListener('click',this.reset.bind(this))
     }
 
     _getPosition() {
@@ -43,9 +46,11 @@ class App {
             }
         ).addTo(this.#map);
         this.#map.on('click', this._showForm.bind(this))
+        this.#workouts.forEach(workout=>this._displayWorkout(workout))
     };
 
     _showForm(e) {
+        workoutHint.classList.add('hidden')
         form.classList.remove('hidden');
         this.#mapEvent = e
         inputDistance.focus()
@@ -68,8 +73,6 @@ class App {
         const {lat, lng} = this.#mapEvent.latlng;
         let workout;
 
-        //clearing input fields
-
 
         //  if the workout is a run create object
         if (type === 'running') {
@@ -77,9 +80,9 @@ class App {
             const temp = +inputTemp.value;
             if (!checkNumbers(duration, distance, temp) || !checkNumbersPositive(duration, distance, temp)) {
                 alert('Введите положительное число')
-                console.log(duration, distance, temp)
+                return;
             }
-            workout = new Cycling(distance, duration, [lat, lng], temp)
+            workout = new Running(distance, duration, [lat, lng], temp)
 
 
         }
@@ -88,12 +91,14 @@ class App {
             //data validity check
             if (!checkNumbers(duration, distance, climb) || !checkNumbersPositive(duration, distance)) {
                 alert('Введите положительное число')
+                return
             }
-            workout = new Running(distance, duration, [lat, lng], climb)
+            workout = new Cycling(distance, duration, [lat, lng], climb)
 
         }
         //add new Object in a workout Array
         this.#workouts.push(workout)
+        this._saveToLocalStorage()
         // display the workout on the map
 
         // display the workout in the list
@@ -101,9 +106,11 @@ class App {
             input.value = ''
         })
         form.classList.add('hidden')
+        
         this._displayWorkout(workout)
     };
-    _displayWorkout(workout){
+
+    _displayWorkout(workout) {
         L.marker(workout.coords)
             .addTo(this.#map)
             .bindPopup(L.popup(
@@ -113,14 +120,75 @@ class App {
                     closeOnClick: false,
                     className: `${workout.type}-popup`,
                 }))
-            .setPopupContent('dsfa')
+            .setPopupContent(`${workout.type === 'running' ? '🏃 Пробежка' : '🚵‍♂️ Велотренировка'} ${workout.date}`)
             .openPopup();
+
+        this._addWorkoutOnSideBar(workout)
     }
+
+    _addWorkoutOnSideBar(workout) {
+        const html = `
+      <li class="workout workout--${workout.type}" data-id="${workout.id}">
+        <h2 class="workout__title">${workout.type === 'running' ? 'Пробежка' : 'Велотренировка'} ${workout.date}</h2>
+        <div class="workout__details">
+          <span class="workout__icon">${workout.type === 'running' ? '🏃' : '🚵‍♂️'}</span>
+          <span class="workout__value">${workout.distance}</span>
+          <span class="workout__unit">км</span>
+        </div>
+        <div class="workout__details">
+          <span class="workout__icon">⏱</span>
+          <span class="workout__value">${workout.duration}</span>
+          <span class="workout__unit">мин</span>
+        </div>
+        <div class="workout__details">
+          <span class="workout__icon">📏⏱</span>
+          <span class="workout__value">${workout.type === 'running' ? workout.pace.toFixed(2) : workout.speed.toFixed(2)}</span>
+          <span class="workout__unit">${workout.type === 'running' ? 'мин/км' : 'км/ч'}</span>
+        </div>
+        <div class="workout__details">
+        
+          <span class="workout__icon">${workout.type === 'running' ? '👟⏱' : '🏔'}</span>
+          <span class="workout__value">${workout.temp || workout.climb}</span>
+          <span class="workout__unit">${workout.type === 'running' ? 'шаг/мин' : 'м'}</span>
+        </div>
+      </li>`;
+        containerWorkouts.insertAdjacentHTML('beforeend', html);
+    }
+
+    _moveToWorkout(e) {
+        const workoutElement = e.target.closest('.workout')
+        if (!workoutElement) return
+        const workout = this.#workouts.find(item => item.id === +workoutElement.getAttribute('data-id'))
+        this.#map.setView(workout.coords, 17, {animate: true, pan: {duration: 1}})
+
+        
+    }
+
+    _saveToLocalStorage(){
+     localStorage.setItem('workouts',JSON.stringify(this.#workouts))
+    }
+
+    _hintToAddWorkout() {
+        if (this.#workouts.length === 0) {
+            workoutHint.classList.remove('hidden')
+        }
+    }
+
+    _localStorageData(){
+       const data =  JSON.parse(localStorage.getItem('workouts'))
+        if(!data)return;
+        this.#workouts = data;
+    }
+
+    reset(){
+        localStorage.removeItem('workouts')
+        location.reload()
+    }
+    
 }
 
-
 class Workout {
-    date = new Date();
+    date = this._date
     id = Date.now();
 
     constructor(distance, duration, coords) {
@@ -129,10 +197,20 @@ class Workout {
         this.coords = coords;
     }
 
+    get _date() {
+        const dateFormat = new Intl.DateTimeFormat(navigator.language, {
+            day: 'numeric',
+            month: 'numeric',
+            year: 'numeric'
+        });
+        return dateFormat.format(new Date());
+    }
+
 }
 
 class Running extends Workout {
     type = 'running'
+
     constructor(distance, duration, coords, temp) {
         super(distance, duration, coords);
         this.temp = temp;
@@ -147,6 +225,7 @@ class Running extends Workout {
 
 class Cycling extends Workout {
     type = 'cycling'
+
     constructor(distance, duration, coords, climb) {
         super(distance, duration, coords);
         this.climb = climb;

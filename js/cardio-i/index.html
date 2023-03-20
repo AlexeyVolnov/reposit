@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="/icon.png" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="shortcut icon" type="image/png" href="/icon.png"/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link
      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
      rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="maps/maps.css">
   <script defer src="settings/setting.js"></script>
   <script defer src="example.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  <link
+     rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
      crossorigin=""
   />
-  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  <script
+     defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
      crossorigin=""
   ></script>
@@ -31,7 +33,7 @@
 <body>
 <div class="wrapper">
   <div class="sidebar">
-    <img src="icon.png" alt="icon" class="icon"/>
+    <img class="icon" src="icon.png" alt="icon"/>
 
     <ul class="workouts">
       <form class="form hidden">
@@ -69,8 +71,8 @@
         </div>
         <button class="form__btn">OK</button>
       </form>
-
-      <li class="workout workout--running" data-id="1234567890">
+      <li class="workout-hint hidden">Нажмите на карте чтобы добавить новую тренировку</li>
+      <!-- <li class="workout workout&#45;&#45;running" data-id="1234567890">
         <h2 class="workout__title">Пробежка 15.05.2021</h2>
         <div class="workout__details">
           <span class="workout__icon">🏃</span>
@@ -85,7 +87,7 @@
         <div class="workout__details">
           <span class="workout__icon">📏⏱</span>
           <span class="workout__value">238</span>
-          <span class="workout__unit">м/мин</span>
+          <span class="workout__unit">мин/км</span>
         </div>
         <div class="workout__details">
           <span class="workout__icon">👟⏱</span>
@@ -94,7 +96,7 @@
         </div>
       </li>
 
-      <li class="workout workout--cycling" data-id="1234567891">
+      <li class="workout workout&#45;&#45;cycling" data-id="1234567891">
         <h2 class="workout__title">Велотренировка 07.05.2021</h2>
         <div class="workout__details">
           <span class="workout__icon">🚵‍♂️</span>
@@ -117,6 +119,7 @@
           <span class="workout__unit">м</span>
         </div>
       </li>
+     -->
     </ul>
     <div class="setting">
       <div class="setting__icon">
@@ -125,8 +128,8 @@
         <span class="icon-line"></span>
       </div>
       <ul class="setting-list">
-        <li class="setting-item setting-maps">Сменить вид карты </li>
-
+        <li class="setting-item setting-maps">Сменить вид карты</li>
+        <li class="setting-item setting-reset-workouts">Очистить все тренировки</li>
       </ul>
     </div>
 

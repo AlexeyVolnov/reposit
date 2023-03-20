@@ -113,7 +113,7 @@ a:visited {
 .sidebar {
   flex-basis: clamp(350px, 50vw, 700px);
   background-color: var(--color-dark--1);
-  padding: 5rem 2rem 1rem 5rem;
+  padding: 5rem 2rem 1rem 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -183,7 +183,15 @@ a:visited {
   text-transform: uppercase;
   font-weight: 800;
 }
-
+.workout-hint{
+  background-color: var(--color-dark--2);
+  padding: 50px;
+  font-size: clamp(14px,1.1vw,26px);
+  border-radius: 15px;
+}
+.hidden{
+  display: none;
+}
 .form {
   background-color: var(--color-dark--2);
   border-radius: 5px;
@@ -310,14 +318,16 @@ a:visited {
   width: 80%;
   height: 2px;
 }
-
+.setting-item{
+  cursor: pointer;
+}
 .setting-list{
   display: none;
 }
 .setting--active .setting-list {
   display: flex;
   position: absolute;
-  background-color: rgba(227, 225, 225, 0.94);
+  background-color: var(--color-dark--2);
   right: 50%;
   top: 20px;
   left: 20px;
@@ -326,7 +336,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   padding: 100px 20px ;
-  color: #0a151d;
+  color: #e0ecf3;
   font-size: clamp(16px,5vw,28px);
   max-width: 678px;
 
@@ -335,9 +345,7 @@ a:visited {
   display: inline-block;
 
 }
-.setting--active .icon-line{
-  background-color: #0a151d;
-}
+
 @media screen and (max-width: 1352px){
   .workout {
     background-color: var(--color-dark--2);
