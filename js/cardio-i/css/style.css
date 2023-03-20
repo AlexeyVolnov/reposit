@@ -98,7 +98,6 @@ html {
   height: 100vh;
   overscroll-behavior-y: none;
   background-color: #fff;
-  padding: 2rem;
   display: flex;
   position: relative;
 }
