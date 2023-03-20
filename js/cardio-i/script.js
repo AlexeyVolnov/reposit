@@ -10,11 +10,37 @@ const inputTemp = document.querySelector('.form__input--temp');
 const inputClimb = document.querySelector('.form__input--climb');
 const workoutHint = document.querySelector('.workout-hint')
 const resetWorkouts = document.querySelector('.setting-reset-workouts')
+const changeMaps = document.querySelector('.setting-maps')
+
 class App {
     #map;
     #mapEvent;
     #workouts = []
-
+    maps = [
+        {
+            link: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+            copyright: {
+                attribution:
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            }
+        },
+        {
+            link: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+            copyright: {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }
+        },
+        {
+            link: 'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
+            copyright: {
+                maxZoom: 20,
+                attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            }
+        }
+    ]
+    indexMap = +JSON.parse(localStorage.getItem('indexMap')) || 0
     constructor() {
         this._getPosition();
         this._localStorageData()
@@ -22,7 +48,8 @@ class App {
         form.addEventListener('submit', this._newWorkout.bind(this))
         inputType.addEventListener('change', this._toggleClimbField)
         containerWorkouts.addEventListener('click', this._moveToWorkout.bind(this))
-        resetWorkouts.addEventListener('click',this.reset.bind(this))
+        resetWorkouts.addEventListener('click', this.reset.bind(this))
+        changeMaps.addEventListener('click', this.changeMapsView.bind(this))
     }
 
     _getPosition() {
@@ -38,15 +65,9 @@ class App {
     _loadMap(position) {
         let {longitude, latitude} = position.coords;
         this.#map = L.map('map').setView([latitude, longitude], 14);
-        L.tileLayer(
-            'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-            {
-                attribution:
-                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }
-        ).addTo(this.#map);
+        L.tileLayer(this.maps[this.indexMap].link, this.maps[this.indexMap].copyright).addTo(this.#map);
         this.#map.on('click', this._showForm.bind(this))
-        this.#workouts.forEach(workout=>this._displayWorkout(workout))
+        this.#workouts.forEach(workout => this._displayWorkout(workout))
     };
 
     _showForm(e) {
@@ -106,7 +127,7 @@ class App {
             input.value = ''
         })
         form.classList.add('hidden')
-        
+
         this._displayWorkout(workout)
     };
 
@@ -161,11 +182,11 @@ class App {
         const workout = this.#workouts.find(item => item.id === +workoutElement.getAttribute('data-id'))
         this.#map.setView(workout.coords, 17, {animate: true, pan: {duration: 1}})
 
-        
+
     }
 
-    _saveToLocalStorage(){
-     localStorage.setItem('workouts',JSON.stringify(this.#workouts))
+    _saveToLocalStorage() {
+        localStorage.setItem('workouts', JSON.stringify(this.#workouts))
     }
 
     _hintToAddWorkout() {
@@ -174,17 +195,22 @@ class App {
         }
     }
 
-    _localStorageData(){
-       const data =  JSON.parse(localStorage.getItem('workouts'))
-        if(!data)return;
+    _localStorageData() {
+        const data = JSON.parse(localStorage.getItem('workouts'))
+        if (!data) return;
         this.#workouts = data;
     }
 
-    reset(){
-        localStorage.removeItem('workouts')
+    reset() {
+        localStorage.removeItem('workouts');
         location.reload()
     }
-    
+
+    changeMapsView() {
+        this.indexMap === this.maps.length-1?this.indexMap = 0:++this.indexMap
+        localStorage.setItem('indexMap',JSON.stringify(this.indexMap))
+        location.reload()
+    }
 }
 
 class Workout {
