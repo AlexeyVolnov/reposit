@@ -115,6 +115,7 @@ a:visited {
   padding: 5rem 2rem 1rem 3rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .icon {
@@ -297,9 +298,39 @@ a:visited {
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
 }
+.notification{
+  position: absolute;
+  background-color: white;
+  color: #0a151d;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 2px;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  box-shadow: #4f4949 -2px 2px 11px;
+  font-family: "Segoe UI" sans-serif;
+  z-index: 99;
+  left: 20%;
+  right: 20%;
+transform: translateX(-50%);
 
 
-
+}
+.workout{
+  position: relative;
+}
+.delete-workout{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: clamp(12px,1vw,16px);
+  outline: none;
+  background: inherit;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 .setting__icon {
   width: 40px;
   height: 50px;
@@ -324,10 +355,10 @@ a:visited {
   display: none;
 }
 .setting--active .setting-list {
-  display: flex;
   position: absolute;
+  display: flex;
   background-color: var(--color-dark--2);
-  right: 50%;
+  right: 20%;
   top: 20px;
   left: 20px;
   bottom: 60%;
@@ -357,6 +388,7 @@ a:visited {
     grid-template-columns: repeat(2,1fr);
     gap: 0.75rem 1.5rem;
   }
+
 }
 @media screen and (max-width: 990px) {
   .wrapper {
@@ -373,6 +405,9 @@ a:visited {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .setting--active .setting-list {
+    bottom: 30%;
   }
   #map{
     border: 20px solid #0a151d;

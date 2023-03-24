@@ -12,6 +12,7 @@ const workoutHint = document.querySelector('.workout-hint')
 const resetWorkouts = document.querySelector('.setting-reset-workouts')
 const changeMaps = document.querySelector('.setting-maps')
 
+
 class App {
     #map;
     #mapEvent;
@@ -41,6 +42,7 @@ class App {
         }
     ]
     indexMap = +JSON.parse(localStorage.getItem('indexMap')) || 0
+
     constructor() {
         this._getPosition();
         this._localStorageData()
@@ -50,6 +52,7 @@ class App {
         containerWorkouts.addEventListener('click', this._moveToWorkout.bind(this))
         resetWorkouts.addEventListener('click', this.reset.bind(this))
         changeMaps.addEventListener('click', this.changeMapsView.bind(this))
+
     }
 
     _getPosition() {
@@ -100,7 +103,7 @@ class App {
             //data validity check
             const temp = +inputTemp.value;
             if (!checkNumbers(duration, distance, temp) || !checkNumbersPositive(duration, distance, temp)) {
-                alert('Введите положительное число')
+                this.notification()
                 return;
             }
             workout = new Running(distance, duration, [lat, lng], temp)
@@ -111,7 +114,7 @@ class App {
             const climb = +inputClimb.value;
             //data validity check
             if (!checkNumbers(duration, distance, climb) || !checkNumbersPositive(duration, distance)) {
-                alert('Введите положительное число')
+                this.notification()
                 return
             }
             workout = new Cycling(distance, duration, [lat, lng], climb)
@@ -172,6 +175,7 @@ class App {
           <span class="workout__value">${workout.temp || workout.climb}</span>
           <span class="workout__unit">${workout.type === 'running' ? 'шаг/мин' : 'м'}</span>
         </div>
+        <button class="delete-workout">X</button>
       </li>`;
         containerWorkouts.insertAdjacentHTML('beforeend', html);
     }
@@ -207,9 +211,23 @@ class App {
     }
 
     changeMapsView() {
-        this.indexMap === this.maps.length-1?this.indexMap = 0:++this.indexMap
-        localStorage.setItem('indexMap',JSON.stringify(this.indexMap))
+        this.indexMap === this.maps.length - 1 ? this.indexMap = 0 : ++this.indexMap
+        localStorage.setItem('indexMap', JSON.stringify(this.indexMap))
         location.reload()
+    }
+
+    notification() {
+        const fieldWithAnError = document.querySelector(':focus').closest('.form__row')
+        fieldWithAnError.style.position = 'relative'
+        const errorNotification = `<p class="notification">Введите число</p>`
+        fieldWithAnError.insertAdjacentHTML('afterbegin', errorNotification)
+        setTimeout(function () {
+            fieldWithAnError.querySelector('.notification').remove()
+        }, 1500)
+    }
+
+    deleteOneWorkout() {
+
     }
 }
 
@@ -264,3 +282,19 @@ class Cycling extends Workout {
 }
 
 const app = new App()
+
+
+
+const request = new XMLHttpRequest()
+
+request.open('GET','https://restcountries.com/v3.1/name/Russia')
+
+request.send()
+
+request.addEventListener('load',function (){
+    const [data] = JSON.parse(this.responseText)
+    console.log(data)
+    
+ 
+})
+
