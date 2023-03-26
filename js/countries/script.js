@@ -2,7 +2,7 @@
 
 const countries = document.querySelector('.countries');
 const menuCountries = document.querySelector('.menu-countries');
-const search = document.querySelector('#menu-search');
+
 let allCountries = [];
 
 
