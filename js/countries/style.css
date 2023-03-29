@@ -24,8 +24,41 @@ body {
   overflow-y: auto;
   background-color: white;
   font-size: 16px;
-  padding: 15px;
+  padding: 20px 15px;
   position: relative;
+}
+.geo-text{
+  text-align: center;
+}
+
+.coords{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 5px;
+
+}
+.input-coords,#input-btn{
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(217, 215, 215, 0.67);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.23),
+              -1px -1px 3px rgba(0, 0, 0, 0.12);
+  margin-bottom: 5px;
+width: 100%;
+  
+}
+#input-btn{
+  cursor: pointer;
+  transition: all .1s;
+}
+#input-btn:hover{
+  box-shadow: 2px 2px 5px rgba(136, 134, 134, 0.46),
+  -3px -3px 5px rgba(250, 248, 248, 0.63);
+transition: all .1s;
+
 }
 .container {
   display: grid;
