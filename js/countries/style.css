@@ -1,182 +1,198 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui;
-  color: rgb(73, 73, 73);
-  background-color: #f0eded;
-  min-height: 100vh;
-}
-.menu-countries{
-  width: 400px;
-  border-right: 1px solid #d9d7d7;
-  border-radius: 2px;
-  max-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: white;
-  font-size: 16px;
-  padding: 20px 15px;
-  position: relative;
-}
-.geo-text{
-  text-align: center;
+    font-family: system-ui;
+    color: rgb(73, 73, 73);
+    background-color: #f0eded;
+    min-height: 100vh;
 }
 
-.coords{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-  margin-top: 10px;
-  padding: 5px;
+.menu-countries {
+    width: 400px;
+    border-right: 1px solid #d9d7d7;
+    border-radius: 2px;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+    font-size: 16px;
+    padding: 20px 15px;
+    position: relative;
+}
+
+.geo-text {
+    text-align: center;
+}
+
+.coords {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 5px;
 
 }
-.input-coords,#input-btn{
-  padding: 10px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid rgba(217, 215, 215, 0.67);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.23),
-              -1px -1px 3px rgba(0, 0, 0, 0.12);
-  margin-bottom: 5px;
-width: 100%;
-  
-}
-#input-btn{
-  cursor: pointer;
-  transition: all .1s;
-}
-#input-btn:hover{
-  box-shadow: 2px 2px 5px rgba(136, 134, 134, 0.46),
-  -3px -3px 5px rgba(250, 248, 248, 0.63);
-transition: all .1s;
+
+.input-coords, #input-btn {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(217, 215, 215, 0.67);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.23),
+    -1px -1px 3px rgba(0, 0, 0, 0.12);
+    margin-bottom: 5px;
+    width: 100%;
 
 }
+
+#input-btn {
+    cursor: pointer;
+    transition: all .1s;
+}
+
+#input-btn:hover {
+    box-shadow: 2px 2px 5px rgba(136, 134, 134, 0.46),
+    -3px -3px 5px rgba(250, 248, 248, 0.63);
+    transition: all .1s;
+
+}
+
 .container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 15px;
-  max-height: min-content;
-  position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 15px;
+    max-height: min-content;
+    position: relative;
 }
 
 .countries {
-  display: grid;
-  font-size: 1.8rem;
-  grid-template-columns: repeat(3,1fr);
-  transition: opacity 1s;
-  overflow-y: auto;
-  overflow-x: hidden;
-  grid-auto-rows: 500px;
-  opacity: 0;
+    display: grid;
+    font-size: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    transition: opacity 1s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    grid-auto-rows: 500px;
+    opacity: 0;
 }
-
+.images{
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.09);
+}
 .country {
-  background-color: #fff;
-  box-shadow: 0 2rem 4rem 1rem rgba(0, 0, 0, 0.1);
-  font-size: 1.6rem;
-  width: 35rem;
-  border-radius: 0.8rem;
-  margin: 0 4rem;
-  max-height: 500px;
-  /* overflow: hidden; */
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    width: 35rem;
+    border-radius: 0.8rem;
+    margin: 0 4rem;
+    max-height: 500px;
+    /* overflow: hidden; */
 }
 
 .neighbour::before {
-  content: 'Соседняя Страна';
-  width: 100%;
-  position: absolute;
-  top: -5rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: rgb(128, 128, 128);
+    content: 'Соседняя Страна';
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
 }
-.nav{
-  position: absolute;
-  top: 50px;
-  left: 100px;
+
+.nav {
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
+
 .neighbour {
-  transform: scale(0.7) translateY(1rem);
-  margin-left: 0;
+    transform: scale(0.7) translateY(1rem);
+    margin-left: 0;
 }
-ul{
-  list-style: none;
+
+ul {
+    list-style: none;
 }
-.countries-name{
-  cursor: pointer;
+
+.countries-name {
+    cursor: pointer;
 }
-.countries-name:nth-child(even){
-background-color: rgba(0, 0, 0, 0.03);
+
+.countries-name:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03);
 }
+
 .country__img {
-  width: 35rem;
-  height: 17rem;
-  object-fit: cover;
-  background-color: rgb(230, 230, 230);
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+    width: 35rem;
+    height: 17rem;
+    object-fit: cover;
+    background-color: rgb(230, 230, 230);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }
 
 .country__data {
-  padding: 2.6rem 3.8rem 3rem 3.8rem;
+    padding: 2.6rem 3.8rem 3rem 3.8rem;
 }
 
 .country__name {
-  font-size: 2.3rem;
-  margin-bottom: 0.8rem;
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
 }
 
 .country__region {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-  text-transform: uppercase;
-  color: rgb(133, 133, 133);
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(133, 133, 133);
 }
 
 .country__row:not(:last-child) {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .country__row span {
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 2.2rem;
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 2.2rem;
 }
 
 .btn-country {
-  border: none;
-  font-size: 2rem;
-  padding: 2rem 5rem;
-  border-radius: 0.7rem;
-  color: white;
-  background-color: rgb(216, 11, 11);
-  cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem 5rem;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: rgb(216, 11, 11);
+    cursor: pointer;
 }
 
 .images {
-  display: flex;
+    display: flex;
 }
 
 .images img {
-  display: block;
-  width: 80rem;
-  margin: 4rem;
+    display: block;
+    width: 80rem;
+    margin: 4rem;
 }
 
 .images img.parallel {
-  width: 40rem;
-  margin: 2rem;
-  border: 3rem solid white;
-  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 40rem;
+    margin: 2rem;
+    border: 3rem solid white;
+    box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }

@@ -94,3 +94,17 @@ function displayCountryByGPS(lat, lng) {
 
 }
 
+function getCountries(country) {
+    return fetch(`https://restcountries.com/v3.1/name/${country}`)
+        .then(res => res.json())
+        .then(res => {
+            let [obj] = res
+            console.log(obj)
+        })
+        .catch(e => console.error(e.message))
+
+}
+
+getCountries('USA')
+
+
