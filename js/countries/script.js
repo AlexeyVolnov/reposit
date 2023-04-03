@@ -60,7 +60,7 @@ function getCountryData(country) {
 function getNeighbor(data) {
     const fierstNeighbor = data.borders;
     if (!fierstNeighbor) return;
-    fierstNeighbor.forEach(item =>
+    fierstNeighbor.forEach(async item =>
         fetch(`https://restcountries.com/v3.1/alpha/${item}`)
             .then(response => response.json())
             .then(data => displayCountries(...data, 'neighbour'))
@@ -94,17 +94,10 @@ function displayCountryByGPS(lat, lng) {
 
 }
 
-function getCountries(country) {
-    return fetch(`https://restcountries.com/v3.1/name/${country}`)
-        .then(res => res.json())
-        .then(res => {
-            let [obj] = res
-            console.log(obj)
-        })
-        .catch(e => console.error(e.message))
+console.log('start');
 
-}
+const promise1 = new Promise((resolve, reject) => {
+    console.log(1)
+})
 
-getCountries('USA')
-
-
+console.log('end');

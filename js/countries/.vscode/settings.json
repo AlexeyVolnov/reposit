@@ -1,0 +1,121 @@
+// VSCODE PLUGINS:
+// CSS Peek
+// eCSStractor for VSCode
+// Gist
+// HTML to CSS autocompletion
+// IntelliSense for CSS class names in HTML
+// Live Server
+// One Dark Pro
+{
+  "emmet.extensionsPath": ["~\\AppData\\Roaming\\Code\\User\\emmet"],
+  // "php.validate.executablePath": "D:\\OpenServer\\modules\\php\\PHP_7.4\\php.exe",
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.smoothScrolling": true,
+  "editor.fontSize": 19,
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": true,
+  "editor.tabSize": 2,
+  "files.defaultLanguage": "html",
+  "git.ignoreMissingGitWarning": true,
+  "editor.detectIndentation": true,
+  "editor.folding": true,
+  "editor.glyphMargin": false,
+  "editor.parameterHints.enabled": true,
+  "editor.hover.enabled": true,
+  "terminal.integrated.fontSize": 15,
+  "editor.renderWhitespace": "boundary",
+  "editor.lineHeight": 23,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "ecsstractor_port.add_comment": false,
+  "ecsstractor_port.empty_line_before_nested_selector": false,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.enabled": false,
+  "workbench.colorTheme": "Community Material Theme",
+  "editor.insertSpaces": false,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.suggest.selection": "first",
+  "emmet.triggerExpansionOnTab": false,
+  "editor.fontVariations": false,
+  "workbench.preferredDarkColorTheme": "Community Material Theme",
+  "workbench.preferredHighContrastColorTheme": "Community Material Theme",
+  "workbench.preferredHighContrastLightColorTheme": "Community Material Theme",
+  "workbench.preferredLightColorTheme": "Community Material Theme",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.productIconTheme": "Default",
+  "vscodeGoogleTranslate.preferredLanguage": "Russian",
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.glyphMargin": false,
+  "terminal.integrated.copyOnSelection": true,
+  "editor.fontLigatures": true,
+  // "editor.fontFamily": "Dank Mono, IBM Plex Mono"
+  "editor.fontFamily": "JetBrains Mono, IBM Plex Mono",
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "cinstant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "explorer.compactFolders": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "newUntitledFile",
+  "prettier.singleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.autoClosingTags": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.idea": true,
+    "**/.vscode": true
+  }
+}

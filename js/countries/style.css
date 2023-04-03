@@ -84,11 +84,6 @@ body {
     grid-auto-rows: 500px;
     opacity: 0;
 }
-.images{
-  width: 400px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.09);
-}
 .country {
     background-color: #fff;
     box-shadow: 0 2rem 4rem 1rem rgba(0, 0, 0, 0.1);
