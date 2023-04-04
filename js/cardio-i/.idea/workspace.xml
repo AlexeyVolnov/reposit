@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="194946d9-e3a0-4188-9adf-6dd6227bc2b9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../countries/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../countries/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../countries/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../countries/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../countries/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../countries/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -73,6 +70,12 @@
       <workItem from="1679768815264" duration="1657000" />
       <workItem from="1680411397095" duration="330000" />
       <workItem from="1680411743725" duration="203000" />
+      <workItem from="1680553563634" duration="118000" />
+      <workItem from="1680553694915" duration="44000" />
+      <workItem from="1680553753203" duration="86000" />
+      <workItem from="1680553857670" duration="88000" />
+      <workItem from="1680553957676" duration="284000" />
+      <workItem from="1680554255626" duration="654000" />
     </task>
     <servers />
   </component>

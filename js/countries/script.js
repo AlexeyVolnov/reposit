@@ -13,6 +13,8 @@ listCountries
     });
 })
 
+
+
 menuCountries.addEventListener('click', function (e) {
     if (e.target.closest('.countries-name')) {
         countries.querySelectorAll('.country').forEach(country => country.remove());
