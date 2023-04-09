@@ -284,3 +284,67 @@ class Cycling extends Workout {
 const app = new App()
 
 
+
+
+
+
+
+
+
+
+
+
+const wait1 = function (second) {
+    const callback = () => console.log(`мы подождали ${second} секунд`)
+    setTimeout(callback, second * 1000)
+}
+
+
+const wait = function (second) {
+    return new Promise(function (resolve) {
+        setTimeout(resolve, second * 1000)
+    })
+        .then(() => console.log(`мы подождали ${second} секунд`))
+}
+
+const containerImg = document.querySelector('.images')
+let elem = null
+
+
+
+function createElement(imagePath) {
+    return new Promise(function (resolve, reject) {
+        const element = document.createElement('img')
+        element.src = imagePath
+        element.addEventListener('load', () => {
+            containerImg.appendChild(element)
+            elem = element
+            resolve(element)
+        })
+        element.addEventListener('error', () => {
+            reject(new Error('none'))
+        })
+    })
+}
+
+createElement(`./icon.png`)
+    .then(res=>elem=res)
+    .then(()=>wait(2))
+    .then(()=>{
+        createElement(`./Блок-схема.png`)
+    })
+    .then((res)=>{
+        console.log(res)
+    })
+    
+
+
+
+
+
+
+
+
+    .catch(error=>console.log(`${error.message}`))
+
+

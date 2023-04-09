@@ -69,7 +69,7 @@ function getNeighbor(data) {
     )
 }
 
-inputBtn.addEventListener('click', function () {
+inputBtn.addEventListener('click', ()=>{
     const [lat, lng] = [+document.querySelector('#lat').value
         , +document.querySelector('#lng').value];
     displayCountryByGPS(lat, lng)
@@ -96,10 +96,3 @@ function displayCountryByGPS(lat, lng) {
 
 }
 
-console.log('start');
-
-const promise1 = new Promise((resolve, reject) => {
-    console.log(1)
-})
-
-console.log('end');
