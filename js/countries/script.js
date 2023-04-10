@@ -5,12 +5,15 @@ const menuCountries = document.querySelector('.menu-countries');
 const listCountries = fetch('https://restcountries.com/v3.1/all')
 const inputBtn = document.querySelector('#input-btn')
 listCountries
-    .then(response => response.json()).then(data => {
+    .then(response => response.json())
+    .then(data => {
     data.forEach(countries => {
         const html = `<li class='countries-name'>${countries.name.common}</li>`;
         menuCountries.insertAdjacentHTML('beforeend', html);
     });
+        console.log(data)
 })
+
 
 
 
@@ -51,6 +54,8 @@ function displayCountries(data, className) {
 }
 
 function getCountryData(country) {
+
+    console.log(listCountries)
     fetch(`https://restcountries.com/v3.1/name/${country}`)
         .then(response => response.json()).then(data => {
         displayCountries(...data);
