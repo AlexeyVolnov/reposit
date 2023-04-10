@@ -17,30 +17,23 @@ class App {
     #map;
     #mapEvent;
     #workouts = []
-    maps = [
-        {
-            link: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-            copyright: {
-                attribution:
-                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }
-        },
-        {
-            link: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-            copyright: {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-                subdomains: 'abcd',
-                maxZoom: 20
-            }
-        },
-        {
-            link: 'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
-            copyright: {
-                maxZoom: 20,
-                attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-            }
+    maps = [{
+        link: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        copyright: {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }
-    ]
+    }, {
+        link: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', copyright: {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }
+    }, {
+        link: 'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', copyright: {
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        }
+    }]
     indexMap = +JSON.parse(localStorage.getItem('indexMap')) || 0
 
     constructor() {
@@ -57,11 +50,9 @@ class App {
 
     _getPosition() {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                this._loadMap.bind(this),
-                function () {
-                    console.log('Включите доступ к местоположению')
-                })
+            navigator.geolocation.getCurrentPosition(this._loadMap.bind(this), function () {
+                console.log('Включите доступ к местоположению')
+            })
         }
     }
 
@@ -137,13 +128,9 @@ class App {
     _displayWorkout(workout) {
         L.marker(workout.coords)
             .addTo(this.#map)
-            .bindPopup(L.popup(
-                {
-                    maxWidth: 350,
-                    autoClose: false,
-                    closeOnClick: false,
-                    className: `${workout.type}-popup`,
-                }))
+            .bindPopup(L.popup({
+                maxWidth: 350, autoClose: false, closeOnClick: false, className: `${workout.type}-popup`,
+            }))
             .setPopupContent(`${workout.type === 'running' ? '🏃 Пробежка' : '🚵‍♂️ Велотренировка'} ${workout.date}`)
             .openPopup();
 
@@ -243,9 +230,7 @@ class Workout {
 
     get _date() {
         const dateFormat = new Intl.DateTimeFormat(navigator.language, {
-            day: 'numeric',
-            month: 'numeric',
-            year: 'numeric'
+            day: 'numeric', month: 'numeric', year: 'numeric'
         });
         return dateFormat.format(new Date());
     }
@@ -284,23 +269,3 @@ class Cycling extends Workout {
 const app = new App()
 
 
-
-
-const getData = async function (countryName) {
-    try {
-        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`)
-        let [data] = await response.json()
-        return data
-    } catch {
-        console.log(new Error('erroreds').message)
-    }
-
-}
-getData(`russia`).then(res=>console.log(res))
-getData('USA').then(res=>console.log(res))
-
-
-function get(value1,value2,value3,value4){
-    console.log(arguments)
-}
-get(1,'hello',3,4)
