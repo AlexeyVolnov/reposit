@@ -286,65 +286,21 @@ const app = new App()
 
 
 
+const getData = async function (countryName) {
+    try {
+        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`)
+        let [data] = await response.json()
+        return data
+    } catch {
+        console.log(new Error('erroreds').message)
+    }
 
-
-
-
-
-
-
-
-const wait1 = function (second) {
-    const callback = () => console.log(`мы подождали ${second} секунд`)
-    setTimeout(callback, second * 1000)
 }
+getData(`russia`).then(res=>console.log(res))
+getData('USA').then(res=>console.log(res))
 
 
-const wait = function (second) {
-    return new Promise(function (resolve) {
-        setTimeout(resolve, second * 1000)
-    })
-        .then(() => console.log(`мы подождали ${second} секунд`))
+function get(value1,value2,value3,value4){
+    console.log(arguments)
 }
-
-const containerImg = document.querySelector('.images')
-let elem = null
-
-
-
-function createElement(imagePath) {
-    return new Promise(function (resolve, reject) {
-        const element = document.createElement('img')
-        element.src = imagePath
-        element.addEventListener('load', () => {
-            containerImg.appendChild(element)
-            elem = element
-            resolve(element)
-        })
-        element.addEventListener('error', () => {
-            reject(new Error('none'))
-        })
-    })
-}
-
-createElement(`./icon.png`)
-    .then(res=>elem=res)
-    .then(()=>wait(2))
-    .then(()=>{
-        createElement(`./Блок-схема.png`)
-    })
-    .then((res)=>{
-        console.log(res)
-    })
-    
-
-
-
-
-
-
-
-
-    .catch(error=>console.log(`${error.message}`))
-
-
+get(1,'hello',3,4)
