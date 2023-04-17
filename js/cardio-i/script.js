@@ -1,6 +1,8 @@
 'use strict';
 
 
+
+
 const form = document.querySelector('.form');
 const containerWorkouts = document.querySelector('.workouts');
 const inputType = document.querySelector('.form__input--type');
@@ -11,7 +13,7 @@ const inputClimb = document.querySelector('.form__input--climb');
 const workoutHint = document.querySelector('.workout-hint')
 const resetWorkouts = document.querySelector('.setting-reset-workouts')
 const changeMaps = document.querySelector('.setting-maps')
-
+import {Workout} from "./classes/_Workout.js";
 
 class App {
     #map;
@@ -218,24 +220,6 @@ class App {
     }
 }
 
-class Workout {
-    date = this._date
-    id = Date.now();
-
-    constructor(distance, duration, coords) {
-        this.distance = distance;
-        this.duration = duration;
-        this.coords = coords;
-    }
-
-    get _date() {
-        const dateFormat = new Intl.DateTimeFormat(navigator.language, {
-            day: 'numeric', month: 'numeric', year: 'numeric'
-        });
-        return dateFormat.format(new Date());
-    }
-
-}
 
 class Running extends Workout {
     type = 'running'
@@ -268,4 +252,28 @@ class Cycling extends Workout {
 
 const app = new App()
 
+import cloneDeep from './node_modules/lodash-es/cloneDeep.js'
+const state = {
+    cart: [
+        {product: 'apple', quantity: 5},
+        {product: 'meet', quantity: 5,
+        name:[{meeting:true}]}
+    ],
+    user: {loggedIn: true},
+    popo:true
+
+}
+
+
+console.log('================================')
+
+const stateCloneDeep = cloneDeep(state);
+
+
+stateCloneDeep.popo = 'false';
+stateCloneDeep.user.loggedIn = false
+
+
+console.log(state)
+console.log(stateCloneDeep)
 

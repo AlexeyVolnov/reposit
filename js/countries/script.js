@@ -4,6 +4,10 @@ const countries = document.querySelector('.countries');
 const menuCountries = document.querySelector('.menu-countries');
 const listCountries = fetch('https://restcountries.com/v3.1/all')
 const inputBtn = document.querySelector('#input-btn')
+
+
+
+
 listCountries
     .then(response => response.json())
     .then(data => {
@@ -92,5 +96,8 @@ function displayCountryByGPS(lat, lng) {
             })
             .catch(e => console.log(e.message))
     }
-
 }
+
+
+
+
