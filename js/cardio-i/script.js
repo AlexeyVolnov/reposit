@@ -277,3 +277,6 @@ stateCloneDeep.user.loggedIn = false
 console.log(state)
 console.log(stateCloneDeep)
 
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
