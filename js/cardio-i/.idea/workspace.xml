@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="194946d9-e3a0-4188-9adf-6dd6227bc2b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.cache/3c/f9265b460ace13ec68018e025ffc26.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/3c/f9265b460ace13ec68018e025ffc26.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/eb/238a34fff44fdb3e7c271975b9d28a.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/eb/238a34fff44fdb3e7c271975b9d28a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TODO/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TODO/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TODO/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TODO/app/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/example.438d3af2.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/example.438d3af2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/maps.4a3469d0.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/maps.4a3469d0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/script.75da7f30.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/script.75da7f30.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/script.75da7f30.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/script.75da7f30.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/setting.3987ebfc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/setting.3987ebfc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/style.78032849.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.78032849.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/data.mdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +123,7 @@
       <workItem from="1681138768550" duration="1742000" />
       <workItem from="1681468937981" duration="6801000" />
       <workItem from="1681971984027" duration="143000" />
+      <workItem from="1682771199477" duration="4419000" />
     </task>
     <servers />
   </component>

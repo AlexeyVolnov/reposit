@@ -1,13 +1,12 @@
 'use strict'
 
 
-class Sticky{
-    constructor(caption,text) {
+class Sticky {
+    constructor(caption, text) {
         this.caption = caption;
         this.text = text
     }
 }
-
 
 
 const containerForStick = document.querySelector('.add_sticky');
@@ -19,17 +18,27 @@ const addStick = `<div class="add_sticky">
         <span class="material-symbols-outlined add_stick">playlist_add</span>
       </div>`
 
-/*const regexp = new RegExp('шаблон','флаги');
 
-const regexp1 = new RegExp('шаблон','флаги');*/
+let test = ['meet', 'car', 'banana']
+test[20] = 'kakacha'
+Array.prototype.forEach2 = function (callback) {
+  
+       if (this === null) {
+           throw new Error('object is not iterable')
+       }
+       let i = 0;
+       const O = Object(this)
+       const len = O.length;
+       while (i < len) {
+           if (i in O) callback(O[i], i, O)
+           i++
+       }
+   
 
-const reg = /./gi
-
-const text = `Как и выражения функций, выражения классов могут быть анонимными или иметь имя, отличное от переменной, которой оно присвоено. Однако, в отличие от объявлений функций, объявления классов имеют те же ограничения на временную мертвую зону, что и let или const, и ведут себя так, как будто они не подняты.`
-    
-    
+}
 
 
-console.log(text.replaceAll(/,/gi,'***'))
-
-
+test.forEach2((value, index, array) => {
+    console.log(value, index, array)
+})+21``
+ 2.
