@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="097a7c5f-bfb5-4bce-bec7-641a62d54fd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../cardio-i/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/maps/maps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/maps/maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/settings/setting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/Архитектура Проекта.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cardio-i/Блок-схема.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardio-gulp/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardio-gulp/.idea/gulp-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cardio-gulp/.idea/gulp-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardio-gulp/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cardio-gulp/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardio-gulp/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/cardio-gulp/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardio-gulp/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cardio-gulp/app/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/.parcel-cache/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/.parcel-cache/data.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/dist/index.25407c47.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/dist/index.25407c47.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/dist/index.2ad7b45e.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/dist/index.2ad7b45e.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/dist/index.8bbc5154.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/dist/index.8bbc5154.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/dist/index.8cfc62b9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/dist/index.8cfc62b9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cardio-i/dist/index.b2625c6b.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cardio-i/dist/index.b2625c6b.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677909650473</updated>
       <workItem from="1677909651932" duration="9459000" />
+      <workItem from="1687003749317" duration="33000" />
     </task>
     <servers />
   </component>

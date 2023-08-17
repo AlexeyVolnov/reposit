@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="20cd7d51-5599-4213-b7ef-dd63e3110154" name="Changes" comment="paddinfg">
-      <change afterPath="$PROJECT_DIR$/../tesla-2/.sass-cache/da65be99a020ee9e38df6f8ef17f05a0a7d8e163/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/css/.sass-cache/5f7594dd3d3f25d7facd5f87d36eef491b5c9e84/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/css/.sass-cache/a1378b3b4b3287fd813be89b70af731ffe043f33/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/present-slider/slider-bg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/product-nav/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/advantage__img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/spec-card.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/spec-img-full.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla-2/sources/spec/speed-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tesla/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HIMO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HIMO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/img/image-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк визуал/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк визуал/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк визуал/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/банк логика/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../js/банк логика/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/.parcel-cache/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/.parcel-cache/data.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/dist/index.25407c47.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/dist/index.25407c47.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/dist/index.2ad7b45e.css" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/dist/index.2ad7b45e.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/dist/index.8bbc5154.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/dist/index.8bbc5154.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/dist/index.8cfc62b9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/dist/index.8cfc62b9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio-i/dist/index.b2625c6b.css" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio-i/dist/index.b2625c6b.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../js/cardio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../js/cardio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../marsy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../marsy/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +61,11 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -115,6 +107,9 @@
       <workItem from="1676459791100" duration="591000" />
       <workItem from="1676460406775" duration="39000" />
       <workItem from="1676971043310" duration="142000" />
+      <workItem from="1687004426781" duration="753000" />
+      <workItem from="1691410826755" duration="561000" />
+      <workItem from="1691411461754" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="paddinfg">
       <created>1661406347937</created>
